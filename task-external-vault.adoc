@@ -1,0 +1,267 @@
+---
+sidebar: sidebar 
+permalink: task-external-vault.html 
+keywords: hashicorp, vault, credentials, secrets, API 
+summary: 'Quando si crea una relazione di sincronizzazione che richiede credenziali Amazon S3, Azure o Google Cloud, è necessario specificare tali credenziali tramite l"interfaccia utente o l"API di copia e sincronizzazione BlueXP. Un"alternativa è impostare il data broker per accedere alle credenziali direttamente da un vault HashiCorp esterno.' 
+---
+= Impostazione di un gruppo di broker di dati per l'utilizzo di un vault HashiCorp esterno
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Quando si crea una relazione di sincronizzazione che richiede credenziali Amazon S3, Azure o Google Cloud, è necessario specificare tali credenziali tramite l'interfaccia utente o l'API di copia e sincronizzazione BlueXP. Un'alternativa è impostare il gruppo di broker di dati per accedere alle credenziali (o _secrets_) direttamente da un vault HashiCorp esterno.
+
+Questa funzionalità è supportata tramite l'API di copia e sincronizzazione BlueXP con relazioni di sincronizzazione che richiedono credenziali Amazon S3, Azure o Google Cloud.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Preparare il vault
+[role="quick-margin-para"]
+Preparare il vault per fornire le credenziali al gruppo di broker di dati impostando gli URL. Gli URL dei segreti nel vault devono terminare con _Creds_.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Preparare il gruppo di broker di dati
+[role="quick-margin-para"]
+Preparare il gruppo di broker di dati a recuperare le credenziali dal vault esterno modificando il file di configurazione locale per ogni broker di dati nel gruppo.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Creare una relazione di sincronizzazione utilizzando l'API
+[role="quick-margin-para"]
+Una volta configurato tutto, è possibile inviare una chiamata API per creare una relazione di sincronizzazione che utilizzi il vault per ottenere i segreti.
+
+
+
+== Preparazione del vault
+
+È necessario fornire una copia BlueXP e sincronizzarla con l'URL con i segreti nel vault. Preparare il vault impostando questi URL. È necessario impostare gli URL in base alle credenziali per ciascuna origine e destinazione nelle relazioni di sincronizzazione che si intende creare.
+
+L'URL deve essere impostato come segue:
+
+`/<path>/<requestid>/<endpoint-protocol>Creds`
+
+Percorso:: Il percorso del prefisso per il segreto. Questo può essere un valore qualsiasi per te.
+ID richiesta:: ID richiesta da generare. Quando si crea la relazione di sincronizzazione, è necessario fornire l'ID in una delle intestazioni della richiesta API POST.
+Protocollo endpoint:: Uno dei seguenti protocolli, come definito https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2["nella documentazione post-relationship v2"^]: S3, AZURE o GCP (ciascuno deve essere in maiuscolo).
+Credi:: L'URL deve terminare con _Creds_.
+
+
+
+
+=== Esempi
+
+Gli esempi seguenti mostrano gli URL per i segreti.
+
+Esempio di URL completo e percorso per le credenziali di origine:: http://example.vault.com:8200/my-path/all-secrets/hb312vdasr2/S3Creds
++
+--
+Come si può vedere nell'esempio, il percorso del prefisso è _/my-path/all-secrets/_, l'ID della richiesta è _hb312vdasr2_ e l'endpoint di origine è S3.
+
+--
+Esempio di URL completo e percorso per le credenziali di destinazione:: http://example.vault.com:8200/my-path/all-secrets/n32hcbnejk2/AZURECreds
++
+--
+Il percorso del prefisso è _/my-path/all-secrets/_, l'ID della richiesta è _n32hcbnejk2_ e l'endpoint di destinazione è Azure.
+
+--
+
+
+
+
+== Preparazione del gruppo di broker di dati
+
+Preparare il gruppo di broker di dati a recuperare le credenziali dal vault esterno modificando il file di configurazione locale per ogni broker di dati nel gruppo.
+
+.Fasi
+. SSH a un broker di dati del gruppo.
+. Modificare il file local.json che risiede in /opt/netapp/databroker/config.
+. Impostare enable su *true* e i campi dei parametri di configurazione in _external-integrations.hashicorp_ come segue:
++
+attivato::
++
+--
+** Valori validi: Vero/falso
+** Tipo: Booleano
+** Valore predefinito: False
+** Vero: Il data broker ottiene segreti dal tuo vault HashiCorp esterno
+** Falso: Il data broker memorizza le credenziali nel proprio vault locale
+
+
+--
+url::
++
+--
+** Digitare: String
+** Valore: L'URL del vault esterno
+
+
+--
+percorso::
++
+--
+** Digitare: String
+** Valore: Inserire il percorso del segreto con le credenziali
+
+
+--
+Rifiuta-non autorizzato::
++
+--
+** Determina se si desidera che il data broker rifiuti un vault esterno non autorizzato
+** Tipo: Booleano
+** Predefinito: Falso
+
+
+--
+authod::
++
+--
+** Il metodo di autenticazione che il data broker deve utilizzare per accedere alle credenziali dal vault esterno
+** Digitare: String
+** Valori validi: "aws-iam" / "role-app" / "gcp-iam"
+
+
+--
+nome-ruolo::
++
+--
+** Digitare: String
+** Nome del tuo ruolo (nel caso in cui utilizzi aws-iam o gcp-iam)
+
+
+--
+Secretid e rootid::
++
+--
+** Digitare: String (se si utilizza app-role)
+
+
+--
+Namespace::
++
+--
+** Digitare: String
+** Spazio dei nomi (intestazione X-Vault-namespace, se necessario)
+
+
+--
+
+
+. Ripetere questa procedura per tutti gli altri broker di dati del gruppo.
+
+
+
+
+=== Esempio di autenticazione con ruolo aws
+
+[source, json]
+----
+{
+          “external-integrations”: {
+                  “hashicorp”: {
+                         “enabled”: true,
+                         “url”: “https://example.vault.com:8200”,
+                         “path”: ““my-path/all-secrets”,
+                         “reject-unauthorized”: false,
+                         “auth-method”: “aws-role”,
+                         “aws-role”: {
+                               “role-name”: “my-role”
+                         }
+                }
+       }
+}
+----
+
+
+=== Esempio di autenticazione gcp-iam
+
+[source, json]
+----
+{
+"external-integrations": {
+    "hashicorp": {
+      "enabled": true,
+      "url": http://ip-10-20-30-55.ec2.internal:8200,
+      "path": "v1/secret",
+      "namespace": "",
+      "reject-unauthorized": true,
+      "auth-method": "gcp-iam",
+      "aws-iam": {
+        "role-name": ""
+      },
+      "app-role": {
+        "root_id": "",
+        "secret_id": ""
+      },
+"gcp-iam": {
+          "role-name": "my-iam-role"
+      }
+    }
+  }
+}
+----
+
+
+=== Impostazione delle autorizzazioni quando si utilizza l'autenticazione gcp-iam
+
+Se si utilizza il metodo di autenticazione _gcp-iam_, il data broker deve disporre della seguente autorizzazione GCP:
+
+[source, yaml]
+----
+- iam.serviceAccounts.signJwt
+----
+link:task-installing-gcp.html#permissions-required-for-the-service-account["Scopri di più sui requisiti di autorizzazione GCP per il data broker"].
+
+
+
+== Creazione di una nuova relazione di sincronizzazione utilizzando i segreti del vault
+
+Una volta configurato tutto, è possibile inviare una chiamata API per creare una relazione di sincronizzazione che utilizzi il vault per ottenere i segreti.
+
+Pubblicare la relazione utilizzando la copia BlueXP e l'API REST di sincronizzazione.
+
+....
+Headers:
+Authorization: Bearer <user-token>
+Content-Type: application/json
+x-account-id: <accountid>
+x-netapp-external-request-id-src: request ID as part of path for source credentials
+x-netapp-external-request-id-trg: request ID as part of path for target credentials
+Body: post relationship v2 body
+....
+* Per ottenere un token utente e l'ID dell'account BlueXP, link:api-sync.html["fare riferimento a questa pagina nella documentazione"].
+* Per costruire un corpo per la tua relazione post, https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2["Fare riferimento alla chiamata all'API Relarcitazioni v2"^].
+
+
+
+
+=== Esempio
+
+Esempio per la richiesta POST:
+
+[source, json]
+----
+url: https://api.cloudsync.netapp.com/api/relationships-v2
+headers:
+"x-account-id": "CS-SasdW"
+"x-netapp-external-request-id-src": "hb312vdasr2"
+"Content-Type": "application/json"
+"Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik…"
+Body:
+{
+"dataBrokerId": "5e6e111d578dtyuu1555sa60",
+"source": {
+        "protocol": "s3",
+        "s3": {
+                "provider": "sgws",
+                "host": "1.1.1.1",
+                "port": "443",
+                "bucket": "my-source"
+     },
+"target": {
+        "protocol": "s3",
+        "s3": {
+                "bucket": "my-target-bucket"
+        }
+    }
+}
+----

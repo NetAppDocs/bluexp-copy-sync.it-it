@@ -1,0 +1,410 @@
+---
+sidebar: sidebar 
+permalink: faq.html 
+keywords: community, forums, help, support, videos, faq, getting help, permissions, access control lists, acls, preserve, preserving, troubleshooting, support, encryption, smb 
+summary: Puoi ottenere aiuto con BlueXP copy and Sync e trovare ulteriori informazioni attraverso varie risorse, tra cui forum, servizi di chat e video. 
+---
+= Domande frequenti tecniche su BlueXP Copy and Sync
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Per iniziare
+
+Le seguenti domande si riferiscono all'introduzione di BlueXP Copy and Sync.
+
+
+
+=== Come funziona la copia e la sincronizzazione di BlueXP?
+
+BlueXP copy and Sync utilizza il software NetApp data broker per sincronizzare i dati da un'origine a una destinazione (questa operazione è denominata _relazione di sincronizzazione_).
+
+Un gruppo di broker di dati controlla le relazioni di sincronizzazione tra origini e destinazioni. Dopo aver impostato una relazione di sincronizzazione, BlueXP Copy and Sync analizza il sistema di origine e lo suddivide in più flussi di replica per eseguire il push sui dati di destinazione selezionati.
+
+Dopo la copia iniziale, il servizio sincronizza i dati modificati in base alla pianificazione impostata.
+
+
+
+=== Come funziona la prova gratuita di 14 giorni?
+
+La versione di prova gratuita di 14 giorni inizia quando ti iscrivi al servizio di copia e sincronizzazione BlueXP. Non sei soggetto ai costi di NetApp per le relazioni di copia e sincronizzazione BlueXP create per 14 giorni. Tuttavia, tutti i costi relativi alle risorse per i broker di dati implementati sono ancora validi.
+
+
+
+=== Quanto costa BlueXP Copy and Sync?
+
+L'utilizzo della copia e della sincronizzazione di BlueXP comporta due tipi di costi: Costi di servizio e costi delle risorse.
+
+*Costi di servizio*
+
+Per i prezzi pay-as-you-go, i costi dei servizi di copia e sincronizzazione BlueXP sono orari, in base al numero di relazioni di sincronizzazione create.
+
+* https://aws.amazon.com/marketplace/pp/B01LZV5DUJ["Visualizza i prezzi pay-as-you-go in AWS"^]
+* https://aws.amazon.com/marketplace/pp/B06XX5V3M2["Visualizza i prezzi annuali in AWS"^]
+* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-sync-service?tab=PlansAndPrice["Visualizza i prezzi in Azure"^]
+
+
+Le licenze di copia e sincronizzazione BlueXP sono disponibili anche presso il rappresentante NetApp. Ogni licenza consente 20 relazioni di sincronizzazione per 12 mesi.
+
+link:concept-licensing.html["Scopri di più sulle licenze"].
+
+
+NOTE: Le relazioni di copia e sincronizzazione BlueXP sono gratuite per Cloud Volumes Service e Azure NetApp Files.
+
+*Costi delle risorse*
+
+I costi delle risorse sono correlati ai costi di calcolo e storage per l'esecuzione del data broker nel cloud.
+
+
+
+=== Come vengono fatturate le copie e le sincronizzazioni BlueXP e come si gestisce l'abbonamento?
+
+Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nell'abbonarsi ad AWS o Azure, che consente di pagare a consumo o di pagare annualmente. La seconda opzione consiste nell'acquistare le licenze direttamente da NetApp. In ogni caso, il tuo abbonamento sarà gestito attraverso il marketplace del tuo provider e *non* attraverso l'interfaccia utente di BlueXP Copy and Sync.
+
+
+
+=== È possibile utilizzare la copia e la sincronizzazione BlueXP all'esterno del cloud?
+
+Sì, puoi utilizzare la copia e la sincronizzazione BlueXP in un'architettura non cloud. L'origine e la destinazione possono risiedere on-premise e così anche il software di broker di dati.
+
+Tenere presente i seguenti punti chiave sull'utilizzo della copia e della sincronizzazione BlueXP all'esterno del cloud:
+
+* Un gruppo di broker di dati necessita di una connessione a Internet per comunicare con il servizio di copia e sincronizzazione BlueXP.
+* Se non acquisti una licenza direttamente da NetApp, dovrai disporre di un account AWS o Azure per la fatturazione del servizio di copia E sincronizzazione PAYGO BlueXP.
+
+
+
+
+=== Come si accede alla copia e alla sincronizzazione di BlueXP?
+
+La copia e la sincronizzazione di BlueXP sono disponibili sul sito Web di BlueXP nella scheda *Sync*.
+
+
+
+=== Cos'è un gruppo di broker di dati?
+
+Ogni data broker appartiene a un gruppo di data broker. Il raggruppamento dei data broker aiuta a migliorare le performance delle relazioni di sincronizzazione.
+
+
+
+== Fonti e destinazioni supportate
+
+Le seguenti domande relative all'origine e alle destinazioni supportate in una relazione di sincronizzazione.
+
+
+
+=== Quali fonti e destinazioni supporta BlueXP Copy and Sync?
+
+BlueXP copy and Sync supporta diversi tipi di relazioni di sincronizzazione. link:reference-supported-relationships.html["Visualizzare l'intero elenco"].
+
+
+
+=== Quali versioni di NFS e SMB sono supportate da BlueXP Copy and Sync?
+
+BlueXP copy and Sync supporta NFS versione 3 e successive e SMB versione 1 e successive.
+
+link:reference-requirements.html["Scopri di più sui requisiti di sincronizzazione"].
+
+
+
+=== Quando Amazon S3 è la destinazione, è possibile eseguire il tiering dei dati in base a una classe di storage S3 specifica?
+
+Sì, è possibile scegliere una classe di storage S3 specifica quando AWS S3 è la destinazione:
+
+* Standard (classe predefinita)
+* Tiering intelligente
+* Standard-infrequent Access (accesso standard-non frequente)
+* Accesso non frequente a una sola zona
+* Glacier Deep Archive
+* Recupero flessibile di Glacier
+* Glacier Instant Retrieval
+
+
+
+
+=== E i Tier di storage per lo storage Azure Blob?
+
+È possibile scegliere un livello di storage Azure Blob specifico quando un container Blob è la destinazione:
+
+* Storage a caldo
+* Storage fresco
+
+
+
+
+=== Supporta i Tier di storage di Google Cloud?
+
+Sì, è possibile scegliere una classe di storage specifica quando un bucket di storage Google Cloud è l'obiettivo:
+
+* Standard
+* Nearline
+* Coldline
+* Archiviare
+
+
+
+
+== Networking
+
+Le seguenti domande si riferiscono ai requisiti di rete per la copia e la sincronizzazione di BlueXP.
+
+
+
+=== Quali sono i requisiti di rete per la copia e la sincronizzazione di BlueXP?
+
+L'ambiente di copia e sincronizzazione BlueXP richiede che un gruppo di broker di dati sia connesso all'origine e alla destinazione attraverso il protocollo selezionato o l'API di storage a oggetti (Amazon S3, Azure Blob, IBM Cloud Object Storage).
+
+Inoltre, un gruppo di broker di dati necessita di una connessione Internet in uscita sulla porta 443 in modo che possa comunicare con il servizio di copia e sincronizzazione BlueXP e contattare alcuni altri servizi e repository.
+
+Per ulteriori informazioni, link:reference-networking.html["esaminare i requisiti di rete"].
+
+
+
+=== È possibile utilizzare un server proxy con il data broker?
+
+Sì.
+
+BlueXP copy and Sync supporta server proxy con o senza autenticazione di base. Se si specifica un server proxy quando si implementa un data broker, tutto il traffico HTTP e HTTPS proveniente dal data broker viene instradato attraverso il proxy. Si noti che il traffico non HTTP, come NFS o SMB, non può essere instradato attraverso un server proxy.
+
+L'unica limitazione del server proxy è quando si utilizza la crittografia dei dati in volo con una relazione di sincronizzazione NFS o Azure NetApp Files. I dati crittografati vengono inviati tramite HTTPS e non possono essere instradati attraverso un server proxy.
+
+
+
+== Sincronizzazione dei dati
+
+Le seguenti domande si riferiscono al funzionamento della sincronizzazione dei dati.
+
+
+
+=== Con quale frequenza si verifica la sincronizzazione?
+
+La pianificazione predefinita è impostata per la sincronizzazione giornaliera. Dopo la sincronizzazione iniziale, è possibile:
+
+* Modificare la pianificazione di sincronizzazione in base al numero di giorni, ore o minuti desiderato
+* Disattivare la pianificazione della sincronizzazione
+* Eliminare la pianificazione di sincronizzazione (nessun dato andrà perso; verrà rimossa solo la relazione di sincronizzazione)
+
+
+
+
+=== Qual è la pianificazione minima di sincronizzazione?
+
+È possibile pianificare una relazione per sincronizzare i dati ogni 1 minuto.
+
+
+
+=== Il gruppo di broker di dati riprova quando un file non riesce a sincronizzarsi? O il timeout?
+
+Un gruppo di broker di dati non esegue il timeout quando un singolo file non viene trasferito. Il gruppo di broker di dati tenta di nuovo 3 volte prima di saltare il file. Il valore di RETRY è configurabile nelle impostazioni per una relazione di sincronizzazione.
+
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
+
+
+
+=== E se si dispone di un set di dati molto grande?
+
+Se una singola directory contiene almeno 600,000 file, mailto:ng-cloudsync-support@netapp.com[contattaci] per aiutarti a configurare il gruppo di broker di dati per gestire il payload. Potrebbe essere necessario aggiungere ulteriore memoria al gruppo di broker di dati.
+
+Tenere presente che non esiste un limite al numero totale di file nel punto di montaggio. La memoria aggiuntiva è necessaria per le directory di grandi dimensioni con 600,000 o più file, indipendentemente dal livello nella gerarchia (directory superiore o sottodirectory).
+
+
+
+== Sicurezza
+
+Le seguenti domande relative alla sicurezza.
+
+
+
+=== BlueXP Copy and Sync è sicuro?
+
+Sì. Tutta la connettività di rete del servizio di copia e sincronizzazione BlueXP viene eseguita utilizzando https://aws.amazon.com/sqs/["Amazon Simple Queue Service (SQS)"^].
+
+Tutte le comunicazioni tra il gruppo di broker di dati e Amazon S3, Azure Blob, Google Cloud Storage e IBM Cloud Object Storage vengono effettuate tramite il protocollo HTTPS.
+
+Se utilizzi la copia BlueXP e la sincronizzazione con sistemi on-premise (di origine o di destinazione), ecco alcune opzioni di connettività consigliate:
+
+* Una connessione AWS Direct Connect, Azure ExpressRoute o Google Cloud Interconnect, non instradata su Internet (e in grado di comunicare solo con le reti cloud specificate)
+* Una connessione VPN tra il dispositivo gateway on-premise e le reti cloud
+* Per un trasferimento dei dati estremamente sicuro con i bucket S3, lo storage Azure Blob o Google Cloud Storage, è possibile stabilire un endpoint Amazon Private S3 Endpoint, un endpoint del servizio Azure Virtual Network o un accesso privato a Google.
+
+
+Uno qualsiasi di questi metodi stabilisce una connessione sicura tra i server NAS on-premise e un gruppo di broker di dati di copia e sincronizzazione BlueXP.
+
+
+
+=== I dati sono crittografati tramite copia e sincronizzazione BlueXP?
+
+* BlueXP copy and Sync supporta la crittografia data-in-flight tra server NFS di origine e di destinazione. link:task-nfs-encryption.html["Scopri di più"].
+* Per SMB, BlueXP Copy and Sync supporta i dati SMB 3.0 e 3.11 crittografati sul lato server. BlueXP copia e sincronizza i dati crittografati dall'origine alla destinazione in cui i dati rimangono crittografati.
++
+La copia e la sincronizzazione BlueXP non possono crittografare i dati SMB.
+
+* Quando un bucket Amazon S3 è la destinazione di una relazione di sincronizzazione, puoi scegliere se attivare la crittografia dei dati utilizzando la crittografia AWS KMS o AES-256.
+
+
+
+
+== Permessi
+
+Le seguenti domande si riferiscono alle autorizzazioni per i dati.
+
+
+
+=== Le autorizzazioni dei dati SMB sono sincronizzate con la posizione di destinazione?
+
+È possibile impostare la copia e la sincronizzazione di BlueXP per conservare gli elenchi di controllo degli accessi (ACL) tra una condivisione SMB di origine e una condivisione SMB di destinazione e da una condivisione SMB di origine allo storage a oggetti (ad eccezione di ONTAP S3).
+
+
+NOTE: BlueXP copy and Sync non supporta la copia degli ACL dallo storage a oggetti alle condivisioni SMB.
+
+link:task-copying-acls.html["Scopri come copiare gli ACL tra le condivisioni SMB"].
+
+
+
+=== Le autorizzazioni dei dati NFS sono sincronizzate con la posizione di destinazione?
+
+BlueXP copy and Sync copia automaticamente le autorizzazioni NFS tra i server NFS come segue:
+
+* NFS versione 3: BlueXP copy and Sync copia i permessi e il proprietario del gruppo di utenti.
+* NFS versione 4: BlueXP copia e sincronizza gli ACL.
+
+
+
+
+== Metadati dello storage a oggetti
+
+BlueXP copy and Sync copia i metadati dello storage a oggetti dall'origine alla destinazione per i seguenti tipi di relazioni di sincronizzazione:
+
+* Amazon S3 -> Amazon S3 ^1^
+* Amazon S3 -> StorageGRID
+* StorageGRID -> Amazon S3
+* StorageGRID -> StorageGRID
+* StorageGRID -> Storage cloud Google
+* Google Cloud Storage -> StorageGRID ^1^
+* Google Cloud Storage -> IBM Cloud Object Storage ^1^
+* Google Cloud Storage -> Amazon S3 ^1^
+* Amazon S3 -> Google Cloud Storage
+* IBM Cloud Object Storage -> Google Cloud Storage
+* StorageGRID -> Storage a oggetti cloud IBM
+* Storage a oggetti cloud IBM -> StorageGRID
+* IBM Cloud Object Storage -> IBM Cloud Object Storage
+
+
+^1^ per queste relazioni di sincronizzazione, è necessario link:task-creating-relationships.html["Attivare l'impostazione Copia per oggetti quando si crea la relazione di sincronizzazione"].
+
+
+
+== Performance
+
+Le seguenti domande si riferiscono alle prestazioni di copia e sincronizzazione di BlueXP.
+
+
+
+=== Cosa rappresenta l'indicatore di avanzamento di una relazione di sincronizzazione?
+
+La relazione di sincronizzazione mostra il throughput della scheda di rete del gruppo di broker di dati. Se le prestazioni di sincronizzazione sono state accelerate utilizzando più broker di dati, il throughput è la somma di tutto il traffico. Questo throughput viene aggiornato ogni 20 secondi.
+
+
+
+=== Sto riscontrando problemi di performance. Possiamo limitare il numero di trasferimenti simultanei?
+
+Se si dispone di file di dimensioni molto grandi (più tie ciascuno), il completamento del processo di trasferimento può richiedere molto tempo e le prestazioni potrebbero risentirne.
+
+Limitare il numero di trasferimenti simultanei può essere di aiuto. Mailto:ng-cloudsync-support@netapp.com[Contattaci per ricevere assistenza].
+
+
+
+=== Perché si riscontrano prestazioni ridotte con Azure NetApp Files?
+
+Quando si sincronizzano i dati con o da Azure NetApp Files, potrebbero verificarsi errori e problemi di performance se il livello di servizio del disco è standard.
+
+Impostare il livello di servizio su Premium o Ultra per migliorare le prestazioni di sincronizzazione.
+
+https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limits["Scopri di più sui livelli di servizio e sul throughput di Azure NetApp Files"^].
+
+
+
+=== Perché si riscontrano prestazioni ridotte con Cloud Volumes Service per AWS?
+
+Quando sincronizzi i dati da o verso un volume cloud, potresti riscontrare guasti e problemi di performance se il livello di performance per il volume cloud è Standard.
+
+Impostare il livello di servizio su Premium o Extreme per migliorare le prestazioni di sincronizzazione.
+
+
+
+=== Quanti broker di dati sono richiesti in un gruppo?
+
+Quando si crea una nuova relazione, si inizia con un singolo data broker in un gruppo (a meno che non sia stato selezionato un data broker esistente che appartiene a una relazione di sincronizzazione accelerata). In molti casi, un singolo data broker può soddisfare i requisiti di performance per una relazione di sincronizzazione. In caso contrario, puoi accelerare le performance di sincronizzazione aggiungendo ulteriori broker di dati al gruppo. Tuttavia, è necessario prima controllare altri fattori che possono influire sulle prestazioni di sincronizzazione.
+
+Diversi fattori possono influire sulle performance di trasferimento dei dati. Le performance di sincronizzazione complessive potrebbero risentire della larghezza di banda, della latenza e della topologia di rete, delle specifiche delle macchine virtuali del data broker e delle performance del sistema storage. Ad esempio, un singolo broker di dati in un gruppo può raggiungere i 100 MB/s, mentre il throughput del disco sulla destinazione potrebbe consentire solo i 64 MB/s. Di conseguenza, il gruppo di broker di dati continua a cercare di copiare i dati, ma la destinazione non può soddisfare le performance del gruppo di broker di dati.
+
+Pertanto, verificare le prestazioni della rete e il throughput del disco sulla destinazione.
+
+Quindi, puoi prendere in considerazione l'accelerazione delle performance di sincronizzazione aggiungendo altri broker di dati a un gruppo per condividere il carico di tale relazione. link:task-managing-relationships.html#accelerating-sync-performance["Scopri come accelerare le performance di sincronizzazione"].
+
+
+
+== Eliminare le cose
+
+Le seguenti domande si riferiscono all'eliminazione di relazioni di sincronizzazione e dati da origini e destinazioni.
+
+
+
+=== Cosa succede se si elimina la copia BlueXP e la relazione di sincronizzazione?
+
+L'eliminazione di una relazione interrompe tutte le future sincronizzazioni dei dati e termina il pagamento. Tutti i dati sincronizzati con la destinazione rimangono invariato.
+
+
+
+=== Cosa succede se si elimina qualcosa dal server di origine? Viene rimosso anche dalla destinazione?
+
+Per impostazione predefinita, se si dispone di una relazione di sincronizzazione attiva, l'elemento eliminato sul server di origine non viene eliminato dalla destinazione durante la sincronizzazione successiva. Tuttavia, esiste un'opzione nelle impostazioni di sincronizzazione per ciascuna relazione, in cui è possibile definire che la copia e la sincronizzazione di BlueXP elimineranno i file nella posizione di destinazione se sono stati eliminati dall'origine.
+
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
+
+
+
+=== Cosa succede se si elimina qualcosa dalla destinazione? Viene rimosso anche dalla fonte?
+
+Se un elemento viene eliminato dalla destinazione, non verrà rimosso dall'origine. La relazione è unidirezionale, dall'origine alla destinazione. Al successivo ciclo di sincronizzazione, BlueXP Copy and Sync confronta l'origine con la destinazione, identifica l'elemento mancante e BlueXP Copy and Sync lo copia di nuovo dall'origine alla destinazione.
+
+
+
+== Risoluzione dei problemi
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Sync/Cloud_Sync_FAQ:_Support_and_Troubleshooting["Knowledge base di NetApp: Domande frequenti su BlueXP Copy and Sync: Supporto e risoluzione dei problemi"^]
+
+
+
+== Analisi approfondita del data broker
+
+La seguente domanda si riferisce al data broker.
+
+
+
+=== Puoi spiegare l'architettura del data broker?
+
+Certo. Ecco i punti più importanti:
+
+* Il data broker è un'applicazione node.js in esecuzione su un host Linux.
+* BlueXP copy and Sync implementa il data broker come segue:
++
+** AWS: Da un modello AWS CloudFormation
+** Azure: Da Azure Resource Manager
+** Google: Da Google Cloud Deployment Manager
+** Se si utilizza il proprio host Linux, è necessario installare manualmente il software
+
+
+* Il software data broker si aggiorna automaticamente alla versione più recente.
+* Il data broker utilizza AWS SQS come canale di comunicazione affidabile e sicuro e per il controllo e il monitoraggio. SQS fornisce anche un layer di persistenza.
+* È possibile aggiungere ulteriori broker di dati a un gruppo per aumentare la velocità di trasferimento e aggiungere alta disponibilità. In caso di guasto di un broker di dati, esiste una resilienza del servizio.
+

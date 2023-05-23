@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: concept-licensing.html 
+keywords: licenses, licensing, subscriptions, annual subscription, paygo, hourly subscription 
+summary: 'Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nell"abbonarsi ad AWS o Azure per il pagamento a consumo o per il pagamento annuale. La seconda opzione consiste nell"acquistare le licenze direttamente da NetApp.' 
+---
+= Panoramica sulle licenze
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nell'abbonarsi ad AWS o Azure per il pagamento a consumo o per il pagamento annuale. La seconda opzione consiste nell'acquistare le licenze direttamente da NetApp.
+
+Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.
+
+
+
+== Iscrizione al Marketplace
+
+La sottoscrizione al servizio di copia e sincronizzazione BlueXP di AWS o Azure consente di pagare a una tariffa oraria o annuale. link:task-licensing.html["Puoi iscriverti tramite AWS o Azure"], a seconda del luogo in cui si desidera essere fatturati.
+
+
+
+=== Abbonamento orario
+
+Con un abbonamento oraria pay-as-you-go, ti verrà addebitato ogni ora in base al numero di relazioni di sincronizzazione create.
+
+* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-sync-service?tab=PlansAndPrice["Visualizza i prezzi in Azure"^]
+* https://aws.amazon.com/marketplace/pp/B01LZV5DUJ["Visualizza i prezzi pay-as-you-go in AWS"^]
+
+
+
+
+=== Abbonamento annuale
+
+Un abbonamento annuale fornisce una licenza per 20 relazioni di sincronizzazione che si paga in anticipo. Se si supera le 20 relazioni di sincronizzazione e si è abbonati tramite AWS, si pagano le relazioni aggiuntive entro l'ora.
+
+https://aws.amazon.com/marketplace/pp/B06XX5V3M2["Visualizza i prezzi annuali in AWS"^]
+
+
+
+== Licenze di NetApp
+
+Un altro modo per pagare anticipatamente le relazioni di sincronizzazione è acquistare le licenze direttamente da NetApp. Ogni licenza consente di creare fino a 20 relazioni di sincronizzazione.
+
+È possibile utilizzare queste licenze con un abbonamento AWS o Azure. Ad esempio, se si dispone di 25 relazioni di sincronizzazione, è possibile pagare le prime 20 relazioni di sincronizzazione utilizzando una licenza e quindi pagare a consumo da AWS o Azure con le restanti 5 relazioni di sincronizzazione.
+
+link:task-licensing.html["Scopri come acquistare le licenze e aggiungerle alla copia e alla sincronizzazione BlueXP"].
+
+
+
+=== Termini di licenza
+
+I clienti che acquistano una licenza Bring Your Own (BYOL) al servizio di copia e sincronizzazione BlueXP devono essere al corrente delle limitazioni associate al diritto di licenza.
+
+* I clienti hanno il diritto di sfruttare la licenza BYOL per un periodo non superiore a un anno dalla data di consegna.
+* I clienti hanno il diritto di sfruttare la licenza BYOL per stabilire e non superare un totale di 20 singole connessioni tra un'origine e una destinazione (ciascuna una "relazione di sincronizzazione").
+* Il diritto di un cliente scade al termine del periodo di validità della licenza di un anno, indipendentemente dal fatto che il cliente abbia raggiunto la limitazione della relazione di sincronizzazione del 20.
+* Nel caso in cui il cliente scelga di rinnovare la propria licenza, le relazioni di sincronizzazione inutilizzate associate alla concessione di licenza precedente NON vengono ripristinate al rinnovo della licenza.
+

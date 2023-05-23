@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: task-installing-gcp.html 
+keywords: data broker, install, gcp, google, networking, permissions, regions, install data broker in gcp, install in gcp, deploy in gcp, deploy data broker in gcp, install data broker in google, install in google, deploy in google, deploy data broker in google, networking requirements, port, ports, 443, port 443, ntp, network time protocol, gcp data broker, service account 
+summary: 'Quando crei un nuovo data broker, scegli l"opzione Google Cloud Data Broker per implementare il software data broker su una nuova istanza di macchina virtuale in un VPC. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
+---
+= Creazione di un nuovo data broker in Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando crei un nuovo gruppo di broker di dati, scegli Google Cloud Platform per implementare il software di broker di dati su una nuova istanza di macchina virtuale in un VPC Google Cloud. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.
+
+È inoltre possibile installare il data broker su un host Linux esistente nel cloud o on-premise. link:task-installing-linux.html["Scopri di più"].
+
+
+
+== Aree di Google Cloud supportate
+
+Sono supportate tutte le regioni.
+
+
+
+== Privilegi root
+
+Il software del data broker viene eseguito automaticamente come root sull'host Linux. L'esecuzione come root è un requisito per le operazioni di data broker. Ad esempio, per montare condivisioni.
+
+
+
+== Requisiti di rete
+
+* Il broker di dati necessita di una connessione Internet in uscita in modo che possa eseguire il polling del servizio di copia e sincronizzazione BlueXP per le attività sulla porta 443.
++
+Quando BlueXP copy and Sync implementa il broker di dati in Google Cloud, crea un gruppo di sicurezza che abilita la comunicazione in uscita richiesta.
+
++
+Per limitare la connettività in uscita, vedere link:reference-networking.html["l'elenco degli endpoint a cui il data broker contatta"].
+
+* NetApp consiglia di configurare l'origine, la destinazione e il data broker per utilizzare un servizio NTP (Network Time Protocol). La differenza di tempo tra i tre componenti non deve superare i 5 minuti.
+
+
+
+
+== Autorizzazioni necessarie per implementare il data broker in Google Cloud
+
+Assicurarsi che l'utente di Google Cloud che implementa il data broker disponga delle seguenti autorizzazioni:
+
+[source, yaml]
+----
+- compute.networks.list
+- compute.regions.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.operations.get
+- iam.serviceAccounts.list
+----
+
+
+== Autorizzazioni richieste per l'account del servizio
+
+Quando si implementa il data broker, è necessario selezionare un account di servizio che disponga delle seguenti autorizzazioni:
+
+[source, yaml]
+----
+- logging.logEntries.create
+- resourcemanager.projects.get
+- storage.buckets.get
+- storage.buckets.list
+- storage.objects.create
+- storage.objects.delete
+- storage.objects.get
+- storage.objects.getIamPolicy
+- storage.objects.list
+- storage.objects.setIamPolicy
+- storage.objects.update
+- iam.serviceAccounts.signJwt
+- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update
+----
+Note:
+
+. L'autorizzazione "iam.serviceAccounts.signJwt" è necessaria solo se si intende configurare il data broker per l'utilizzo di un vault HashiCorp esterno.
+. Le autorizzazioni "pubsub.*" e "storage.bucket.update" sono necessarie solo se si intende attivare l'impostazione di Continuous Sync su una relazione di sincronizzazione tra Google Cloud Storage e un'altra posizione di cloud storage. link:task-creating-relationships.html#settings["Scopri di più sull'opzione Continuous Sync"].
+
+
+
+
+== Creazione del data broker
+
+Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Google Cloud quando si crea una relazione di sincronizzazione.
+
+.Fasi
+. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
+. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.
++
+Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.
+
+. Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Google Cloud Platform*.
++
+image:screenshot-google.png["Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem."]
+
+. Immettere un nome per il broker di dati e fare clic su *continua*.
+. Se richiesto, accedere con l'account Google.
++
+Il modulo è di proprietà e ospitato da Google. Le tue credenziali non vengono fornite a NetApp.
+
+. Selezionare un account di progetto e servizio, quindi scegliere una posizione per il data broker, ad esempio se si desidera attivare o disattivare un indirizzo IP pubblico.
++
+Se non si attiva un indirizzo IP pubblico, sarà necessario definire un server proxy nella fase successiva.
+
++
+image:screenshot_data_broker_gcp.png["Una schermata che mostra le informazioni necessarie per implementare un data broker in Google Cloud."]
+
+. Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet nel VPC.
++
+Se è necessario un proxy per l'accesso a Internet, il proxy deve trovarsi in Google Cloud e utilizzare lo stesso account di servizio del data broker.
+
+. Una volta che il data broker è disponibile, fare clic su *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizzazione BlueXP).
++
+L'implementazione dell'istanza richiede da 5 a 10 minuti circa. È possibile monitorare l'avanzamento del servizio di copia e sincronizzazione BlueXP, che si aggiorna automaticamente quando l'istanza è disponibile.
+
+. Completare le pagine della procedura guidata per creare la nuova relazione di sincronizzazione.
+
+
+.Risultato
+Hai implementato un data broker in Google Cloud e creato una nuova relazione di sincronizzazione. Puoi utilizzare questo data broker con ulteriori relazioni di sincronizzazione.
+
+
+
+== Fornire le autorizzazioni per utilizzare i bucket in altri progetti Google Cloud
+
+Quando crei una relazione di sincronizzazione e scegli Google Cloud Storage come origine o destinazione, BlueXP Copy and Sync ti consente di scegliere tra i bucket che l'account di servizio del broker di dati dispone delle autorizzazioni per l'utilizzo. Per impostazione predefinita, sono inclusi i bucket che si trovano nel _stesso_ progetto dell'account di servizio del broker di dati. Tuttavia, è possibile scegliere i bucket di _altri_ progetti se si forniscono le autorizzazioni necessarie.
+
+.Fasi
+. Aprire la console di Google Cloud Platform e caricare il servizio Cloud Storage.
+. Fare clic sul nome del bucket che si desidera utilizzare come origine o destinazione in una relazione di sincronizzazione.
+. Fare clic su *Permissions*.
+. Fare clic su *Aggiungi*.
+. Immettere il nome dell'account di servizio del broker di dati.
+. Selezionare un ruolo che fornisce <<Autorizzazioni richieste per l'account del servizio,le stesse autorizzazioni illustrate in precedenza>>.
+. Fare clic su *Save* (Salva).
+
+
+.Risultato
+Quando si imposta una relazione di sincronizzazione, è ora possibile scegliere tale bucket come origine o destinazione nella relazione di sincronizzazione.
+
+
+
+== Dettagli sull'istanza di VM del data broker
+
+BlueXP copy and Sync crea un data broker in Google Cloud utilizzando la seguente configurazione.
+
+Tipo di macchina:: n2-standard-4
+VCPU:: 4
+RAM:: 15 GB
+Sistema operativo:: Rocky Linux 9.0
+Dimensione e tipo di disco:: HDD da 20 GB pd-standard
+

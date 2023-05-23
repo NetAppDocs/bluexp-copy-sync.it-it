@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: task-installing-azure.html 
+keywords: data broker, install, azure, networking, permissions, regions, install data broker in azure, install in azure, deploy in azure, deploy data broker in azure, networking requirements, port, ports, 443, port 443, ntp, network time protocol, azure data broker 
+summary: 'Quando crei un nuovo data broker, scegli l"opzione Azure Data Broker per implementare il software del data broker su una nuova macchina virtuale in una VNET. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
+---
+= Creazione di un nuovo data broker in Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si crea un nuovo gruppo di broker di dati, scegliere Microsoft Azure per implementare il software di broker di dati su una nuova macchina virtuale in una VNET. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.
+
+È inoltre possibile installare il data broker su un host Linux esistente nel cloud o on-premise. link:task-installing-linux.html["Scopri di più"].
+
+
+
+== Aree Azure supportate
+
+Sono supportate tutte le regioni, ad eccezione di quelle della Cina, degli Stati Uniti e del DOD.
+
+
+
+== Privilegi root
+
+Il software del data broker viene eseguito automaticamente come root sull'host Linux. L'esecuzione come root è un requisito per le operazioni di data broker. Ad esempio, per montare condivisioni.
+
+
+
+== Requisiti di rete
+
+* Il broker di dati necessita di una connessione Internet in uscita in modo che possa eseguire il polling del servizio di copia e sincronizzazione BlueXP per le attività sulla porta 443.
++
+Quando BlueXP copy and Sync implementa il data broker in Azure, crea un gruppo di sicurezza che abilita la comunicazione in uscita richiesta.
+
++
+Per limitare la connettività in uscita, vedere link:reference-networking.html["l'elenco degli endpoint a cui il data broker contatta"].
+
+* NetApp consiglia di configurare l'origine, la destinazione e il data broker per utilizzare un servizio NTP (Network Time Protocol). La differenza di tempo tra i tre componenti non deve superare i 5 minuti.
+
+
+
+
+== Autorizzazioni necessarie per implementare il data broker in Azure
+
+Assicurarsi che l'account utente Azure utilizzato per implementare il data broker disponga delle seguenti autorizzazioni:
+
+[source, json]
+----
+{
+    "Name": "Azure Data Broker",
+    "Actions": [
+					"Microsoft.Resources/subscriptions/read",
+                    "Microsoft.Resources/deployments/operationstatuses/read",
+                    "Microsoft.Resources/subscriptions/locations/read",
+                    "Microsoft.Network/networkInterfaces/read",
+                    "Microsoft.Network/virtualNetworks/subnets/read",
+                    "Microsoft.Resources/subscriptions/resourceGroups/write",
+                    "Microsoft.Resources/subscriptions/resourceGroups/delete",
+                    "Microsoft.Resources/deployments/write",
+                    "Microsoft.Resources/deployments/validate/action",
+                    "Microsoft.Resources/deployments/operationStatuses/read",
+                    "Microsoft.Resources/deployments/cancel/action",
+                    "Microsoft.Compute/virtualMachines/read",
+                    "Microsoft.Compute/virtualMachines/delete",
+                    "Microsoft.Compute/disks/delete",
+                    "Microsoft.Network/networkInterfaces/delete",
+                    "Microsoft.Network/publicIPAddresses/delete",
+                    "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+                    "Microsoft.Resources/subscriptions/resourceGroups/write",
+                    "Microsoft.Compute/virtualMachines/delete",
+                    "Microsoft.Network/networkSecurityGroups/write",
+                    "Microsoft.Network/networkSecurityGroups/join/action",
+                    "Microsoft.Compute/disks/write",
+                    "Microsoft.Network/networkInterfaces/write",
+                    "Microsoft.Network/virtualNetworks/read",
+                    "Microsoft.Network/publicIPAddresses/write",
+                    "Microsoft.Compute/virtualMachines/write",
+                    "Microsoft.Compute/virtualMachines/extensions/write",
+                    "Microsoft.Resources/deployments/read",
+                    "Microsoft.Network/networkSecurityGroups/read",
+                    "Microsoft.Network/publicIPAddresses/read",
+                    "Microsoft.Network/virtualNetworks/subnets/join/action",
+                    "Microsoft.Network/publicIPAddresses/join/action",
+                    "Microsoft.Network/networkInterfaces/join/action",
+                    "Microsoft.Storage/storageAccounts/read",
+                    "Microsoft.EventGrid/systemTopics/eventSubscriptions/write",
+                    "Microsoft.EventGrid/systemTopics/eventSubscriptions/read",
+                    "Microsoft.EventGrid/systemTopics/eventSubscriptions/delete",
+                    "Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action",
+                    "Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action",
+                    "Microsoft.EventGrid/systemTopics/read",
+                    "Microsoft.EventGrid/systemTopics/write",
+                    "Microsoft.EventGrid/systemTopics/delete",
+                    "Microsoft.EventGrid/eventSubscriptions/write",
+                    "Microsoft.Storage/storageAccounts/write"
+                    "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read"
+                    "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write"
+----
+....
+    ],
+    "NotActions": [],
+    "AssignableScopes": [],
+    "Description": "Azure Data Broker",
+    "IsCustom": "true"
+}
+....
+Nota:
+
+. Le seguenti autorizzazioni sono necessarie solo se si intende attivare l'impostazione di Continuous Sync su una relazione di sincronizzazione da Azure a un'altra posizione di cloud storage:
++
+** "Microsoft.Storage/storageAccounts/Read",
+** "Microsoft.EventGrid/systemTopics/eventSubscriptions/write",
+** "Microsoft.EventGrid/systemTopics/eventSubscriptions/Read",
+** "Microsoft.EventGrid/systemTopics/eventSubscriptions/delete",
+** "Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action",
+** "Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action",
+** "Microsoft.EventGrid/systemTopics/Read",
+** "Microsoft.EventGrid/systemTopics/write",
+** "Microsoft.EventGrid/systemTopics/delete",
+** "Microsoft.EventGrid/eventSubscriptions/write",
+** "Microsoft.Storage/storageAccounts/write"
+
+
++
+Inoltre, l'ambito assegnabile deve essere impostato sull'ambito della sottoscrizione e sull'ambito del gruppo di risorse *NOF* se si intende implementare la sincronizzazione continua in Azure.
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione della sincronizzazione continua"].
+
+
+
+== Metodo di autenticazione
+
+Quando si implementa il data broker, è necessario scegliere un metodo di autenticazione per la macchina virtuale: Una password o una coppia di chiavi SSH pubblico-privato.
+
+Per informazioni sulla creazione di una coppia di chiavi, fare riferimento a. https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys["Documentazione di Azure: Creare e utilizzare una coppia di chiavi SSH pubblico-privato per macchine virtuali Linux in Azure"^].
+
+
+
+== Creazione del data broker
+
+Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Azure quando si crea una relazione di sincronizzazione.
+
+.Fasi
+. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
+. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.
++
+Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.
+
+. Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Microsoft Azure*.
++
+image:screenshot-azure.png["Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem."]
+
+. Immettere un nome per il broker di dati e fare clic su *continua*.
+. Se richiesto, accedere all'account Microsoft. Se non viene richiesto, fare clic su *Accedi ad Azure*.
++
+Il modulo è di proprietà e ospitato da Microsoft. Le tue credenziali non vengono fornite a NetApp.
+
+. Scegliere una posizione per il data broker e inserire i dettagli di base sulla macchina virtuale.
++
+image:screenshot_azure_data_broker.gif["Una schermata della pagina di implementazione di Azure che mostra i seguenti campi: Subscription, Azure Region, VNET, Subnet, VM Name, Nome utente, metodo di autenticazione e gruppo di risorse."]
+
++
+
+NOTE: Se si prevede di implementare una relazione di sincronizzazione continua, è necessario assegnare un ruolo personalizzato al proprio data broker. Questa operazione può essere eseguita anche manualmente dopo la creazione del broker.
+
+. Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet in VNET.
+. Fare clic su *Continue* (continua) e mantenere aperta la pagina fino al completamento dell'implementazione.
++
+Il processo può richiedere fino a 7 minuti.
+
+. In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), fare clic su *Continue* (continua) una volta che il data broker è disponibile.
+. Completare le pagine della procedura guidata per creare la nuova relazione di sincronizzazione.
+
+
+.Risultato
+Hai implementato un data broker in Azure e creato una nuova relazione di sincronizzazione. Puoi utilizzare questo data broker con ulteriori relazioni di sincronizzazione.
+
+.Viene visualizzato un messaggio che richiede il consenso dell'amministratore?
+****
+Se Microsoft notifica che è richiesta l'approvazione dell'amministratore perché la copia e la sincronizzazione di BlueXP richiedono l'autorizzazione per accedere alle risorse dell'organizzazione per conto dell'utente, sono disponibili due opzioni:
+
+. Chiedi all'amministratore di ad di fornirti le seguenti autorizzazioni:
++
+In Azure, accedere a *Admin Center > Azure ad > utenti e gruppi > Impostazioni utente* e abilitare *gli utenti possono autorizzare le applicazioni ad accedere ai dati aziendali per loro conto*.
+
+. Chiedi al tuo amministratore di ad di acconsentire a *CloudSync-AzureDataBrokerCreator* utilizzando il seguente URL (questo è l'endpoint di consenso dell'amministratore):
++
+https://login.microsoftonline.com/{FILL QUI IL tuo ID TENANT}/v2.0/adminassenso?client_id=8e4ca3a-bafa-4831-97cc-5a38923cab85&redirect_uri=https://cloudsync.netapp.com&scope=https://management.azure.com/user_impersonationhttps://graph.microsoft.com/User.Read
+
++
+Come mostrato nell'URL, l'URL dell'applicazione è https://cloudsync.netapp.com e l'ID del client dell'applicazione è 8ee4ca3a-bafa-4831-97cc-5a38923cab85.
+
+
+
+****
+
+
+== Dettagli sulla VM del data broker
+
+BlueXP copy and Sync crea un data broker in Azure utilizzando la seguente configurazione.
+
+Tipo di macchina virtuale:: DS4 v2 standard
+VCPU:: 8
+RAM:: 28 GB
+Sistema operativo:: Rocky Linux 9.0
+Dimensione e tipo di disco:: SSD Premium da 64 GB
+

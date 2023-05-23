@@ -1,0 +1,123 @@
+---
+sidebar: sidebar 
+permalink: reference-networking.html 
+keywords: networking, 443, port, ports, port 443, connections, connectivity, path, paths, vpn 
+summary: Il networking per la copia e la sincronizzazione BlueXP include la connettività tra il gruppo di broker di dati e le ubicazioni di origine e destinazione, e una connessione Internet in uscita da broker di dati sulla porta 443. 
+---
+= Panoramica delle reti per la copia e la sincronizzazione di BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il networking per la copia e la sincronizzazione BlueXP include la connettività tra il gruppo di broker di dati e le ubicazioni di origine e destinazione, e una connessione Internet in uscita da broker di dati sulla porta 443.
+
+
+
+== Posizione del data broker
+
+Un gruppo di broker di dati è costituito da uno o più broker di dati installati nel cloud o on-premise.
+
+
+
+=== Broker di dati nel cloud
+
+La seguente immagine mostra un broker di dati eseguito nel cloud, in AWS, Google Cloud o Azure. L'origine e la destinazione possono trovarsi in qualsiasi posizione, a condizione che vi sia una connessione al data broker. Ad esempio, è possibile che si disponga di una connessione VPN dal data center al cloud provider.
+
+
+NOTE: Quando BlueXP copy and Sync implementa il data broker in AWS, Azure o Google Cloud, crea un gruppo di sicurezza che abilita la comunicazione in uscita richiesta.
+
+image:diagram_networking_cloud.png["Un diagramma che mostra il servizio di copia e sincronizzazione BlueXP, il broker di dati in esecuzione nel cloud e le connessioni all'origine e alla destinazione."]
+
+
+
+=== Broker di dati on-premise
+
+La seguente immagine mostra il data broker in esecuzione on-premise in un data center. Anche in questo caso, l'origine e la destinazione possono trovarsi in qualsiasi posizione, a condizione che vi sia una connessione al data broker.
+
+image:diagram_networking_onprem.png["Diagramma che mostra il servizio di copia e sincronizzazione BlueXP, il broker di dati in esecuzione on-premise e le connessioni all'origine e alla destinazione."]
+
+
+
+== Requisiti di rete
+
+* L'origine e la destinazione devono disporre di una connessione di rete al gruppo di broker di dati.
++
+Ad esempio, se un server NFS si trova nel data center e un broker di dati si trova in AWS, è necessaria una connessione di rete (VPN o Direct Connect) dalla rete al VPC.
+
+* Un broker di dati necessita di una connessione Internet in uscita in modo che possa eseguire il polling del servizio di copia e sincronizzazione BlueXP per le attività sulla porta 443.
+* NetApp consiglia di configurare i broker di origine, destinazione e dati per utilizzare un servizio NTP (Network Time Protocol). La differenza di tempo tra i tre componenti non deve superare i 5 minuti.
+
+
+
+
+== Endpoint di rete
+
+Il data broker di NetApp richiede l'accesso a Internet in uscita tramite la porta 443 per comunicare con il servizio di copia e sincronizzazione BlueXP e per contattare altri servizi e repository. Il browser Web locale richiede inoltre l'accesso agli endpoint per determinate azioni. Per limitare la connettività in uscita, fare riferimento al seguente elenco di endpoint durante la configurazione del firewall per il traffico in uscita.
+
+
+
+=== Endpoint del data broker
+
+Un broker di dati contatta i seguenti endpoint:
+
+[cols="38,62"]
+|===
+| Endpoint | Scopo 
+
+
+| https://olcentgbl.trafficmanager.net | Per contattare un repository per l'aggiornamento dei pacchetti CentOS per l'host del data broker. Questo endpoint viene contattato solo se si installa manualmente il data broker su un host CentOS. 
+
+
+| https://rpm.nodesource.com https://registry.npmjs.org https://nodejs.org: | Per contattare i repository per l'aggiornamento di Node.js, npm e altri pacchetti di terze parti utilizzati nello sviluppo. 
+
+
+| https://tgz.pm2.io | Per accedere a un repository per l'aggiornamento di PM2, un pacchetto di terze parti utilizzato per monitorare la copia e la sincronizzazione di BlueXP. 
+
+
+| https://sqs.us-east-1.amazonaws.com https://kinesis.us-east-1.amazonaws.com | Per contattare i servizi AWS utilizzati da BlueXP copy e Sync per le operazioni (accodamento dei file, registrazione delle azioni e distribuzione degli aggiornamenti al data broker). 
+
+
+| https://s3._region_.amazonaws.com ad esempio: s3.us-east-2.amazonaws.com:443https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region["Per un elenco degli endpoint S3, consultare la documentazione di AWS"^] | Per contattare Amazon S3 quando una relazione di sincronizzazione include un bucket S3. 
+
+
+| https://s3.amazonaws.com/ | Quando si scaricano i registri del broker di dati da BlueXP copy e Sync, il broker di dati esegue la zip della directory dei registri e carica i registri in un bucket S3 predefinito nella regione US-East-1. 
+
+
+| https://storage.googleapis.com/ | Per contattare Google Cloud quando una relazione di sincronizzazione utilizza un bucket GCP. 
+
+
+| https://_storage-account_.blob.core.windows.net[]Se si utilizza Azure Data Lake Gen2:https://_storage-account_.dfs.core.windows.net[]Dove _storage-account_ è l'account storage di origine dell'utente. | Per aprire il proxy all'indirizzo dell'account di storage Azure di un utente. 
+
+
+| https://cf.cloudsync.netapp.com https://repo.cloudsync.netapp.com | Per contattare il servizio di copia e sincronizzazione BlueXP. 
+
+
+| https://support.netapp.com | Per contattare il supporto NetApp quando si utilizza una licenza BYOL per le relazioni di sincronizzazione. 
+
+
+| https://fedoraproject.org | Per installare 7z sulla macchina virtuale del data broker durante l'installazione e gli aggiornamenti. 7z è necessario per inviare messaggi AutoSupport al supporto tecnico NetApp. 
+
+
+| https://sts.amazonaws.com | Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato. 
+
+
+| https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com | Per contattare Cloud Data Sense quando si utilizza Data Sense per selezionare i file di origine per una nuova relazione di sincronizzazione. 
+
+
+| https://pubsub.googleapis.com | Se si crea una relazione di sincronizzazione continua da un account di storage Google. 
+
+
+| https://_storage-account_.queue.core.windows.net[]https://management.azure.com/subscriptions/${_subscriptionId_} /resourceGroups/{_resourceGroup_}/provider/Microsoft.EventGrid/* dove _storage-account_ è l'account storage di origine dell'utente, _subscriptionid_ è l'ID dell'abbonamento di origine e _resourceGroup_ è il gruppo di risorse di origine. | Se si crea una relazione di sincronizzazione continua da un account di storage Azure. 
+|===
+
+
+=== Endpoint del browser Web
+
+Il browser Web deve accedere al seguente endpoint per scaricare i registri a scopo di risoluzione dei problemi:
+
+logs.cloudsync.netapp.com:443

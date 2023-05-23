@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-managing-reports.html 
+keywords: reports, sync reports, BlueXP copy and sync reports, report errors, path reports 
+summary: 'Creare e visualizzare report per ottenere informazioni da utilizzare con l"aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.' 
+---
+= Creazione e visualizzazione di report per ottimizzare la configurazione
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.
+
+Ogni report fornisce dettagli approfonditi su un percorso in una relazione di sincronizzazione. Ad esempio, il report di un file system mostra il numero di directory e file presenti, la distribuzione delle dimensioni dei file, la profondità e l'ampiezza delle directory e molto altro ancora.
+
+
+
+== Creazione di report
+
+Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.
+
+.Fasi
+. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
++
+I percorsi (origine o destinazione) in ciascuna delle relazioni di sincronizzazione vengono visualizzati in una tabella.
+
+. Nella colonna *azioni report*, selezionare un percorso specifico e fare clic su *Crea* oppure fare clic sul menu delle azioni e selezionare *Crea nuovo*.
+. Quando il report è pronto, fare clic sul menu delle azioni e selezionare *Visualizza*.
++
+Ecco un report di esempio per un percorso del file system.
+
++
+image:screenshot_sync_report.gif["Un report che mostra la quantità di elementi di sincronizzazione, le dimensioni del file, i massimi, i tempi di accesso, i tempi di modifica, e modificare l'ora."]
+
++
+Ecco un report di esempio per lo storage a oggetti.
+
++
+image:screenshot_sync_report_object.gif["Report che mostra il numero di elementi del percorso, la dimensione degli oggetti, l'ora di modifica e la classe di storage."]
+
+
+
+
+
+== Download di report
+
+È possibile scaricare un report in formato PDF per visualizzarlo offline o condividerlo.
+
+.Fasi
+. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
+. Nella colonna *azioni report*, fare clic sul menu delle azioni e selezionare *Visualizza*.
+. Nella parte superiore destra del report, fare clic sul menu delle azioni e selezionare *Download pdf*.
++
+image:screenshot-sync-download-report.png["Una schermata dell'opzione Download pdf (Scarica pdf) che viene visualizzata dopo aver fatto clic sul menu delle azioni in un report."]
+
+
+
+
+
+== Visualizzazione degli errori dei report
+
+La tabella Paths (percorsi) indica se sono presenti errori nel report più recente. Un errore identifica un problema riscontrato da BlueXP durante la scansione del percorso.
+
+Ad esempio, un report potrebbe contenere errori di autorizzazione negata. Questo tipo di errore può influire sulla capacità di BlueXP Copy e Sync di eseguire la scansione dell'intero set di file e directory.
+
+Dopo aver visualizzato l'elenco degli errori, è possibile risolvere i problemi ed eseguire nuovamente il report.
+
+.Fasi
+. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
+. Nella colonna *Errors*, identificare se in un report sono presenti errori.
+. Se sono presenti errori, fare clic sulla freccia accanto al numero di errori.
++
+image:screenshot_sync_report_errors.gif["Una schermata della tabella Paths che mostra il numero di errori e una piccola freccia cliccabile nella colonna Errors."]
+
+. Utilizzare le informazioni contenute nell'errore per risolvere il problema.
++
+Una volta risolto il problema, l'errore non dovrebbe apparire alla successiva esecuzione del report.
+
+
+
+
+
+== Eliminazione dei report
+
+È possibile eliminare un report contenente un errore risolto o se il report è correlato a una relazione di sincronizzazione rimossa.
+
+.Fasi
+. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
+. Nella colonna *azioni report*, fare clic sul menu delle azioni di un percorso e selezionare *Elimina ultimo report* o *Elimina tutti i report*.
+. Confermare che si desidera eliminare il rapporto o i rapporti.
+

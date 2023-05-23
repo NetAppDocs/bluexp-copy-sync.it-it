@@ -1,0 +1,299 @@
+---
+sidebar: sidebar 
+permalink: task-managing-data-brokers.html 
+keywords: manage data brokers, manage data broker groups, data broker performance, data broker configuration, data broker removal, remove data broker, delete data broker, groups, data broker group, rename data broker group, add data broker, data broker cpu, data broker ram, data broker status, edit group name, change group name, modify group name 
+summary: Un broker di dati sincronizza i dati da una posizione di origine a una posizione di destinazione. Per ogni relazione di sincronizzazione creata, è necessario un data broker. Gestisci i data broker aggiungendo un nuovo data broker a un gruppo, visualizzando informazioni sui data broker e molto altro ancora. 
+---
+= Gestire i gruppi di broker di dati
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Un gruppo di broker di dati sincronizza i dati da una posizione di origine a una posizione di destinazione. In un gruppo è richiesto almeno un broker di dati per ogni relazione di sincronizzazione creata. Gestisci i gruppi di broker di dati aggiungendo un nuovo broker di dati a un gruppo, visualizzando informazioni sui gruppi e molto altro ancora.
+
+
+
+== Come funzionano i gruppi di broker di dati
+
+Un gruppo di broker di dati può includere uno o più broker di dati. Il raggruppamento dei data broker può contribuire a migliorare le performance delle relazioni di sincronizzazione.
+
+
+
+=== I gruppi possono gestire diverse relazioni
+
+Un gruppo di broker di dati può gestire una o più relazioni di sincronizzazione alla volta.
+
+Ad esempio, supponiamo di avere tre relazioni:
+
+* La relazione 1 è gestita dal gruppo Di broker di dati A.
+* La relazione 2 è gestita dal gruppo B di broker di dati
+* La relazione 3 è gestita dal gruppo Di broker di dati A.
+
+
+Vuoi accelerare le performance della relazione 1 in modo da aggiungere un nuovo data broker al gruppo di data broker A. Poiché il gruppo A gestisce anche la relazione di sincronizzazione 3, anche le prestazioni di sincronizzazione per la relazione vengono accelerate automaticamente.
+
+
+
+=== Numero di broker di dati in un gruppo
+
+In molti casi, un singolo data broker può soddisfare i requisiti di performance per una relazione di sincronizzazione. In caso contrario, puoi accelerare le performance di sincronizzazione aggiungendo ulteriori broker di dati al gruppo. Tuttavia, è necessario prima controllare altri fattori che possono influire sulle prestazioni di sincronizzazione. link:faq.html#how-many-data-brokers-are-required-in-a-group["Scopri di più su come determinare quando sono necessari più broker di dati"].
+
+
+
+== Consigli sulla sicurezza
+
+Per garantire la sicurezza del tuo data broker, NetApp consiglia quanto segue:
+
+* SSH non deve consentire l'inoltro X11
+* SSH non deve consentire l'inoltro della connessione TCP
+* SSH non deve consentire i tunnel
+* SSH non deve accettare le variabili di ambiente del client
+
+
+Questi consigli sulla sicurezza possono aiutare a prevenire connessioni non autorizzate alla macchina del broker di dati.
+
+
+
+== Aggiungere un nuovo data broker a un gruppo
+
+Esistono diversi modi per creare un nuovo data broker:
+
+* Quando si crea una nuova relazione di sincronizzazione
++
+link:task-creating-relationships.html["Scopri come creare un nuovo data broker quando crei una relazione di sincronizzazione"].
+
+* Dalla pagina *Gestisci data broker* facendo clic su *Aggiungi nuovo data broker* per creare il data broker in un nuovo gruppo
+* Dalla pagina *Gestisci data broker* creando un nuovo data broker in un gruppo esistente
+
+
+.Prima di iniziare
+* Non è possibile aggiungere broker di dati a un gruppo che gestisce una relazione di sincronizzazione crittografata.
+* Se si desidera creare un data broker in un gruppo esistente, il data broker deve essere un data broker on-premise o lo stesso tipo di data broker.
++
+Ad esempio, se un gruppo include un broker di dati AWS, è possibile creare un broker di dati AWS o un broker di dati on-premise in quel gruppo. Non puoi creare un data broker Azure o un data broker Google Cloud perché non sono dello stesso tipo di data broker.
+
+
+
+.Procedura per creare un data broker in un nuovo gruppo
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic su *Aggiungi nuovo Data Broker*.
+. Seguire le istruzioni per creare il data broker.
++
+Per assistenza, consultare le seguenti pagine:
+
++
+** link:task-installing-aws.html["Creare un data broker in AWS"]
+** link:task-installing-azure.html["Crea un data broker in Azure"]
+** link:task-installing-gcp.html["Crea un data broker in Google Cloud"]
+** link:task-installing-linux.html["Installazione del data broker su un host Linux"]
+
+
+
+
+.Procedura per creare un data broker in un gruppo esistente
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic sul menu delle azioni e selezionare *Add Data Broker*.
++
+image:screenshot_sync_group_add.png["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
+
+. Seguire le istruzioni per creare il data broker nel gruppo.
++
+Per assistenza, consultare le seguenti pagine:
+
++
+** link:task-installing-aws.html["Creare un data broker in AWS"]
+** link:task-installing-azure.html["Crea un data broker in Azure"]
+** link:task-installing-gcp.html["Crea un data broker in Google Cloud"]
+** link:task-installing-linux.html["Installazione del data broker su un host Linux"]
+
+
+
+
+
+
+== Modificare il nome di un gruppo
+
+Modificare il nome di un gruppo di broker di dati in qualsiasi momento.
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic sul menu delle azioni e selezionare *Edit Group Name* (Modifica nome gruppo).
++
+image:screenshot_sync_group_edit.gif["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
+
+. Immettere un nuovo nome e fare clic su *Save* (Salva).
+
+
+.Risultato
+BlueXP copy and Sync aggiorna il nome del gruppo di broker di dati.
+
+
+
+== Configurare una configurazione unificata
+
+Se una relazione di sincronizzazione rileva errori durante il processo di sincronizzazione, unificare la concorrenza del gruppo di broker di dati può aiutare a ridurre il numero di errori di sincronizzazione. Tenere presente che le modifiche alla configurazione del gruppo possono influire sulle prestazioni rallentando il trasferimento.
+
+Si sconsiglia di modificare la configurazione autonomamente. È necessario consultare NetApp per capire quando modificare la configurazione e come modificarla.
+
+.Fasi
+. Fare clic su *Manage Data Broker* (Gestisci data Broker).
+. Fare clic sull'icona Impostazioni per un gruppo di broker di dati.
++
+image:screenshot_sync_group_settings.png["Una schermata che mostra l'icona Impostazioni per un gruppo di broker di dati."]
+
+. Modificare le impostazioni in base alle necessità, quindi fare clic su *Unify Configuration* (Unifica configurazione).
++
+Tenere presente quanto segue:
+
++
+** È possibile scegliere e scegliere le impostazioni da modificare, senza dover modificare tutte e quattro le impostazioni contemporaneamente.
+** Dopo l'invio di una nuova configurazione a un data broker, il data broker si riavvia automaticamente e utilizza la nuova configurazione.
+** Questa modifica può richiedere fino a un minuto ed è visibile nell'interfaccia di copia e sincronizzazione di BlueXP.
+** Se un broker di dati non è in esecuzione, la configurazione non cambierà perché la copia e la sincronizzazione di BlueXP non possono comunicare con esso. La configurazione cambia dopo il riavvio del data broker.
+** Dopo aver impostato una configurazione unificata, i nuovi broker di dati utilizzeranno automaticamente la nuova configurazione.
+
+
+
+
+
+
+== Spostare i broker di dati tra gruppi
+
+Spostare un data broker da un gruppo a un altro se è necessario accelerare le performance del gruppo di data broker di destinazione.
+
+Ad esempio, se un data broker non gestisce più una relazione di sincronizzazione, è possibile spostarla facilmente in un altro gruppo che gestisce le relazioni di sincronizzazione.
+
+.Limitazioni
+* Se un gruppo di broker di dati gestisce una relazione di sincronizzazione e nel gruppo è presente un solo broker di dati, non è possibile spostare tale broker di dati in un altro gruppo.
+* Non è possibile spostare un broker di dati da o verso un gruppo che gestisce le relazioni di sincronizzazione crittografate.
+* Non è possibile spostare un data broker attualmente in fase di implementazione.
+
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Fare clic sul menu delle azioni di un broker di dati e selezionare *Move Data Broker* (Sposta broker di dati).
++
+image:screenshot_sync_group_remove.png["Una schermata del menu di azione disponibile per ogni singolo gruppo di broker di dati."]
+
+. Creare un nuovo gruppo di broker di dati o selezionare un gruppo di broker di dati esistente.
+. Fare clic su *Sposta*.
+
+
+.Risultato
+BlueXP copy and Sync sposta il broker di dati in un nuovo gruppo di broker di dati o in un gruppo di broker di dati esistente. Se nel gruppo precedente non sono presenti altri broker di dati, BlueXP copia e Sync lo elimina.
+
+
+
+== Aggiornare la configurazione del proxy
+
+Aggiornare la configurazione del proxy per un data broker aggiungendo dettagli su una nuova configurazione del proxy o modificando la configurazione del proxy esistente.
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Fare clic sul menu delle azioni di un data broker e selezionare *Edit Proxy Configuration* (Modifica configurazione proxy).
+. Specificare i dettagli relativi al proxy: Nome host, numero di porta, nome utente e password.
+. Fare clic su *Aggiorna*.
+
+
+.Risultato
+BlueXP copy and Sync aggiorna il data broker per utilizzare la configurazione proxy per l'accesso a Internet.
+
+
+
+== Visualizzare la configurazione di un data broker
+
+È possibile visualizzare i dettagli di un broker di dati per identificare elementi come il nome host, l'indirizzo IP, la CPU e la RAM disponibili e altro ancora.
+
+BlueXP Copy and Sync fornisce i seguenti dettagli su un data broker:
+
+* Informazioni di base: ID istanza, nome host, ecc.
+* Network (rete): Regione, rete, subnet, IP privato e così via
+* Software: Distribuzione Linux, versione data broker, ecc.
+* Hardware: CPU e RAM
+* Configurazione: Dettagli sui due tipi di processi principali del data broker: Scanner e transferrer
++
+
+TIP: Lo scanner esegue la scansione dell'origine e della destinazione e decide cosa copiare. Il trasferitore esegue la copia effettiva. Il personale NetApp potrebbe utilizzare questi dettagli di configurazione per suggerire azioni in grado di ottimizzare le performance.
+
+
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere i dettagli di un broker di dati."] per visualizzare i dettagli di un broker di dati.
++
+image:screenshot_sync_data_broker_details.gif["Una schermata di informazioni su un broker di dati."]
+
+
+
+
+
+== Affronta i problemi con un data broker
+
+BlueXP copy and Sync visualizza uno stato per ogni broker di dati che può aiutarti a risolvere i problemi.
+
+.Fasi
+. Identificare eventuali broker di dati con stato "Sconosciuto" o "non riuscito".
++
+image:screenshot_sync_broker_status.gif["Viene visualizzata una schermata dello stato di copia e sincronizzazione di BlueXP in cui un broker di dati ha uno stato \"sconosciuto\""]
+
+. Passare il mouse su image:screenshot_sync_status_icon.gif["Un'icona \"info\""] per visualizzare il motivo del guasto.
+. Correggere il problema.
++
+Ad esempio, potrebbe essere necessario riavviare semplicemente il data broker se non è in linea, oppure potrebbe essere necessario rimuovere il data broker se l'implementazione iniziale non è riuscita.
+
+
+
+
+
+== Rimuovere un data broker da un gruppo
+
+È possibile rimuovere un broker di dati da un gruppo se non è più necessario o se l'implementazione iniziale non è riuscita. Questa azione elimina solo il broker di dati dalla copia di BlueXP e dai record di Sync. Dovrai eliminare manualmente il data broker e le eventuali risorse cloud aggiuntive.
+
+.Cose che dovresti sapere
+* BlueXP copy and Sync elimina un gruppo quando si rimuove l'ultimo broker di dati dal gruppo.
+* Non è possibile rimuovere l'ultimo broker di dati da un gruppo se esiste una relazione che utilizza tale gruppo.
+
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Fare clic sul menu delle azioni di un broker di dati e selezionare *Remove Data Broker* (Rimuovi broker di dati).
++
+image:screenshot_sync_group_remove.gif["Una schermata del menu di azione disponibile per ogni singolo gruppo di broker di dati."]
+
+. Fare clic su *Rimuovi Data Broker*.
+
+
+.Risultato
+BlueXP copy and Sync rimuove il broker di dati dal gruppo.
+
+
+
+== Eliminare un gruppo di broker di dati
+
+Se un gruppo di broker di dati non gestisce più alcuna relazione di sincronizzazione, è possibile eliminare il gruppo, che rimuove tutti i broker di dati dalla copia e dalla sincronizzazione di BlueXP.
+
+I broker di dati che BlueXP copia e rimuove vengono cancellati solo dalla copia BlueXP e dai record di Sync. Dovrai eliminare manualmente l'istanza del data broker dal tuo cloud provider e da eventuali risorse cloud aggiuntive.
+
+.Fasi
+. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
+. Fare clic sul menu delle azioni e selezionare *Delete Group* (Elimina gruppo).
++
+image:screenshot_sync_group_add.png["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
+
+. Per confermare, inserire il nome del gruppo e fare clic su *Delete Group* (Elimina gruppo).
+
+
+.Risultato
+BlueXP copy and Sync rimuove i broker di dati ed elimina il gruppo.

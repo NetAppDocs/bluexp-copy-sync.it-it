@@ -1,0 +1,114 @@
+---
+settings:
+  name: BlueXP copy and sync
+  harmony_integration: maestro
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documenti di copia e sincronizzazione BlueXP
+    url: "/index.html"
+  - title: Note di rilascio
+    entries:
+    - title: Novità
+      url: "/whats-new.html"
+    - title: Limitazioni
+      url: "/reference-limitations.html"
+  - title: Inizia subito
+    entries:
+    - title: Scopri di più sulla copia e la sincronizzazione di BlueXP
+      url: "/concept-cloud-sync.html"
+    - title: Avvio rapido
+      url: "/task-quick-start.html"
+    - title: Visualizzare le relazioni di sincronizzazione supportate
+      url: "/reference-supported-relationships.html"
+    - title: Preparare l'origine e la destinazione
+      url: "/reference-requirements.html"
+    - title: Preparare il networking
+      url: "/reference-networking.html"
+    - title: Installare un data broker
+      entries:
+      - title: Installare in AWS
+        url: "/task-installing-aws.html"
+      - title: Installare in Azure
+        url: "/task-installing-azure.html"
+      - title: Installazione in Google Cloud
+        url: "/task-installing-gcp.html"
+      - title: Installare su un host Linux
+        url: "/task-installing-linux.html"
+  - title: USA copia e sincronizzazione BlueXP
+    entries:
+    - title: Sincronizza i dati tra un'origine e una destinazione
+      entries:
+      - title: Creare una relazione di sincronizzazione
+        url: "/task-creating-relationships.html"
+      - title: Copia degli ACL da una condivisione SMB
+        url: "/task-copying-acls.html"
+      - title: Crittografare i dati NFS in volo
+        url: "/task-nfs-encryption.html"
+      - title: Utilizza i segreti di HashiCorp Vault
+        url: "/task-external-vault.html"
+    - title: Impostare la licenza
+      url: "/task-licensing.html"
+    - title: Gestire le relazioni di sincronizzazione
+      url: "/task-managing-relationships.html"
+    - title: Gestire i broker di dati
+      url: "/task-managing-data-brokers.html"
+    - title: Visualizzare i report per ottimizzare la configurazione
+      url: "/task-managing-reports.html"
+    - title: Disinstallare un data broker
+      url: "/task-uninstalling.html"
+  - title: Automatizza con l'API REST
+    url: "/api-sync.html"
+  - title: Concetti
+    entries:
+    - title: Licensing
+      url: "/concept-licensing.html"
+    - title: Privacy dei dati
+      url: "/concept-privacy.html"
+    - title: FAQ
+      url: "/faq.html"
+  - title: Conoscenza e supporto
+    entries:
+    - title: Registrati per ricevere assistenza
+      url: "/task-support-registration.html"
+    - title: Richiedi assistenza
+      url: "/task-get-help.html"
+  - title: Note legali
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Inizia subito
+    links:
+    - title: Panoramica sulla copia e la sincronizzazione BlueXP
+      url: concept-cloud-sync.html
+    - title: Avvio rapido
+      url: task-quick-start.html
+    - title: FAQ
+      url: faq.html
+  - title: USA copia e sincronizzazione BlueXP
+    links:
+    - title: Creare una relazione di sincronizzazione
+      url: task-creating-relationships.html
+    - title: Impostare la licenza
+      url: task-licensing.html
+    - title: Gestire i gruppi di broker di dati
+      url: task-managing-data-brokers.html
+  - title: Blog e community
+    links:
+    - title: Community NetApp
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Blog BlueXP
+      url: https://cloud.netapp.com/blog
+    - title: Webinar sul cloud
+      url: https://cloud.netapp.com/events
+product-family:
+  name: BlueXP
+  repo: cloud-manager-family
+  sidebar_label: Tutta la documentazione BlueXP

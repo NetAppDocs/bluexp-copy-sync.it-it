@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: concept-cloud-sync.html 
+keywords: BlueXP copy and sync, overview, conceptual, how, data broker, service, cloudsync 
+summary: Il servizio di copia e sincronizzazione BlueXP di NetApp offre un modo semplice, sicuro e automatizzato per migrare i dati verso qualsiasi destinazione, nel cloud o on-premise. 
+---
+= Panoramica sulla copia e la sincronizzazione BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il servizio di copia e sincronizzazione BlueXP di NetApp offre un modo semplice, sicuro e automatizzato per migrare i dati verso qualsiasi destinazione, nel cloud o on-premise. Sia che si tratti di un set di dati NAS basato su file (NFS o SMB), di un formato di oggetti Amazon Simple Storage Service (S3), di un'appliance NetApp StorageGRID® o di qualsiasi altro archivio di oggetti di provider cloud, BlueXP Copy and Sync può convertirlo e spostarlo per te.
+
+
+
+== Caratteristiche
+
+Guarda il seguente video per una panoramica della copia e della sincronizzazione di BlueXP:
+
+video::oZNJtLvgNfQ[youtube,width=848,height=480]
+
+
+== Come funziona la copia e la sincronizzazione di BlueXP
+
+BlueXP copy and Sync è una piattaforma software-as-a-service (SaaS) che consiste in un gruppo di broker di dati, un'interfaccia basata su cloud disponibile tramite BlueXP e un'origine e una destinazione.
+
+La seguente immagine mostra la relazione tra i componenti di copia e sincronizzazione di BlueXP:
+
+image:diagram_cloud_sync_overview.png["Immagine concettuale che mostra il flusso di dati da un'origine a una destinazione. Il software di broker dei dati agisce come mediatore e esegue il polling del servizio di copia e sincronizzazione BlueXP per le attività."]
+
+Il software NetApp data broker sincronizza i dati da un'origine a un'area di destinazione (chiamata _relazione di sincronizzazione_). Puoi eseguire il data broker in AWS, Azure, Google Cloud Platform o on-premise. Un gruppo di broker di dati, costituito da uno o più broker di dati, necessita di una connessione Internet in uscita sulla porta 443 in modo che possa comunicare con il servizio di copia e sincronizzazione BlueXP e contattare altri servizi e repository. link:reference-networking.html["Visualizzare l'elenco degli endpoint"].
+
+Dopo la copia iniziale, il servizio sincronizza i dati modificati in base alla pianificazione impostata.
+
+
+
+== Tipi di storage supportati
+
+BlueXP copy and Sync supporta i seguenti tipi di storage:
+
+* Qualsiasi server NFS
+* Qualsiasi server SMB
+* Amazon EFS
+* Amazon FSX per ONTAP
+* Amazon S3
+* Azure Blob
+* Azure Data Lake Storage Gen2
+* Azure NetApp Files
+* Box (disponibile in anteprima)
+* Cloud Volumes Service
+* Cloud Volumes ONTAP
+* Storage Google Cloud
+* Google Drive
+* Storage a oggetti IBM Cloud
+* Cluster ONTAP on-premise
+* Storage ONTAP S3
+* SFTP (solo tramite API)
+* StorageGRID
+
+
+link:reference-supported-relationships.html["Visualizzare le relazioni di sincronizzazione supportate"].
+
+
+
+== Costi
+
+L'utilizzo della copia e della sincronizzazione di BlueXP comporta due tipi di costi: Costi delle risorse e costi del servizio.
+
+Costi delle risorse:: I costi delle risorse sono correlati ai costi di calcolo e storage per l'esecuzione di uno o più broker di dati nel cloud.
+Costi del servizio:: Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nell'effettuare l'iscrizione da AWS o Azure, che consente di pagare ogni ora o annualmente. La seconda opzione consiste nell'acquistare le licenze direttamente da NetApp.
+
+
+link:concept-licensing.html["Scopri come funzionano le licenze"].

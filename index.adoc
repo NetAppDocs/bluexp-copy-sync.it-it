@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: BlueXP copy and sync is a cloud replication and synchronization service for transferring NAS data between on-premises and cloud object stores. 
+summary: BlueXP copy and Sync è un servizio di replica e sincronizzazione cloud per il trasferimento dei dati NAS tra archivi di oggetti on-premise e cloud. 
+---
+= Copia BlueXP e documentazione di sincronizzazione
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

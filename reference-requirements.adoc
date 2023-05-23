@@ -1,0 +1,327 @@
+---
+sidebar: sidebar 
+permalink: reference-requirements.html 
+keywords: networking, nfs, cifs, smb, version, connection, google, gcp, azure, blob, service account, resource, permissions, networking, version, ntp, network, protocol, aws efs requirements, efs requirements, s3 requirements, azure blob requirements, blob requirements, azure netapp files, cifs requirements, smb requirements, cloud volumes service, google cloud storage, gcp, ibm cloud object storage, storagegrid, storage tier, blob storage tier, storage class, s3 storage class, nfs versions, smb versions, box 
+summary: Verificare che la fonte e le destinazioni soddisfino i seguenti requisiti. 
+---
+= Preparare l'origine e la destinazione
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verificare che la fonte e le destinazioni soddisfino i seguenti requisiti.
+
+
+
+== Networking
+
+* L'origine e la destinazione devono disporre di una connessione di rete al gruppo di broker di dati.
++
+Ad esempio, se un server NFS si trova nel data center e un broker di dati si trova in AWS, è necessaria una connessione di rete (VPN o Direct Connect) dalla rete al VPC.
+
+* NetApp consiglia di configurare l'origine, la destinazione e i broker di dati per utilizzare un servizio NTP (Network Time Protocol). La differenza di tempo tra i tre componenti non deve superare i 5 minuti.
+
+
+
+
+== Directory di destinazione
+
+Quando si crea una relazione di sincronizzazione, BlueXP copy and Sync consente di selezionare una directory di destinazione esistente e, se necessario, di creare una nuova cartella all'interno di tale directory. Quindi, assicurarsi che la directory di destinazione preferita esista già.
+
+
+
+== Permessi di lettura delle directory
+
+Per visualizzare ogni directory o cartella in un'origine o destinazione, la copia e la sincronizzazione di BlueXP richiedono permessi di lettura per la directory o la cartella.
+
+NFS:: I permessi devono essere definiti sull'origine/destinazione con uid/gid su file e directory.
+Storage a oggetti::
++
+--
+* Per AWS e Google Cloud, un data broker deve disporre delle autorizzazioni per gli oggetti elenco (queste autorizzazioni vengono fornite per impostazione predefinita se si seguono le fasi di installazione del data broker).
+* Per Azure, StorageGRID e IBM, le credenziali immesse durante l'impostazione di una relazione di sincronizzazione devono disporre delle autorizzazioni per gli oggetti elenco.
+
+
+--
+PMI:: Le credenziali SMB immesse durante l'impostazione di una relazione di sincronizzazione devono disporre delle autorizzazioni per la cartella elenco.
+
+
+
+NOTE: Per impostazione predefinita, il data broker ignora le seguenti directory: .Snapshot, ~snapshot, .copy-offload
+
+
+
+== [[s3]]requisiti del bucket Amazon S3
+
+Assicurati che il bucket Amazon S3 soddisfi i seguenti requisiti.
+
+
+
+=== Posizioni dei data broker supportate per Amazon S3
+
+Le relazioni di sincronizzazione che includono lo storage S3 richiedono un broker di dati implementato in AWS o on-premise. In entrambi i casi, BlueXP Copy and Sync richiede di associare il data broker a un account AWS durante l'installazione.
+
+* link:task-installing-aws.html["Scopri come implementare il data broker AWS"]
+* link:task-installing-linux.html["Scopri come installare il data broker su un host Linux"]
+
+
+
+
+=== Regioni AWS supportate
+
+Tutte le regioni sono supportate, ad eccezione delle regioni della Cina.
+
+
+
+=== Autorizzazioni richieste per i bucket S3 in altri account AWS
+
+Quando si imposta una relazione di sincronizzazione, è possibile specificare un bucket S3 che risiede in un account AWS non associato a un data broker.
+
+link:media/aws_iam_policy_s3_bucket.json["Le autorizzazioni incluse in questo file JSON"^] Deve essere applicato al bucket S3 in modo che un broker di dati possa accedervi. Queste autorizzazioni consentono al broker di dati di copiare i dati da e verso il bucket e di elencare gli oggetti nel bucket.
+
+Tenere presente quanto segue sulle autorizzazioni incluse nel file JSON:
+
+. _<BucketName>_ è il nome del bucket che risiede nell'account AWS non associato a un data broker.
+. _<RoleARN>_ deve essere sostituito con uno dei seguenti elementi:
++
+** Se un data broker è stato installato manualmente su un host Linux, _RoleARN_ dovrebbe essere l'ARN dell'utente AWS per cui hai fornito le credenziali AWS durante l'implementazione di un data broker.
+** Se un broker di dati è stato implementato in AWS utilizzando il modello CloudFormation, _RoleARN_ deve essere l'ARN del ruolo IAM creato dal modello.
++
+Per trovare il ruolo ARN, accedere alla console EC2, selezionare l'istanza del broker di dati e fare clic sul ruolo IAM nella scheda Description (Descrizione). Viene visualizzata la pagina Summary (Riepilogo) nella console IAM che contiene il ruolo ARN.
+
++
+image:screenshot_iam_role_arn.gif["Una schermata della console AWS IAM che mostra un ruolo ARN."]
+
+
+
+
+
+
+
+== [[blob]]requisiti di storage di Azure Blob
+
+Assicurati che lo storage Azure Blob soddisfi i seguenti requisiti.
+
+
+
+=== Posizioni dei data broker supportate per Azure Blob
+
+Un broker di dati può risiedere in qualsiasi posizione quando una relazione di sincronizzazione include lo storage Azure Blob.
+
+
+
+=== Aree Azure supportate
+
+Sono supportate tutte le regioni, ad eccezione di quelle della Cina, degli Stati Uniti e del DOD.
+
+
+
+=== Stringa di connessione per le relazioni che includono Azure Blob e NFS/SMB
+
+Quando si crea una relazione di sincronizzazione tra un container Azure Blob e un server NFS o SMB, è necessario fornire una copia BlueXP e la sincronizzazione con la stringa di connessione dell'account di storage:
+
+image:screenshot_connection_string.gif["Mostra una stringa di connessione, disponibile dal portale Azure selezionando un account di storage e facendo clic su Access keys (chiavi di accesso)."]
+
+Se si desidera sincronizzare i dati tra due contenitori Azure Blob, la stringa di connessione deve includere un https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1["firma di accesso condivisa"^] (SAS). È inoltre possibile utilizzare un SAS durante la sincronizzazione tra un container Blob e un server NFS o SMB.
+
+Il SAS deve consentire l'accesso al servizio Blob e a tutti i tipi di risorse (Servizio, container e oggetto). Il SAS deve includere anche le seguenti autorizzazioni:
+
+* Per il contenitore Blob di origine: Read and List (lettura ed elenco)
+* Per il contenitore Blob di destinazione: Lettura, scrittura, elenco, Aggiungi e Crea
+
+
+image:screenshot_connection_string_sas.gif["Mostra una firma di accesso condivisa, disponibile dal portale Azure selezionando un account di storage e facendo clic su Firma di accesso condivisa."]
+
+
+NOTE: Se si sceglie di implementare una relazione di sincronizzazione continua che include un container Azure Blob, è possibile utilizzare una stringa di connessione normale o una stringa di connessione SAS. Se si utilizza una stringa di connessione SAS, non deve essere impostata in modo che scada nel prossimo futuro.
+
+
+
+== Azure Data Lake Storage Gen2
+
+Quando si crea una relazione di sincronizzazione che include Azure Data Lake, è necessario fornire una copia BlueXP e sincronizzarla con la stringa di connessione dell'account di storage. Deve essere una stringa di connessione regolare e non una firma di accesso condivisa (SAS).
+
+
+
+== Requisito Azure NetApp Files
+
+Utilizzare il livello di servizio Premium o Ultra quando si sincronizzano i dati da o verso Azure NetApp Files. Se il livello di servizio del disco è Standard, potrebbero verificarsi errori e problemi di performance.
+
+
+TIP: Se hai bisogno di aiuto per determinare il livello di servizio giusto, consulta un Solutions Architect. Le dimensioni del volume e il Tier del volume determinano il throughput che è possibile ottenere.
+
+https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limits["Scopri di più sui livelli di servizio e sul throughput di Azure NetApp Files"^].
+
+
+
+== Requisiti della confezione
+
+* Per creare una relazione di sincronizzazione che includa Box, devi fornire le seguenti credenziali:
++
+** ID client
+** Segreto del client
+** Chiave privata
+** ID chiave pubblica
+** Passphrase
+** ID aziendale
+
+
+* Se crei una relazione di sincronizzazione da Amazon S3 a Box, devi utilizzare un gruppo di broker di dati con una configurazione unificata in cui le seguenti impostazioni sono impostate su 1:
++
+** Concorrenza scanner
+** Limiti dei processi dello scanner
+** Concorrenza del transferrer
+** Limiti dei processi di trasferimento
+
+
++
+link:task-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group["Scopri come definire una configurazione unificata per un gruppo di broker di dati"^].
+
+
+
+
+
+== [[google]]requisiti del bucket di storage Google Cloud
+
+Assicurati che il tuo bucket di storage Google Cloud soddisfi i seguenti requisiti.
+
+
+
+=== Posizioni dei data broker supportate per Google Cloud Storage
+
+Le relazioni di sincronizzazione che includono Google Cloud Storage richiedono un broker di dati implementato in Google Cloud o on-premise. BlueXP copy and Sync ti guida attraverso il processo di installazione del data broker quando crei una relazione di sincronizzazione.
+
+* link:task-installing-gcp.html["Scopri come implementare il data broker di Google Cloud"]
+* link:task-installing-linux.html["Scopri come installare il data broker su un host Linux"]
+
+
+
+
+=== Aree di Google Cloud supportate
+
+Sono supportate tutte le regioni.
+
+
+
+=== Permessi per bucket in altri progetti Google Cloud
+
+Quando si imposta una relazione di sincronizzazione, è possibile scegliere tra i bucket di Google Cloud in diversi progetti, se si forniscono le autorizzazioni necessarie all'account di servizio del broker di dati. link:task-installing-gcp.html["Scopri come configurare l'account di servizio"].
+
+
+
+=== Autorizzazioni per una destinazione SnapMirror
+
+Se l'origine di una relazione di sincronizzazione è una destinazione SnapMirror (di sola lettura), le autorizzazioni di "lettura/elenco" sono sufficienti per sincronizzare i dati dall'origine a una destinazione.
+
+
+
+== Google Drive
+
+Quando si imposta una relazione di sincronizzazione che include Google Drive, è necessario fornire quanto segue:
+
+* L'indirizzo e-mail di un utente che ha accesso alla posizione Google Drive in cui si desidera sincronizzare i dati
+* L'indirizzo e-mail di un account di servizio Google Cloud che dispone delle autorizzazioni per accedere a Google Drive
+* Chiave privata per l'account del servizio
+
+
+Per configurare l'account di servizio, seguire le istruzioni nella documentazione di Google:
+
+* https://developers.google.com/admin-sdk/directory/v1/guides/delegation#create_the_service_account_and_credentials["Creare l'account del servizio e le credenziali"^]
+* https://developers.google.com/admin-sdk/directory/v1/guides/delegation#delegate_domain-wide_authority_to_your_service_account["Delegare l'autorità a livello di dominio all'account di servizio"^]
+
+
+Quando si modifica il campo OAuth Scopes (Scopes OAuth), immettere i seguenti ambiti:
+
+* https://www.googleapis.com/auth/drive
+* https://www.googleapis.com/auth/drive.file
+
+
+
+
+== Requisiti del server NFS
+
+* Il server NFS può essere un sistema NetApp o un sistema non NetApp.
+* Il file server deve consentire a un host del data broker di accedere alle esportazioni sulle porte richieste.
++
+** 111 TCP/UDP
+** 2049 TCP/UDP
+** 5555 TCP/UDP
+
+
+* Sono supportate le versioni 3, 4.0, 4.1 e 4.2 di NFS.
++
+La versione desiderata deve essere abilitata sul server.
+
+* Se si desidera sincronizzare i dati NFS da un sistema ONTAP, assicurarsi che sia abilitato l'accesso all'elenco di esportazione NFS per una SVM (vserver nfs modify -vserver _nome_svm_ -showmount abilitato).
++
+
+NOTE: L'impostazione predefinita per showmount è _enabled_ a partire da ONTAP 9.2.
+
+
+
+
+
+== Requisiti ONTAP
+
+Se la relazione di sincronizzazione include Cloud Volumes ONTAP o un cluster ONTAP on-premise ed è stato selezionato NFSv4 o successivo, sarà necessario attivare gli ACL NFSv4 sul sistema ONTAP. Questa operazione è necessaria per copiare gli ACL.
+
+
+
+== Requisiti di storage per ONTAP S3
+
+Quando si imposta una relazione di sincronizzazione che include https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Storage ONTAP S3"^], è necessario fornire quanto segue:
+
+* L'indirizzo IP del LIF connesso a ONTAP S3
+* La chiave di accesso e la chiave segreta che ONTAP è configurato per utilizzare
+
+
+
+
+== Requisiti dei server SMB
+
+* Il server SMB può essere un sistema NetApp o un sistema non NetApp.
+* È necessario fornire una copia BlueXP e la sincronizzazione con le credenziali che dispongono di autorizzazioni sul server SMB.
++
+** Per un server SMB di origine, sono necessarie le seguenti autorizzazioni: List and Read (elenco e lettura).
++
+I membri del gruppo Backup Operators sono supportati con un server SMB di origine.
+
+** Per un server SMB di destinazione, sono necessarie le seguenti autorizzazioni: List, Read e write.
+
+
+* Il file server deve consentire a un host del data broker di accedere alle esportazioni sulle porte richieste.
++
+** 139 TCP
+** 445 TCP
+** 137-138 UDP
+
+
+* Sono supportate le versioni SMB 1.0, 2.0, 2.1, 3.0 e 3.11.
+* Assegnare al gruppo "Administrators" le autorizzazioni "controllo completo" alle cartelle di origine e di destinazione.
++
+Se non si concede questa autorizzazione, il broker di dati potrebbe non disporre di autorizzazioni sufficienti per ottenere gli ACL in un file o in una directory. In questo caso, viene visualizzato il seguente errore: "Getxattr error 95"
+
+
+
+
+
+=== Limitazione SMB per directory e file nascosti
+
+Una limitazione SMB influisce sulle directory e sui file nascosti durante la sincronizzazione dei dati tra server SMB. Se una delle directory o dei file sul server SMB di origine è stata nascosta tramite Windows, l'attributo nascosto non viene copiato nel server SMB di destinazione.
+
+
+
+=== Comportamento di sincronizzazione SMB dovuto a una limitazione di insensibilità ai casi
+
+Il protocollo SMB non fa distinzione tra maiuscole e minuscole, il che significa che le lettere maiuscole e minuscole sono considerate uguali. Questo comportamento può causare errori di file sovrascritti e copia della directory, se una relazione di sincronizzazione include un server SMB e i dati sono già presenti sulla destinazione.
+
+Ad esempio, supponiamo che vi sia un file denominato "a" sull'origine e un file denominato "A" sull'origine. Quando BlueXP copia e sincronizza il file denominato "a" nella destinazione, il file "A" viene sovrascritto dal file "a" della fonte.
+
+Nel caso delle directory, supponiamo che sia presente una directory denominata "b" sull'origine e una directory denominata "B" sull'origine. Quando BlueXP copy and Sync tenta di copiare la directory denominata "b" nella destinazione, BlueXP copy and Sync riceve un errore che indica che la directory esiste già. Di conseguenza, la copia e la sincronizzazione di BlueXP non riescono sempre a copiare la directory denominata "b."
+
+Il modo migliore per evitare questo limite è quello di garantire la sincronizzazione dei dati in una directory vuota.

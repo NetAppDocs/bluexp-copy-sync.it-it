@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, china, unsupported regions 
+summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni. 
+---
+= Limitazioni
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni.
+
+La copia e la sincronizzazione BlueXP non sono supportate nelle seguenti regioni:
+
+* Regioni governative AWS
+* Regioni governative di Azure
+* Cina
+
