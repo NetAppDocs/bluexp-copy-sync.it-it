@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Creare relazioni di sincronizzazione | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Creare relazioni di sincronizzazione | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html" />
+	<meta property="og:description" content="Quando si crea una relazione di sincronizzazione, il servizio di copia e sincronizzazione BlueXP copia i file dall"origine alla destinazione. Dopo la copia i..." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/cloud-manager-sync/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Quando si crea una relazione di sincronizzazione, il servizio di copia e sincronizzazione BlueXP copia i file dall"origine alla destinazione. Dopo la copia i...">
+  <meta name="keywords" content=" sync, relationship, create, tags, settings, create a relationship, creating relationships, bucket setup, tags"><!-- Icons -->
+  <link rel="icon" href="/it-it/cloud-manager-sync/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/cloud-manager-sync/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/cloud-manager-sync/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/cloud-manager-sync/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/cloud-manager-sync/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-manager-sync/task-creating-relationships.html" />
+  <link rel='stylesheet' href='/it-it/cloud-manager-sync/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/cloud-manager-sync/js/na-search.js'></script><script src='/it-it/cloud-manager-sync/js/na-pagenav.js'></script><script src='/it-it/cloud-manager-sync/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/cloud-manager-sync/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/cloud-manager-sync/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/cloud-manager-sync/js/na-utility.js'></script> -->
+  <script src='/it-it/cloud-manager-sync/js/clouddocs.js'></script>
+  <script src='/it-it/cloud-manager-sync/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/cloud-manager-sync/js/toc.js'></script> -->
+  <!-- <script src='/it-it/cloud-manager-sync/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/cloud-manager-sync"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/cloud-manager-sync/js/custom-dropdown.js'></script>
+  <script src='/it-it/cloud-manager-sync/js/FileSaver.min.js'></script>
+  <script src='/it-it/cloud-manager-sync/js/jszip-utils.min.js'></script>
+  <script src='/it-it/cloud-manager-sync/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/cloud-manager-sync/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html&page-title=Creare relazioni di sincronizzazione" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-sync/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-sync/blob/main/task-creating-relationships.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-sync/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/cloud-manager-sync/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/cloud-manager-sync/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/cloud-manager-sync/task-creating-relationships.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/cloud-manager-sync/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/cloud-manager-sync/pdfs/fullsite-sidebar/Copia_BlueXP_e_documentazione_di_sincronizzazione.pdf" >
+          <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Inizia_subito.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia subito
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Installare_un_data_broker.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Installare un data broker
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/USA_copia_e_sincronizzazione_BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            USA copia e sincronizzazione BlueXP
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Sincronizza_i_dati_tra_un_origine_e_una_destinazione.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Sincronizza i dati tra un'origine e una destinazione
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Concetti.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Concetti
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-sync/pdfs/sidebar/Conoscenza_e_supporto.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-sync/images/pdf.png" alt="" width="16" height="16"/>
+            Conoscenza e supporto
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/cloud-manager-sync/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-manager-sync/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documenti di copia e sincronizzazione BlueXP"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/index.html">
+        Documenti di copia e sincronizzazione BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Note di rilascio</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/whats-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/reference-limitations.html">
+        Limitazioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia subito"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia subito</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scopri di più sulla copia e la sincronizzazione di BlueXP"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/concept-cloud-sync.html">
+        Scopri di più sulla copia e la sincronizzazione di BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-quick-start.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzare le relazioni di sincronizzazione supportate"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/reference-supported-relationships.html">
+        Visualizzare le relazioni di sincronizzazione supportate
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Preparare l'origine e la destinazione"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/reference-requirements.html">
+        Preparare l'origine e la destinazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Preparare il networking"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/reference-networking.html">
+        Preparare il networking
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare un data broker"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Installare un data broker</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare in AWS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-installing-aws.html">
+        Installare in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare in Azure"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-installing-azure.html">
+        Installare in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installazione in Google Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-installing-gcp.html">
+        Installazione in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare su un host Linux"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-installing-linux.html">
+        Installare su un host Linux
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="USA copia e sincronizzazione BlueXP"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> USA copia e sincronizzazione BlueXP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sincronizza i dati tra un'origine e una destinazione"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Sincronizza i dati tra un'origine e una destinazione</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare una relazione di sincronizzazione"
+      data-li-level="3#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-creating-relationships.html">
+        Creare una relazione di sincronizzazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Copia degli ACL da una condivisione SMB"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-copying-acls.html">
+        Copia degli ACL da una condivisione SMB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Crittografare i dati NFS in volo"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-nfs-encryption.html">
+        Crittografare i dati NFS in volo
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Utilizza i segreti di HashiCorp Vault"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-external-vault.html">
+        Utilizza i segreti di HashiCorp Vault
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare la licenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-licensing.html">
+        Impostare la licenza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le relazioni di sincronizzazione"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-managing-relationships.html">
+        Gestire le relazioni di sincronizzazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire i broker di dati"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-managing-data-brokers.html">
+        Gestire i broker di dati
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzare i report per ottimizzare la configurazione"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-managing-reports.html">
+        Visualizzare i report per ottimizzare la configurazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Disinstallare un data broker"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-uninstalling.html">
+        Disinstallare un data broker
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Automatizza con l'API REST"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/api-sync.html">
+        Automatizza con l'API REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Concetti"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Concetti</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Licensing"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/concept-licensing.html">
+        Licensing
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Privacy dei dati"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/concept-privacy.html">
+        Privacy dei dati
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/faq.html">
+        FAQ
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conoscenza e supporto"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Conoscenza e supporto</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Registrati per ricevere assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-support-registration.html">
+        Registrati per ricevere assistenza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Richiedi assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/task-get-help.html">
+        Richiedi assistenza
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-sync/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/cloud-manager-sync/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/cloud-manager-sync/">BlueXP&nbsp;copy&nbsp;and&nbsp;sync</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Creare relazioni di sincronizzazione</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 20:53:08 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Quando si crea una relazione di sincronizzazione, il servizio di copia e sincronizzazione BlueXP copia i file dall&#8217;origine alla destinazione. Dopo la copia iniziale, il servizio sincronizza tutti i dati modificati ogni 24 ore.</p>
+</div>
+<div class="paragraph">
+<p>Prima di creare alcuni tipi di relazioni di sincronizzazione, è necessario creare un ambiente di lavoro in BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="creare-relazioni-di-sincronizzazione-per-specifici-tipi-di-ambienti-di-lavoro">Creare relazioni di sincronizzazione per specifici tipi di ambienti di lavoro</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Se si desidera creare relazioni di sincronizzazione per uno dei seguenti elementi, è necessario innanzitutto creare o individuare l&#8217;ambiente di lavoro:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon FSX per ONTAP</p>
+</li>
+<li>
+<p>Azure NetApp Files</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP</p>
+</li>
+<li>
+<p>Cluster ONTAP on-premise</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Fasi</div>
+<ol class="arabic">
+<li>
+<p>Creare o scoprire l&#8217;ambiente di lavoro.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html" target="_blank" rel="noopener">"Creare un ambiente di lavoro Amazon FSX per ONTAP"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html" target="_blank" rel="noopener">"Configurazione e rilevamento di Azure NetApp Files"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html" target="_blank" rel="noopener">"Avvio di Cloud Volumes ONTAP in AWS"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Azure"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Google Cloud"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html" target="_blank" rel="noopener">"Aggiunta di sistemi Cloud Volumes ONTAP esistenti"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html" target="_blank" rel="noopener">"Alla scoperta dei cluster ONTAP"</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Fare clic su <strong>Canvas</strong>.</p>
+</li>
+<li>
+<p>Selezionare un ambiente di lavoro che corrisponda a uno dei tipi elencati sopra.</p>
+</li>
+<li>
+<p>Selezionare il menu delle azioni accanto a Sincronizza.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_we.gif" alt="Una schermata che mostra le azioni disponibili dal menu Sync dopo aver selezionato un ambiente di lavoro."></span></p>
+</div>
+</li>
+<li>
+<p>Selezionare <strong>Sincronizza dati da questa posizione</strong> o <strong>Sincronizza dati in questa posizione</strong> e seguire le istruzioni per impostare la relazione di sincronizzazione.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="creare-altri-tipi-di-relazioni-di-sincronizzazione">Creare altri tipi di relazioni di sincronizzazione</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Utilizzare questa procedura per sincronizzare i dati da o verso un tipo di storage supportato diverso da Amazon FSX per cluster ONTAP, Azure NetApp Files, Cloud Volumes ONTAP o ONTAP on-premise. I passaggi riportati di seguito forniscono un esempio che mostra come impostare una relazione di sincronizzazione da un server NFS a un bucket S3.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In BlueXP, fare clic su <strong>Sync</strong>.</p>
+</li>
+<li>
+<p>Nella pagina <strong>Definisci relazione di sincronizzazione</strong>, scegliere un&#8217;origine e una destinazione.</p>
+<div class="paragraph">
+<p>I passaggi seguenti forniscono un esempio di come creare una relazione di sincronizzazione da un server NFS a un bucket S3.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_nfs_to_s3.png" alt="Una schermata che mostra NFS come origine e S3 come destinazione in una nuova relazione di sincronizzazione."></span></p>
+</div>
+</li>
+<li>
+<p>Nella pagina <strong>NFS Server</strong>, inserire l&#8217;indirizzo IP o il nome di dominio completo del server NFS che si desidera sincronizzare con AWS.</p>
+</li>
+<li>
+<p>Nella pagina <strong>Data Broker Group</strong>, seguire le istruzioni per creare una macchina virtuale per broker di dati in AWS, Azure o Google Cloud Platform, oppure per installare il software per broker di dati su un host Linux esistente.</p>
+<div class="paragraph">
+<p>Per ulteriori informazioni, consultare le seguenti pagine:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-installing-aws.html">"Creare un data broker in AWS"</a></p>
+</li>
+<li>
+<p><a href="task-installing-azure.html">"Crea un data broker in Azure"</a></p>
+</li>
+<li>
+<p><a href="task-installing-gcp.html">"Crea un data broker in Google Cloud"</a></p>
+</li>
+<li>
+<p><a href="task-installing-linux.html">"Installazione del data broker su un host Linux"</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dopo aver installato il data broker, fare clic su <strong>Continue</strong> (continua).</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-data-broker-group.png" alt="Questa schermata mostra un&#8217;istanza implementata correttamente. L&#8217;interfaccia mostra i dettagli sull&#8217;istanza, inclusa la rete AWS."></span></p>
+</div>
+</li>
+<li>
+<p><a id="filter"></a>nella pagina <strong>Directory</strong>, selezionare una directory o una sottodirectory di livello superiore.</p>
+<div class="paragraph">
+<p>Se BlueXP copy and Sync non riesce a recuperare le esportazioni, fare clic su <strong>Add Export Manually</strong> (Aggiungi esportazione manualmente) e inserire il nome di un&#8217;esportazione NFS.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-sync/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Se si desidera sincronizzare più di una directory sul server NFS, è necessario creare ulteriori relazioni di sincronizzazione al termine dell&#8217;operazione.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Nella pagina <strong>bucket AWS S3</strong>, selezionare un bucket:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Eseguire il drill-down per selezionare una cartella esistente all&#8217;interno del bucket o per selezionare una nuova cartella creata all&#8217;interno del bucket.</p>
+</li>
+<li>
+<p>Fare clic su <strong>Aggiungi all&#8217;elenco</strong> per selezionare un bucket S3 non associato all&#8217;account AWS. <a href="reference-requirements.html#s3">"Al bucket S3 devono essere applicate autorizzazioni specifiche"</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nella pagina <strong>Bucket Setup</strong>, impostare il bucket:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Scegliere se attivare la crittografia del bucket S3, quindi selezionare una chiave AWS KMS, immettere l&#8217;ARN di una chiave KMS o selezionare la crittografia AES-256.</p>
+</li>
+<li>
+<p>Selezionare una classe di storage S3. <a href="reference-supported-relationships.html#storage-classes">"Visualizzare le classi di storage supportate"</a>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_bucket_setup.gif" alt="Questa schermata mostra la pagina Bucket Setup, che consente di scegliere Sì o No per la crittografia e di selezionare una classe di storage S3 specifica per i dati sincronizzati."></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a id="impostazioni"></a>nella pagina <strong>Impostazioni</strong>, definire come i file e le cartelle di origine vengono sincronizzati e mantenuti nella posizione di destinazione:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Pianificazione</dt>
+<dd>
+<p>Scegliere una pianificazione ricorrente per le sincronizzazioni future o disattivare la pianificazione della sincronizzazione. È possibile pianificare una relazione per sincronizzare i dati ogni 1 minuto.</p>
+</dd>
+<dt class="hdlist1">Timeout di sincronizzazione</dt>
+<dd>
+<p>Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di ore o giorni specificato.</p>
+</dd>
+<dt class="hdlist1">Notifiche</dt>
+<dd>
+<p>Consente di scegliere se ricevere notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP. È possibile attivare le notifiche per la sincronizzazione dei dati riuscita, per la sincronizzazione dei dati non riuscita e per la sincronizzazione dei dati annullata.</p>
+</dd>
+<dt class="hdlist1">Tentativi</dt>
+<dd>
+<p>Definire il numero di tentativi di copia e sincronizzazione di BlueXP per sincronizzare un file prima di ignorarlo.</p>
+</dd>
+<dt class="hdlist1">Sincronizzazione continua</dt>
+<dd>
+<p>Dopo la sincronizzazione iniziale dei dati, BlueXP Copy and Sync ascolta le modifiche apportate al bucket S3 di origine o al bucket Google Cloud Storage e sincronizza continuamente le modifiche apportate al target nel momento in cui si verificano. Non è necessario eseguire una nuova scansione dell&#8217;origine a intervalli pianificati.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Questa impostazione è disponibile solo quando si crea una relazione di sincronizzazione e si sincronizzano i dati da un bucket S3 o Google Cloud Storage allo storage Azure Blob, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS, S3, E StorageGRID * o* dallo storage Azure Blob allo storage Azure Blob, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS e StorageGRID.</p>
+</div>
+<div class="paragraph">
+<p>Se si attiva questa impostazione, questa influisce sulle altre funzioni nel modo seguente:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>La pianificazione della sincronizzazione è disattivata.</p>
+</li>
+<li>
+<p>Vengono ripristinati i valori predefiniti delle seguenti impostazioni: Timeout di sincronizzazione, file modificati di recente e Data di modifica.</p>
+</li>
+<li>
+<p>Se S3 è l&#8217;origine, il filtro per dimensione sarà attivo solo per gli eventi di copia (non per gli eventi di eliminazione).</p>
+</li>
+<li>
+<p>Una volta creata la relazione, è possibile solo accelerare o eliminare la relazione. Non è possibile interrompere le sincronizzazioni, modificare le impostazioni o visualizzare i report.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Confronta per</dt>
+<dd>
+<p>Scegliere se la copia e la sincronizzazione di BlueXP devono confrontare determinati attributi quando si determina se un file o una directory è stata modificata e deve essere nuovamente sincronizzata.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Anche se si deselezionano questi attributi, BlueXP copy and Sync confronta ancora l&#8217;origine con la destinazione controllando i percorsi, le dimensioni dei file e i nomi dei file. In caso di modifiche, i file e le directory vengono sincronizzati.</p>
+</div>
+<div class="paragraph">
+<p>È possibile scegliere di attivare o disattivare la copia e la sincronizzazione BlueXP confrontando i seguenti attributi:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Mtime</strong>: L&#8217;ora dell&#8217;ultima modifica di un file. Questo attributo non è valido per le directory.</p>
+</li>
+<li>
+<p><strong>Uid</strong>, <strong>gid</strong> e <strong>mode</strong>: Flag di autorizzazione per Linux.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Copia per gli oggetti</dt>
+<dd>
+<p>Attivare questa opzione per copiare tag e metadati dello storage a oggetti. Se un utente modifica i metadati sull&#8217;origine, BlueXP copia e sincronizza questo oggetto nella sincronizzazione successiva, ma se un utente modifica i tag sull&#8217;origine (e non i dati stessi), BlueXP copia e sincronizza l&#8217;oggetto nella sincronizzazione successiva.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Non è possibile modificare questa opzione dopo aver creato la relazione.</p>
+</div>
+<div class="paragraph">
+<p>La copia dei tag è supportata con relazioni di sincronizzazione che includono Azure Blob o un endpoint compatibile con S3 (S3, StorageGRID o IBM Cloud Object Storage) come destinazione.</p>
+</div>
+<div class="paragraph">
+<p>La copia dei metadati è supportata con relazioni "cloud-to-cloud" tra uno dei seguenti endpoint:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS S3</p>
+</li>
+<li>
+<p>Azure Blob</p>
+</li>
+<li>
+<p>Storage Google Cloud</p>
+</li>
+<li>
+<p>Storage a oggetti IBM Cloud</p>
+</li>
+<li>
+<p>StorageGRID</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">File modificati di recente</dt>
+<dd>
+<p>Scegliere di escludere i file modificati di recente prima della sincronizzazione pianificata.</p>
+</dd>
+<dt class="hdlist1">Elimina file in origine</dt>
+<dd>
+<p>Scegliere di eliminare i file dalla posizione di origine dopo che BlueXP copia e Sync copia i file nella posizione di destinazione. Questa opzione include il rischio di perdita dei dati perché i file di origine vengono cancellati dopo la copia.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Se si attiva questa opzione, è necessario modificare anche un parametro nel file local.json sul data broker. Aprire il file e aggiornarlo come segue:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+"workers":{
+"transferrer":{
+"delete-on-source": true
+}
+}
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Eliminare i file di destinazione</dt>
+<dd>
+<p>Scegliere di eliminare i file dalla posizione di destinazione, se sono stati eliminati dall&#8217;origine. Per impostazione predefinita, i file non vengono mai eliminati dalla posizione di destinazione.</p>
+</dd>
+<dt class="hdlist1">Tipi di file</dt>
+<dd>
+<p>Definire i tipi di file da includere in ogni sincronizzazione: File, directory, collegamenti simbolici e collegamenti hardware.</p>
+<div class="openblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-sync/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+I collegamenti hardware sono disponibili solo per le relazioni NFS-NFS non protette. Gli utenti saranno limitati a un processo scanner e a una concorrenza scanner e le scansioni devono essere eseguite da una directory principale.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Escludi estensioni file</dt>
+<dd>
+<p>Specificare le estensioni dei file da escludere dalla sincronizzazione digitando l&#8217;estensione del file e premendo <strong>Invio</strong>. Ad esempio, digitare <em>log</em> o <em>.log</em> per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:</p>
+<div class="openblock">
+<div class="content">
+<div class="videoblock">
+<div class="content">
+<video src="./media/video_file_extensions.mp4" width="840" height="240" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Escludi directory</dt>
+<dd>
+<p>Specificare un massimo di 15 directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo <strong>Invio</strong>. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita. Se desideri includerli nella sincronizzazione, contattaci.</p>
+</dd>
+<dt class="hdlist1">Dimensione del file</dt>
+<dd>
+<p>Scegliere di sincronizzare tutti i file indipendentemente dalle dimensioni o solo i file che si trovano in un intervallo di dimensioni specifico.</p>
+</dd>
+<dt class="hdlist1">Data di modifica</dt>
+<dd>
+<p>Scegliere tutti i file indipendentemente dalla data dell&#8217;ultima modifica, i file modificati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo.</p>
+</dd>
+<dt class="hdlist1">Data di creazione</dt>
+<dd>
+<p>Quando un server SMB è l&#8217;origine, questa impostazione consente di sincronizzare i file creati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo specifico.</p>
+</dd>
+<dt class="hdlist1">ACL - Access Control List (elenco di controllo degli accessi)</dt>
+<dd>
+<p>Copiare gli ACL da un server SMB attivando un&#8217;impostazione quando si crea una relazione o dopo la creazione di una relazione.</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>Nella pagina <strong>Tags/Metadata</strong>, scegliere se salvare una coppia valore-chiave come tag su tutti i file trasferiti al bucket S3 o assegnare una coppia valore-chiave di metadati su tutti i file.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_relationship_tags.png" alt="Una schermata che mostra la pagina Tag/metadati quando si crea una relazione di sincronizzazione con Amazon S3."></span></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-sync/images/tip.svg" alt="Suggerimento">
+</td>
+<td class="content">
+Questa stessa funzionalità è disponibile quando si sincronizzano i dati con StorageGRID e IBM Cloud Object Storage. Per Azure e Google Cloud Storage, è disponibile solo l&#8217;opzione metadati.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Esaminare i dettagli della relazione di sincronizzazione, quindi fare clic su <strong>Crea relazione</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Risultato</strong></p>
+</div>
+<div class="paragraph">
+<p>BlueXP copy and Sync avvia la sincronizzazione dei dati tra l&#8217;origine e la destinazione.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="crea-relazioni-di-sincronizzazione-da-cloud-data-sense">Crea relazioni di sincronizzazione da Cloud Data Sense</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP copy and Sync è integrato con Cloud Data Sense. Da Data Sense, è possibile selezionare i file di origine che si desidera sincronizzare in una posizione di destinazione utilizzando la copia e la sincronizzazione BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Dopo aver avviato una sincronizzazione dei dati da Cloud Data Sense, tutte le informazioni di origine sono contenute in un singolo passaggio e richiedono solo l&#8217;immissione di alcuni dettagli chiave. Quindi, scegliere la posizione di destinazione per la nuova relazione di sincronizzazione.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-data-sense.png" alt="Una schermata che mostra la pagina Data Sense Integration che viene visualizzata dopo l&#8217;avvio di una nuova sincronizzazione direttamente da Cloud Data Sense."></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system" target="_blank" rel="noopener">"Scopri come avviare una relazione di sincronizzazione da Cloud Data Sense"</a>.</p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-sync/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/cloud-manager-sync/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/cloud-manager-sync/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/cloud-manager-sync/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/cloud-manager-sync/js/tabbed-blocks.js'></script>
+    <script src='/it-it/cloud-manager-sync/js/sidebar.js'></script>
+  </body></html>
