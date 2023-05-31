@@ -92,7 +92,7 @@ BlueXP copy and Sync aggiorna le credenziali sul data broker. Possono essere nec
 
 Un'impostazione *Notifiche* per ciascuna relazione di sincronizzazione consente di scegliere se ricevere notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP. È possibile attivare le notifiche per la sincronizzazione dei dati riuscita, per la sincronizzazione dei dati non riuscita e per la sincronizzazione dei dati annullata.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["Una schermata che mostra il Centro notifiche in BlueXP."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-notification-center.png["Una schermata che mostra il Centro notifiche in BlueXP."]
 
 Inoltre, è possibile ricevere notifiche via email.
 

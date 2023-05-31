@@ -33,13 +33,13 @@ Se si desidera creare relazioni di sincronizzazione per uno dei seguenti element
 .Fasi
 . Creare o scoprire l'ambiente di lavoro.
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["Creare un ambiente di lavoro Amazon FSX per ONTAP"^]
-** https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Configurazione e rilevamento di Azure NetApp Files"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Aggiunta di sistemi Cloud Volumes ONTAP esistenti"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Alla scoperta dei cluster ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Creare un ambiente di lavoro Amazon FSX per ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Configurazione e rilevamento di Azure NetApp Files"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Aggiunta di sistemi Cloud Volumes ONTAP esistenti"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Alla scoperta dei cluster ONTAP"^]
 
 
 . Fare clic su *Canvas*.
@@ -215,4 +215,4 @@ Dopo aver avviato una sincronizzazione dei dati da Cloud Data Sense, tutte le in
 
 image:screenshot-sync-data-sense.png["Una schermata che mostra la pagina Data Sense Integration che viene visualizzata dopo l'avvio di una nuova sincronizzazione direttamente da Cloud Data Sense."]
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["Scopri come avviare una relazione di sincronizzazione da Cloud Data Sense"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["Scopri come avviare una relazione di sincronizzazione da Cloud Data Sense"^].

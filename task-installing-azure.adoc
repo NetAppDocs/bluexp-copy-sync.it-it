@@ -132,7 +132,7 @@ Inoltre, l'ambito assegnabile deve essere impostato sull'ambito della sottoscriz
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione della sincronizzazione continua"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione della sincronizzazione continua"].
 
 
 

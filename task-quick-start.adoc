@@ -33,8 +33,8 @@ Se si desidera creare relazioni di sincronizzazione per uno dei seguenti element
 È necessario un connettore per Cloud Volumes ONTAP, i cluster ONTAP on-premise e Amazon FSX per ONTAP.
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html["Scopri come iniziare a utilizzare BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Scopri di più sui connettori"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Scopri come iniziare a utilizzare BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Scopri di più sui connettori"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Preparare l'origine e la destinazione
