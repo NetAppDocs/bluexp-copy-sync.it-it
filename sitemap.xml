@@ -13,205 +13,205 @@
   
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/api-sync.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/api-sync.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/concept-cloud-sync.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/concept-cloud-sync.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/concept-licensing.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/concept-licensing.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/concept-privacy.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/concept-privacy.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/faq.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/faq.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/legal-notices.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/legal-notices.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/reference-limitations.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/reference-limitations.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/reference-networking.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/reference-networking.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/reference-requirements.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/reference-requirements.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/reference-supported-relationships.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/reference-supported-relationships.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync//search.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync//search.html</loc>
       
-      <lastmod>2023-05-24T08:35:15+00:00</lastmod>
+      <lastmod>2023-05-31T14:22:51+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-copying-acls.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-copying-acls.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-creating-relationships.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-creating-relationships.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-external-vault.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-external-vault.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-get-help.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-installing-aws.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-get-help.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-installing-azure.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-installing-gcp.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-installing-aws.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-installing-linux.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-installing-azure.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-licensing.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-installing-gcp.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-managing-data-brokers.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-installing-linux.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-managing-relationships.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-managing-reports.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-licensing.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-nfs-encryption.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-managing-data-brokers.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-quick-start.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-support-registration.html</loc>
+      
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/task-uninstalling.html</loc>
       
       <lastmod>2023-05-23T20:53:08+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-managing-relationships.html</loc>
+      <loc>https://docs.netapp.com/it-it/bluexp-copy-sync/whats-new.html</loc>
       
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-managing-reports.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-nfs-encryption.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-quick-start.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-support-registration.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/task-uninstalling.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/it-it/cloud-manager-sync/whats-new.html</loc>
-      
-      <lastmod>2023-05-23T20:53:08+00:00</lastmod>
+      <lastmod>2023-05-31T14:22:34+00:00</lastmod>
       
     </url>
   
