@@ -107,7 +107,7 @@ image:screenshot_bucket_setup.gif["Questa schermata mostra la pagina Bucket Setu
 . [[impostazioni]]nella pagina *Impostazioni*, definire come i file e le cartelle di origine vengono sincronizzati e mantenuti nella posizione di destinazione:
 +
 Pianificazione:: Scegliere una pianificazione ricorrente per le sincronizzazioni future o disattivare la pianificazione della sincronizzazione. È possibile pianificare una relazione per sincronizzare i dati ogni 1 minuto.
-Timeout di sincronizzazione:: Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di ore o giorni specificato.
+Timeout di sincronizzazione:: Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero specificato di minuti, ore o giorni.
 Notifiche:: Consente di scegliere se ricevere notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP. È possibile attivare le notifiche per la sincronizzazione dei dati riuscita, per la sincronizzazione dei dati non riuscita e per la sincronizzazione dei dati annullata.
 Tentativi:: Definire il numero di tentativi di copia e sincronizzazione di BlueXP per sincronizzare un file prima di ignorarlo.
 Sincronizzazione continua:: Dopo la sincronizzazione iniziale dei dati, BlueXP Copy and Sync ascolta le modifiche apportate al bucket S3 di origine o al bucket Google Cloud Storage e sincronizza continuamente le modifiche apportate al target nel momento in cui si verificano. Non è necessario eseguire una nuova scansione dell'origine a intervalli pianificati.

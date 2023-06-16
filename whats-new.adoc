@@ -18,6 +18,26 @@ Scopri le novità di BlueXP Copy and Sync.
 
 
 
+== 11 giugno 2023
+
+
+
+=== Supporta l'interruzione automatica in pochi minuti
+
+Le sincronizzazioni attive che non sono state completate possono ora essere interrotte dopo quindici minuti utilizzando la funzione *Timeout sincronizzazione*.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione del timeout di sincronizzazione"].
+
+
+
+=== Copiare i metadati del tempo di accesso
+
+Nelle relazioni, incluso un file system, la funzione *Copy for Objects* copia ora i metadati del tempo di accesso.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Copia per oggetti"].
+
+
+
 == 8 maggio 2023
 
 

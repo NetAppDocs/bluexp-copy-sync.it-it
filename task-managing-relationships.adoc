@@ -134,7 +134,7 @@ image:screenshot_sync_settings.png["Una schermata che mostra le impostazioni per
 
 +
 Pianificazione:: Scegliere una pianificazione ricorrente per le sincronizzazioni future o disattivare la pianificazione della sincronizzazione. È possibile pianificare una relazione per sincronizzare i dati ogni 1 minuto.
-Timeout di sincronizzazione:: Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di ore o giorni specificato.
+Timeout di sincronizzazione:: Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di minuti, ore o giorni specificato.
 Notifiche:: Consente di scegliere se ricevere notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP. È possibile attivare le notifiche per la sincronizzazione dei dati riuscita, per la sincronizzazione dei dati non riuscita e per la sincronizzazione dei dati annullata.
 +
 --

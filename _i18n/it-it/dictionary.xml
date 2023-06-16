@@ -1496,7 +1496,6 @@
   <block id="25f7347236b51a5eae4ba01a7862cb55" category="list-text">Pianificazione</block>
   <block id="3e8e8a2afdd515355f098433677b9baa" category="list-text">Scegliere una pianificazione ricorrente per le sincronizzazioni future o disattivare la pianificazione della sincronizzazione. È possibile pianificare una relazione per sincronizzare i dati ogni 1 minuto.</block>
   <block id="64b10e9eb890594a5a1756353aca634b" category="list-text">Timeout di sincronizzazione</block>
-  <block id="5cd54d605c54fc35f035298798014895" category="list-text">Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di ore o giorni specificato.</block>
   <block id="bd171db960b7fb2897e98bf00be4815f" category="list-text">Consente di scegliere se ricevere notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP. È possibile attivare le notifiche per la sincronizzazione dei dati riuscita, per la sincronizzazione dei dati non riuscita e per la sincronizzazione dei dati annullata.</block>
   <block id="7ca5aa2b579039b92d9aed9f84201f04" category="paragraph">Se si desidera ricevere notifiche per</block>
   <block id="519b4d25c8ffbf8de1ebf62fde5dc856" category="list-text">Tentativi</block>
@@ -1817,4 +1816,16 @@
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Aggiornamento del software Cloud Volumes ONTAP alla versione più recente</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">L'associazione delle credenziali NSS all'account BlueXP è diversa dall'account NSS associato a un account utente BlueXP.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Queste credenziali NSS sono associate all'ID account BlueXP specifico. Gli utenti che appartengono all'account BlueXP possono accedere a queste credenziali da *Support &gt; NSS Management*.</block>
+  <block id="860b2fc9627ec3a5cc3396995584e75b" category="list-text">Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero specificato di minuti, ore o giorni.</block>
+  <block id="26d399293c97f500657ad4983fd0d9fa" category="list-text">Definire se la copia e la sincronizzazione di BlueXP devono annullare una sincronizzazione dei dati se la sincronizzazione non è stata completata nel numero di minuti, ore o giorni specificato.</block>
+  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 giugno 2023</block>
+  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Supporta l'interruzione automatica in pochi minuti</block>
+  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Le sincronizzazioni attive che non sono state completate possono ora essere interrotte dopo quindici minuti utilizzando la funzione *Timeout sincronizzazione*.</block>
+  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">Scopri di più sull'impostazione del timeout di sincronizzazione</block>
+  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>.</block>
+  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">Copiare i metadati del tempo di accesso</block>
+  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">Nelle relazioni, incluso un file system, la funzione *Copy for Objects* copia ora i metadati del tempo di accesso.</block>
+  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">Scopri di più sull'impostazione Copia per oggetti</block>
+  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="admonition">L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati.</block>
 </blocks>
