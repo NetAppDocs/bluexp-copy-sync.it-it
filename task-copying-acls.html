@@ -83,7 +83,7 @@
       head.appendChild(onetrustScript);
     }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
     addAdobeLaunch("launch-e9ff3acac59f");
-    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+    addGoogleAnalytics("G-KYN6T440WN");function OptanonWrapper() { }
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -909,21 +909,21 @@
   </div>
 </div>
 
-      <div class="ie-nmt-disclaimer">
-  <span>
-    <div class="ie-nmt-disclaimer-container">
-      <div class="ie-nmt-disclaimer-icon">
-        <svg class="luci-icon" aria-hidden="true">
-          <use xlink:href="/it-it/bluexp-copy-sync/images/sprite.svg#circle-info">
-        </svg>
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <svg class="luci-icon" aria-hidden="true">
+            <use xlink:href="/it-it/bluexp-copy-sync/images/sprite.svg#circle-info">
+          </svg>
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+        </div>
+        <div style="clear:both;"></div>
       </div>
-      <div class="ie-nmt-disclaimer-content">
-        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
-      </div>
-      <div style="clear:both;"></div>
-    </div>
-  </span>
-</div><div class="n-doc__component-detail-heading-wrap">
+    </span>
+  </div><div class="n-doc__component-detail-heading-wrap">
   <h1 class="n-doc__component-detail-heading">Copia degli ACL dalle condivisioni SMB</h1>
 </div>
 
@@ -931,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 20:53:08 +0000">05/23/2023</time>
+    <time datetime="2023-07-10 15:09:40 +0000">07/10/2023</time>
     
   
 
@@ -953,27 +953,27 @@
 <p><a href="#Setting up BlueXP copy and sync to copy ACLs from an SMB server">Impostare la copia e la sincronizzazione di BlueXP per copiare automaticamente gli ACL</a></p>
 </li>
 <li>
-<p><a href="#copia-manuale-degli-acl-tra-le-condivisioni-smb">Copiare manualmente gli ACL tra le condivisioni SMB</a></p>
+<p><a href="#Manually copying ACLs between SMB shares">Copiare manualmente gli ACL tra le condivisioni SMB</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="configurazione-di-bluexp-copy-e-sync-per-copiare-gli-acl">Configurazione di BlueXP copy e Sync per copiare gli ACL</h2>
+<h2 id="impostare-la-copia-bluexp-e-la-sincronizzazione-per-copiare-gli-acl">Impostare la copia BlueXP e la sincronizzazione per copiare gli ACL</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Copiare gli ACL tra le condivisioni SMB e tra le condivisioni SMB e lo storage a oggetti attivando un&#8217;impostazione quando si crea una relazione o dopo la creazione di una relazione.</p>
 </div>
 <div class="paragraph">
-<div class="title">Di cosa hai bisogno</div>
+<div class="title">Prima di iniziare</div>
 <p>Questa funzionalità funziona con <em>qualsiasi</em> tipo di data broker: AWS, Azure, Google Cloud Platform o data broker on-premise. Il data broker on-premise può essere eseguito <a href="task-installing-linux.html">"qualsiasi sistema operativo supportato"</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Passaggi per una nuova relazione</div>
 <ol class="arabic">
 <li>
-<p>Da BlueXP copy and Sync, fare clic su <strong>Create New Sync</strong> (Crea nuova sincronizzazione).</p>
+<p>Da BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare <strong>Create New Sync</strong> (Crea nuova sincronizzazione).</p>
 </li>
 <li>
 <p>Trascinare un server SMB o uno storage a oggetti come origine e un server SMB o storage a oggetti come destinazione, quindi fare clic su <strong>continua</strong>.</p>
@@ -983,15 +983,15 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Immettere un nuovo server SMB o selezionare un server esistente e fare clic su <strong>continua</strong>.</p>
+<p>Immettere un nuovo server SMB o selezionare un server esistente e selezionare <strong>continua</strong>.</p>
 </li>
 <li>
 <p>Immettere le credenziali per il server SMB.</p>
 </li>
 <li>
-<p>Selezionare <strong>Copy Access Control Lists to the target</strong> (Copia elenchi di controllo degli accessi nella destinazione) e fare clic su <strong>Continue</strong> (continua).</p>
+<p>Scegliere <strong>Copy only Files</strong> (Copia solo file), <strong>Copy Only ACL</strong> (Copia solo ACL) o <strong>Copy Files and ACL</strong> (Copia file e ACL) e selezionare <strong>Continue</strong> (continua).</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_acl_support.gif" alt="Una schermata che mostra l&#8217;opzione per abilitare la copia degli elenchi di controllo degli accessi nella destinazione."></span></p>
+<p><span class="image"><img src="./media/screenshot_acl_support.png" alt="Una schermata che mostra l&#8217;opzione per abilitare la copia degli elenchi di controllo degli accessi nella destinazione."></span></p>
 </div>
 </li>
 </ol>
@@ -1015,16 +1015,16 @@
 <div class="title">Passaggi per una relazione esistente</div>
 <ol class="arabic">
 <li>
-<p>Passare il mouse sulla relazione di sincronizzazione e fare clic sul menu delle azioni.</p>
+<p>Passare il mouse sulla relazione di sincronizzazione e selezionare il menu delle azioni.</p>
 </li>
 <li>
-<p>Fare clic su <strong>Impostazioni</strong>.</p>
+<p>Selezionare <strong>Impostazioni</strong>.</p>
 </li>
 <li>
-<p>Selezionare <strong>Copy Access Control Lists to the target</strong> (Copia elenchi di controllo degli accessi nella destinazione).</p>
+<p>Scegliere <strong>Copy only Files</strong> (Copia solo file), <strong>Copy Only ACL</strong> (Copia solo ACL) o <strong>Copy Files and ACL</strong> (Copia file e ACL) e selezionare <strong>Continue</strong> (continua).</p>
 </li>
 <li>
-<p>Fare clic su <strong>Save Settings</strong> (Salva impostazioni).</p>
+<p>Selezionare <strong>Save Settings</strong> (Salva impostazioni).</p>
 </li>
 </ol>
 </div>
@@ -1035,7 +1035,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="copia-manuale-degli-acl-tra-le-condivisioni-smb">Copia manuale degli ACL tra le condivisioni SMB</h2>
+<h2 id="copia-manualmente-gli-acl-tra-le-condivisioni-smb">Copia manualmente gli ACL tra le condivisioni SMB</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>È possibile conservare manualmente gli ACL tra le condivisioni SMB utilizzando il comando Windows robocopy.</p>
