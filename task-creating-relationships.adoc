@@ -187,7 +187,7 @@ Escludi directory:: Specificare un massimo di 15 directory da escludere dalla si
 Dimensione del file:: Scegliere di sincronizzare tutti i file indipendentemente dalle dimensioni o solo i file che si trovano in un intervallo di dimensioni specifico.
 Data di modifica:: Scegliere tutti i file indipendentemente dalla data dell'ultima modifica, i file modificati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo.
 Data di creazione:: Quando un server SMB è l'origine, questa impostazione consente di sincronizzare i file creati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo specifico.
-ACL - Access Control List (elenco di controllo degli accessi):: Copiare gli ACL da un server SMB attivando un'impostazione quando si crea una relazione o dopo la creazione di una relazione.
+ACL - Access Control List (elenco di controllo degli accessi):: Copia solo ACL, solo file o ACL e file da un server SMB attivando un'impostazione quando si crea una relazione o dopo la creazione di una relazione.
 
 
 . Nella pagina *Tags/Metadata*, scegliere se salvare una coppia valore-chiave come tag su tutti i file trasferiti al bucket S3 o assegnare una coppia valore-chiave di metadati su tutti i file.

@@ -20,6 +20,7 @@ Quando crei un nuovo gruppo di broker di dati, scegli l'opzione on-Prem Data Bro
 
 == Requisiti degli host Linux
 
+* *Node.js Compatibility*: v20
 * *Sistema operativo*:
 +
 ** CentOS 8.0 e 8.5

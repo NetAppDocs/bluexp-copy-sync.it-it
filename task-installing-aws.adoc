@@ -120,6 +120,7 @@ Hai implementato un data broker in AWS e creato una nuova relazione di sincroniz
 
 BlueXP copy and Sync crea un data broker in AWS utilizzando la seguente configurazione.
 
+Compatibilità Node.js:: v20
 Tipo di istanza:: m5n.xlarge se disponibile nella regione, altrimenti m5.xlarge
 VCPU:: 4
 RAM:: 16 GB
