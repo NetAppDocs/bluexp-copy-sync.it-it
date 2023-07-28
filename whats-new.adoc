@@ -590,7 +590,7 @@ La creazione di una relazione di sincronizzazione da SFTP ad Amazon S3 è ora su
 
 === Miglioramento della vista tabella
 
-Abbiamo riprogettato la vista tabella sul dashboard per una maggiore facilità di utilizzo. Facendo clic su *ulteriori informazioni*, Cloud Sync filtra la dashboard per visualizzare ulteriori informazioni su tale relazione specifica.
+Abbiamo riprogettato la vista tabella sul dashboard per una maggiore facilità di utilizzo. Se si seleziona *ulteriori informazioni*, Cloud Sync filtra la dashboard per visualizzare ulteriori informazioni sulla relazione specifica.
 
 image:screenshot-sync-table.png["Una schermata della vista tabella nella dashboard."]
 

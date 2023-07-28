@@ -70,7 +70,7 @@ Esistono diversi modi per creare un nuovo data broker:
 +
 link:task-creating-relationships.html["Scopri come creare un nuovo data broker quando crei una relazione di sincronizzazione"].
 
-* Dalla pagina *Gestisci data broker* facendo clic su *Aggiungi nuovo data broker* per creare il data broker in un nuovo gruppo
+* Dalla pagina *Gestisci Data Broker* selezionando *Aggiungi nuovo Data Broker* che crea il data broker in un nuovo gruppo
 * Dalla pagina *Gestisci data broker* creando un nuovo data broker in un gruppo esistente
 
 
@@ -83,8 +83,8 @@ Ad esempio, se un gruppo include un broker di dati AWS, è possibile creare un b
 
 
 .Procedura per creare un data broker in un nuovo gruppo
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic su *Aggiungi nuovo Data Broker*.
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare *Aggiungi nuovo Data Broker*.
 . Seguire le istruzioni per creare il data broker.
 +
 Per assistenza, consultare le seguenti pagine:
@@ -99,8 +99,8 @@ Per assistenza, consultare le seguenti pagine:
 
 
 .Procedura per creare un data broker in un gruppo esistente
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic sul menu delle azioni e selezionare *Add Data Broker*.
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare il menu delle azioni e scegliere *Add Data Broker*.
 +
 image:screenshot_sync_group_add.png["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
 
@@ -124,12 +124,12 @@ Per assistenza, consultare le seguenti pagine:
 Modificare il nome di un gruppo di broker di dati in qualsiasi momento.
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic sul menu delle azioni e selezionare *Edit Group Name* (Modifica nome gruppo).
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare il menu delle azioni e scegliere *Modifica nome gruppo*.
 +
 image:screenshot_sync_group_edit.gif["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
 
-. Immettere un nuovo nome e fare clic su *Save* (Salva).
+. Immettere un nuovo nome e selezionare *Salva*.
 
 
 .Risultato
@@ -144,12 +144,12 @@ Se una relazione di sincronizzazione rileva errori durante il processo di sincro
 Si sconsiglia di modificare la configurazione autonomamente. È necessario consultare NetApp per capire quando modificare la configurazione e come modificarla.
 
 .Fasi
-. Fare clic su *Manage Data Broker* (Gestisci data Broker).
-. Fare clic sull'icona Impostazioni per un gruppo di broker di dati.
+. Selezionare *Manage Data Broker* (Gestisci data Broker).
+. Selezionare l'icona Impostazioni per un gruppo di broker di dati.
 +
 image:screenshot_sync_group_settings.png["Una schermata che mostra l'icona Impostazioni per un gruppo di broker di dati."]
 
-. Modificare le impostazioni in base alle necessità, quindi fare clic su *Unify Configuration* (Unifica configurazione).
+. Modificare le impostazioni in base alle necessità, quindi selezionare *Unify Configuration* (Unifica configurazione).
 +
 Tenere presente quanto segue:
 
@@ -178,14 +178,14 @@ Ad esempio, se un data broker non gestisce più una relazione di sincronizzazion
 
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
-. Fare clic sul menu delle azioni di un broker di dati e selezionare *Move Data Broker* (Sposta broker di dati).
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Selezionare il menu delle azioni di un data broker e selezionare *Move Data Broker* (Sposta data Broker).
 +
 image:screenshot_sync_group_remove.png["Una schermata del menu di azione disponibile per ogni singolo gruppo di broker di dati."]
 
 . Creare un nuovo gruppo di broker di dati o selezionare un gruppo di broker di dati esistente.
-. Fare clic su *Sposta*.
+. Selezionare *Sposta*.
 
 
 .Risultato
@@ -198,11 +198,11 @@ BlueXP copy and Sync sposta il broker di dati in un nuovo gruppo di broker di da
 Aggiornare la configurazione del proxy per un data broker aggiungendo dettagli su una nuova configurazione del proxy o modificando la configurazione del proxy esistente.
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
-. Fare clic sul menu delle azioni di un data broker e selezionare *Edit Proxy Configuration* (Modifica configurazione proxy).
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Selezionare il menu delle azioni di un data broker e selezionare *Edit Proxy Configuration* (Modifica configurazione proxy).
 . Specificare i dettagli relativi al proxy: Nome host, numero di porta, nome utente e password.
-. Fare clic su *Aggiorna*.
+. Selezionare *Aggiorna*.
 
 
 .Risultato
@@ -228,9 +228,9 @@ TIP: Lo scanner esegue la scansione dell'origine e della destinazione e decide c
 
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
-. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere i dettagli di un broker di dati."] per visualizzare i dettagli di un broker di dati.
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Selezionare image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere i dettagli di un broker di dati."] per visualizzare i dettagli di un broker di dati.
 +
 image:screenshot_sync_data_broker_details.gif["Una schermata di informazioni su un broker di dati."]
 
@@ -266,13 +266,13 @@ Ad esempio, potrebbe essere necessario riavviare semplicemente il data broker se
 
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic su image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
-. Fare clic sul menu delle azioni di un broker di dati e selezionare *Remove Data Broker* (Rimuovi broker di dati).
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare image:screenshot_sync_group_expand.gif["Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo."] per espandere l'elenco dei broker di dati in un gruppo.
+. Selezionare il menu delle azioni di un data broker e selezionare *Remove Data Broker*.
 +
 image:screenshot_sync_group_remove.gif["Una schermata del menu di azione disponibile per ogni singolo gruppo di broker di dati."]
 
-. Fare clic su *Rimuovi Data Broker*.
+. Selezionare *Rimuovi Data Broker*.
 
 
 .Risultato
@@ -287,12 +287,12 @@ Se un gruppo di broker di dati non gestisce più alcuna relazione di sincronizza
 I broker di dati che BlueXP copia e rimuove vengono cancellati solo dalla copia BlueXP e dai record di Sync. Dovrai eliminare manualmente l'istanza del data broker dal tuo cloud provider e da eventuali risorse cloud aggiuntive.
 
 .Fasi
-. Fare clic su *Sync > Manage Data Broker* (Sincronizza > Gestisci data Broker).
-. Fare clic sul menu delle azioni e selezionare *Delete Group* (Elimina gruppo).
+. Selezionare *Sync > Manage Data Brokers* (Sincronizza > Gestisci data Brokers).
+. Selezionare il menu delle azioni e selezionare *Delete Group* (Elimina gruppo).
 +
 image:screenshot_sync_group_add.png["Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo."]
 
-. Per confermare, inserire il nome del gruppo e fare clic su *Delete Group* (Elimina gruppo).
+. Per confermare, inserire il nome del gruppo e selezionare *Delete Group* (Elimina gruppo).
 
 
 .Risultato

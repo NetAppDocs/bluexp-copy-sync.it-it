@@ -33,9 +33,9 @@ Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web appl
 AWS ti consente di pagare a consumo o di pagare annualmente.
 
 .Procedura per il pagamento a consumo
-. Fare clic su *Sync > Licensing*.
+. Selezionare *Sync > Licensing*.
 . Selezionare *AWS*
-. Fare clic su *Iscriviti*, quindi su *continua*.
+. Selezionare *Subscribe*, quindi selezionare *Continue* (continua).
 . Iscriviti a AWS Marketplace, quindi accedi nuovamente al servizio di copia e sincronizzazione BlueXP per completare la registrazione.
 +
 Il seguente video mostra il processo:
@@ -46,8 +46,8 @@ video::video_cloud_sync_registering.mp4[width=848,height=480]
 
 .Passi da pagare annualmente
 . https://aws.amazon.com/marketplace/pp/B06XX5V3M2["Accedere alla pagina AWS Marketplace"^].
-. Fare clic su *continua per iscriversi*.
-. Selezionare le opzioni del contratto e fare clic su *Crea contratto*.
+. Selezionare *continua per iscriversi*.
+. Selezionare le opzioni del contratto, quindi selezionare *Crea contratto*.
 
 
 
@@ -60,15 +60,15 @@ Azure ti consente di pagare in base alle tue esigenze o di pagare ogni anno.
 Un account utente Azure che dispone delle autorizzazioni Contributor o Owner nell'abbonamento pertinente.
 
 .Fasi
-. Fare clic su *Sync > Licensing*.
+. Selezionare *Sync > Licensing*.
 . Selezionare *Azure*.
-. Fare clic su *Iscriviti*, quindi su *continua*.
-. Nel portale Azure, fare clic su *Create*, selezionare le opzioni e fare clic su *Subscribe*.
+. Selezionare *Subscribe*, quindi selezionare *Continue* (continua).
+. Nel portale Azure, selezionare *Crea*, selezionare le opzioni desiderate, quindi selezionare *Iscriviti*.
 +
 Seleziona *mensile* per pagare in base all'ora o *annuale* per pagare in anticipo un anno.
 
-. Una volta completata l'implementazione, fare clic sul nome della risorsa SaaS nella finestra a comparsa di notifica.
-. Fare clic su *Configure account* (Configura account) per tornare alla copia e alla sincronizzazione di BlueXP.
+. Una volta completata l'implementazione, selezionare il nome della risorsa SaaS nella finestra a comparsa di notifica.
+. Selezionare *Configure account* (Configura account) per tornare alla copia e alla sincronizzazione di BlueXP.
 +
 Il seguente video mostra il processo:
 
@@ -87,17 +87,17 @@ Sono necessari il numero di serie della licenza e il nome utente e la password p
 
 .Fasi
 . Acquista una licenza inviando un messaggio di posta:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[come contattare NetApp].
-. In BlueXP, fare clic su *Sync > Licensing*.
-. Fare clic su *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:
+. In BlueXP, selezionare *Sync > Licensing*.
+. Selezionare *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:
 +
 .. Inserire il numero di serie.
 .. Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere:
 +
 *** Se l'account è già stato aggiunto a BlueXP, selezionarlo dall'elenco a discesa.
-*** Se l'account non è stato ancora aggiunto, fare clic su *Aggiungi credenziali NSS*, immettere il nome utente e la password, fare clic su *Registra*, quindi selezionarlo dall'elenco a discesa.
+*** Se l'account non è stato ancora aggiunto, selezionare *Aggiungi credenziali NSS*, immettere il nome utente e la password, selezionare *Registra*, quindi selezionarlo dall'elenco a discesa.
 
 
-.. Fare clic su *Aggiungi*.
+.. Selezionare *Aggiungi*.
 
 
 
@@ -109,12 +109,12 @@ Sono necessari il numero di serie della licenza e il nome utente e la password p
 Se hai esteso una licenza di copia e sincronizzazione BlueXP acquistata da NetApp, la nuova data di scadenza non verrà aggiornata automaticamente in BlueXP Copy and Sync. È necessario aggiungere nuovamente la licenza per aggiornare la data di scadenza. Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.
 
 .Fasi
-. In BlueXP, fare clic su *Sync > Licensing*.
-. Fare clic su *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:
+. In BlueXP, selezionare *Sync > Licensing*.
+. Selezionare *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:
 +
 .. Inserire il numero di serie.
 .. Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere.
-.. Fare clic su *Aggiungi*.
+.. Selezionare *Aggiungi*.
 
 
 

@@ -28,16 +28,11 @@
   <block id="9727c41167b4d3a89168d9e2a6bf1fbe" category="section-title">Creazione del data broker</block>
   <block id="c371ecc54445590f3e356493638d02db" category="paragraph">Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in AWS quando si crea una relazione di sincronizzazione.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Fasi</block>
-  <block id="05b03110970a5e69bee8654fc24ccf0b" category="list-text">Fare clic su *Create New Sync* (Crea nuova sincronizzazione).</block>
-  <block id="699986c3a8b1dd3a3143973b450c229d" category="list-text">Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.</block>
   <block id="f0fff4676c779987735fc7ee633da03c" category="paragraph">Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.</block>
-  <block id="c26c6fab489734aee5276f7e590f8b18" category="list-text">Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Amazon Web Services*.</block>
   <block id="0fc6ea2f37f8948c8630ffb60d5e0265" category="inline-image-macro">Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem.</block>
   <block id="7af53fb4b55f3887a3b7d59e2a119aa2" category="paragraph"><block ref="7af53fb4b55f3887a3b7d59e2a119aa2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8d5f3c11505e061fa1ae30de2766106b" category="list-text">Immettere un nome per il broker di dati e fare clic su *continua*.</block>
   <block id="4aeed94a6e997eb99e2ee56acf52c9d9" category="list-text">Inserire una chiave di accesso AWS in modo che la copia e la sincronizzazione BlueXP possano creare il data broker in AWS per tuo conto.</block>
   <block id="5c06da7ffcfe27fbe1ca6a288b6d46c8" category="paragraph">Le chiavi non vengono salvate o utilizzate per altri scopi.</block>
-  <block id="ea274abab109d43436d6d4dd8e13bab8" category="paragraph">Se invece non si desidera fornire le chiavi di accesso, fare clic sul collegamento in fondo alla pagina per utilizzare un modello CloudFormation. Quando si utilizza questa opzione, non è necessario fornire le credenziali perché si effettua l'accesso direttamente ad AWS.</block>
   <block id="fac489f42d32a183751d7250d0d6ddf8" category="paragraph">[[cft]]il seguente video mostra come avviare l'istanza del data broker utilizzando un modello CloudFormation:</block>
   <block id="9b9c7cf2519d51f6dbe3acb1138a5125" category="list-text">Se è stata inserita una chiave di accesso AWS, selezionare una posizione per l'istanza, selezionare una coppia di chiavi, scegliere se attivare un indirizzo IP pubblico e selezionare un ruolo IAM esistente oppure lasciare vuoto il campo in modo che BlueXP copy and Sync crei il ruolo per te. È inoltre possibile crittografare il data broker utilizzando una chiave KMS.</block>
   <block id="17cc78aee78be2a54a8cc1a5a2172559" category="inline-xref">è necessario fornire le autorizzazioni necessarie</block>
@@ -45,7 +40,6 @@
   <block id="48ddfca14a59f67e3a3c2c0c1ad80745" category="inline-image-macro">Una schermata delle informazioni da fornire durante l'implementazione di un data broker in AWS.</block>
   <block id="c8420e741e74236d475d7e500b73f774" category="paragraph"><block ref="c8420e741e74236d475d7e500b73f774" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bc9746b5abda5cdfdb7d182e1d430612" category="list-text">Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet nel VPC.</block>
-  <block id="cf01363cb3b3aefee32677428a86d1df" category="list-text">Una volta che il data broker è disponibile, fare clic su *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizzazione BlueXP).</block>
   <block id="fec1c8b71689bb3080955da982e9fed4" category="paragraph">L'immagine seguente mostra un'istanza implementata correttamente in AWS:</block>
   <block id="78f8e06b33ffb5e1a53c6685b329afd5" category="inline-image-macro">Questa schermata mostra un'istanza implementata correttamente. L'interfaccia mostra i dettagli sull'istanza, inclusa la rete AWS.</block>
   <block id="1e7762f618855774465cdffd1012f4f3" category="paragraph"><block ref="1e7762f618855774465cdffd1012f4f3" category="inline-image-macro-rx" type="image"></block></block>
@@ -76,36 +70,25 @@
   <block id="ed14d70dad7ae627497350bc4e3868e5" category="section-title">[[aws]]sottoscrizione da AWS</block>
   <block id="7f1e5fcf21192da891eea1c1f4f6e6f0" category="paragraph">AWS ti consente di pagare a consumo o di pagare annualmente.</block>
   <block id="f06e94914580a228484d54783ffeb2bb" category="list-title">Procedura per il pagamento a consumo</block>
-  <block id="f4e86f9d0f6800384c773bd03834297d" category="list-text">Fare clic su *Sync &gt; Licensing*.</block>
   <block id="af3298973678fbb2b80974a8030f07ac" category="list-text">Selezionare *AWS*</block>
-  <block id="01849158eeeec12ef2f893c8efd6c0e3" category="list-text">Fare clic su *Iscriviti*, quindi su *continua*.</block>
   <block id="6169c8d461dd7f9996b17fcf210180a3" category="list-text">Iscriviti a AWS Marketplace, quindi accedi nuovamente al servizio di copia e sincronizzazione BlueXP per completare la registrazione.</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">Il seguente video mostra il processo:</block>
   <block id="d95d2545b9702aaa44811f90fd798b70" category="list-title">Passi da pagare annualmente</block>
   <block id="b857da0ad28712a25e73c0907a2b3740" category="inline-link">Accedere alla pagina AWS Marketplace</block>
   <block id="b84483eacee20411f642e9b32a1532d3" category="list-text"><block ref="9a55e6c904391172078e71a0186ef751" category="inline-link-rx"></block>.</block>
-  <block id="6ce481dcdc8134b6b4c81db0911f0267" category="list-text">Fare clic su *continua per iscriversi*.</block>
-  <block id="1ee9033888539de2e81ddb29d255c405" category="list-text">Selezionare le opzioni del contratto e fare clic su *Crea contratto*.</block>
   <block id="b6a5a78c3221a73b92bf2f602e64a9cc" category="section-title">[[Azure]]sottoscrizione a Azure</block>
   <block id="5b708f827f75588e652438e8d2977fb4" category="paragraph">Azure ti consente di pagare in base alle tue esigenze o di pagare ogni anno.</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">Di cosa hai bisogno</block>
   <block id="251910634a1b47d0359b6171382f3f9a" category="paragraph">Un account utente Azure che dispone delle autorizzazioni Contributor o Owner nell'abbonamento pertinente.</block>
   <block id="2164db8f01d0c0a0dc250abc3b9556f5" category="list-text">Selezionare *Azure*.</block>
-  <block id="e70ccb5a825dd2a0a3daf679b5f23567" category="list-text">Nel portale Azure, fare clic su *Create*, selezionare le opzioni e fare clic su *Subscribe*.</block>
   <block id="981e7253aa8df6872dfd3d544c12ef23" category="paragraph">Seleziona *mensile* per pagare in base all'ora o *annuale* per pagare in anticipo un anno.</block>
-  <block id="23a902dd0c4b97b70f0c79f7c46ed483" category="list-text">Una volta completata l'implementazione, fare clic sul nome della risorsa SaaS nella finestra a comparsa di notifica.</block>
-  <block id="d6555e6f7172ab3b02bb7b9388844450" category="list-text">Fare clic su *Configure account* (Configura account) per tornare alla copia e alla sincronizzazione di BlueXP.</block>
   <block id="b5ee50058b36eec1b9d5e452251d8123" category="section-title">[[licenses]]Acquisto di licenze NetApp e aggiunta a BlueXP copy e Sync</block>
   <block id="a1c678174ddff43ed8cf229a96c7a003" category="paragraph">Per pagare anticipatamente le relazioni di sincronizzazione, è necessario acquistare una o più licenze e aggiungerle al servizio di copia e sincronizzazione BlueXP.</block>
   <block id="97e3031ee8bcd0a19765ddc808e71590" category="paragraph">Sono necessari il numero di serie della licenza e il nome utente e la password per l'account NetApp Support Site a cui è associata la licenza.</block>
   <block id="0f5161c9e18f97b653442fef34de1024" category="list-text">Acquista una licenza inviando un messaggio di posta:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[come contattare NetApp].</block>
-  <block id="e8b441efabe30a472bc01ae49f99e1c5" category="list-text">In BlueXP, fare clic su *Sync &gt; Licensing*.</block>
-  <block id="c705d1b4b3b9a5ab7a62cfb882e27612" category="list-text">Fare clic su *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:</block>
   <block id="a7a65c558a31a52f3a2570581f5170c2" category="list-text">Inserire il numero di serie.</block>
   <block id="441eaafe617acae90fac942cbac1d2a0" category="list-text">Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere:</block>
   <block id="8d91fda63040409e75bebd4d14b9a825" category="list-text">Se l'account è già stato aggiunto a BlueXP, selezionarlo dall'elenco a discesa.</block>
-  <block id="93bad0f0398a452d035b9d52ba2724f5" category="list-text">Se l'account non è stato ancora aggiunto, fare clic su *Aggiungi credenziali NSS*, immettere il nome utente e la password, fare clic su *Registra*, quindi selezionarlo dall'elenco a discesa.</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Fare clic su *Aggiungi*.</block>
   <block id="e0fd71ec05fc637037be9da3ff2103b0" category="section-title">Aggiornamento di una licenza</block>
   <block id="b69b60c6eae94cb020b628bd40e1db2a" category="paragraph">Se hai esteso una licenza di copia e sincronizzazione BlueXP acquistata da NetApp, la nuova data di scadenza non verrà aggiornata automaticamente in BlueXP Copy and Sync. È necessario aggiungere nuovamente la licenza per aggiornare la data di scadenza. Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.</block>
   <block id="83893211fb004302e2b1216eda1eb1f8" category="list-text">Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere.</block>
@@ -189,7 +172,6 @@
   <block id="6af6c652626660023ec712f6c15bbc0a" category="cell">https://sts.amazonaws.com</block>
   <block id="89100474e7faee0c34727c4b2b471007" category="cell">Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato.</block>
   <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com</block>
-  <block id="7f13eefefc02d429e3f594cb6d48d10e" category="cell">Per contattare Cloud Data Sense quando si utilizza Data Sense per selezionare i file di origine per una nuova relazione di sincronizzazione.</block>
   <block id="8f606ab2764de8092de1ca0d967cfb8d" category="cell">https://pubsub.googleapis.com</block>
   <block id="df94b5032f4c4edc418da1de5a985935" category="cell">Se si crea una relazione di sincronizzazione continua da un account di storage Google.</block>
   <block id="cfcdd9e78004b91f8c395165fdb5e282" category="cell"><block ref="e36a49efb19686edd0dc8263877ab168" category="inline-link-rx"></block>https://management.azure.com/subscriptions/${_subscriptionId_} /resourceGroups/{_resourceGroup_}/provider/Microsoft.EventGrid/* dove _storage-account_ è l'account storage di origine dell'utente, _subscriptionid_ è l'ID dell'abbonamento di origine e _resourceGroup_ è il gruppo di risorse di origine.</block>
@@ -227,10 +209,7 @@
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Questi numeri seriali sono comunemente denominati _numeri seriali PAYGO_ e vengono generati da BlueXP al momento dell'implementazione di Cloud Volumes ONTAP.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Se disponi di un account a livello di cliente, puoi aggiungere uno o più account NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Se disponi di un account partner o reseller, puoi aggiungere uno o più account NSS, ma non possono essere aggiunti insieme agli account a livello di cliente.</block>
-  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Nella parte superiore destra della console BlueXP, fare clic sull'icona Guida e selezionare *supporto*.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata</block>
-  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Fare clic su *Gestione NSS &gt; Aggiungi account NSS*.</block>
-  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Quando richiesto, fare clic su *Continue* per essere reindirizzati a una pagina di accesso Microsoft.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Queste azioni consentono a BlueXP di utilizzare il tuo account NSS per download di licenze, verifica dell'aggiornamento software e registrazioni di supporto future.</block>
@@ -274,7 +253,6 @@
   <block id="e9e23d944b5ba04f7bd10800f3536393" category="inline-link-macro">qualsiasi sistema operativo supportato</block>
   <block id="b82aab2ce8ba96a1adcef93a4d0f2e7a" category="paragraph">Questa funzionalità funziona con _qualsiasi_ tipo di data broker: AWS, Azure, Google Cloud Platform o data broker on-premise. Il data broker on-premise può essere eseguito <block ref="21c422ddfc59d696be9e90956009904f" category="inline-link-macro-rx"></block>.</block>
   <block id="38ab7ff3062aba8e3cff5bda4cd76234" category="list-title">Passaggi per una nuova relazione</block>
-  <block id="4eb7f5a2c981906a3398b40af3279ff4" category="list-text">Trascinare un server SMB o uno storage a oggetti come origine e un server SMB o storage a oggetti come destinazione, quindi fare clic su *continua*.</block>
   <block id="078c5213fa0cb4e4d041374224a30418" category="list-text">Nella pagina *SMB Server*:</block>
   <block id="446dd08d6403fc4cd86bff2687c49fac" category="list-text">Immettere le credenziali per il server SMB.</block>
   <block id="fb45eb06d7031a4458942ff295e2b322" category="inline-image-macro">Una schermata che mostra l'opzione per abilitare la copia degli elenchi di controllo degli accessi nella destinazione.</block>
@@ -284,8 +262,6 @@
   <block id="70ebe11ca97b687790441cba3fee58d1" category="inline-image-macro">Una schermata del sesto passaggio della procedura guidata di sincronizzazione delle relazioni durante la copia nello storage a oggetti. È possibile scegliere di salvare gli ACL nei tag o nei metadati dell'oggetto.</block>
   <block id="c5b5f241a9177e265d584f0d7e7eb47f" category="paragraph"><block ref="c5b5f241a9177e265d584f0d7e7eb47f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="713b689d8504ac385f256ca9887e16b1" category="list-title">Passaggi per una relazione esistente</block>
-  <block id="bdcd619e6df173b859ed2a1a86e17328" category="list-text">Fare clic su *Impostazioni*.</block>
-  <block id="14242c99845a0bf338d45c648e061643" category="list-text">Fare clic su *Save Settings* (Salva impostazioni).</block>
   <block id="25aad67dfa80ebe55925aa72bc94b583" category="paragraph">Durante la sincronizzazione dei dati, BlueXP Copy and Sync preserva gli ACL tra origine e destinazione.</block>
   <block id="d7acee2f148a20ab4d4e346ddcb75a00" category="paragraph">È possibile conservare manualmente gli ACL tra le condivisioni SMB utilizzando il comando Windows robocopy.</block>
   <block id="41c1f5322f48eb3e6207394ffc0589d0" category="list-text">Identificare un host Windows con accesso completo a entrambe le condivisioni SMB.</block>
@@ -536,7 +512,6 @@
   <block id="2feeb126323f3368d5b67555099e8c26" category="list-text">_&lt;RoleARN&gt;_ deve essere sostituito con uno dei seguenti elementi:</block>
   <block id="64382286854eaefaa762d894a81fc3ff" category="list-text">Se un data broker è stato installato manualmente su un host Linux, _RoleARN_ dovrebbe essere l'ARN dell'utente AWS per cui hai fornito le credenziali AWS durante l'implementazione di un data broker.</block>
   <block id="e2fd71d5e0089aec445e3585846600a5" category="list-text">Se un broker di dati è stato implementato in AWS utilizzando il modello CloudFormation, _RoleARN_ deve essere l'ARN del ruolo IAM creato dal modello.</block>
-  <block id="e12f2cb93ea8b0df53b39ccf052346cd" category="paragraph">Per trovare il ruolo ARN, accedere alla console EC2, selezionare l'istanza del broker di dati e fare clic sul ruolo IAM nella scheda Description (Descrizione). Viene visualizzata la pagina Summary (Riepilogo) nella console IAM che contiene il ruolo ARN.</block>
   <block id="27b29b1148f0a8d10712b93a6b2f07c0" category="inline-image-macro">Una schermata della console AWS IAM che mostra un ruolo ARN.</block>
   <block id="5413d4eaee8e3ec886af67b45688f61a" category="paragraph"><block ref="5413d4eaee8e3ec886af67b45688f61a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c398ecad8f5257d018a9dbbc98e011b" category="section-title">[[blob]]requisiti di storage di Azure Blob</block>
@@ -547,15 +522,11 @@
   <block id="df8514e24a07bfd81c667163f17fbec0" category="paragraph">Sono supportate tutte le regioni, ad eccezione di quelle della Cina, degli Stati Uniti e del DOD.</block>
   <block id="cd0559cbb36e8ae61712a5e3085023f0" category="section-title">Stringa di connessione per le relazioni che includono Azure Blob e NFS/SMB</block>
   <block id="6b2af6431dae2fed1f81892a707f99c4" category="paragraph">Quando si crea una relazione di sincronizzazione tra un container Azure Blob e un server NFS o SMB, è necessario fornire una copia BlueXP e la sincronizzazione con la stringa di connessione dell'account di storage:</block>
-  <block id="1e9af9bf420c920c526a831d6d40e038" category="inline-image-macro">Mostra una stringa di connessione, disponibile dal portale Azure selezionando un account di storage e facendo clic su Access keys (chiavi di accesso).</block>
-  <block id="0898c993025b0ff5f0e5ec87ebf5842d" category="paragraph"><block ref="0898c993025b0ff5f0e5ec87ebf5842d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b353a92f9cd802272f6be2754b692e1" category="inline-link">firma di accesso condivisa</block>
   <block id="4910e65af2eedc6fa7ed53c1aebddd87" category="paragraph">Se si desidera sincronizzare i dati tra due contenitori Azure Blob, la stringa di connessione deve includere un<block ref="1b83926908223c09ad8189ca7e78f06a" category="inline-link-rx"></block> (SAS). È inoltre possibile utilizzare un SAS durante la sincronizzazione tra un container Blob e un server NFS o SMB.</block>
   <block id="f59a16e82b8115f2b51037c416a69a67" category="paragraph">Il SAS deve consentire l'accesso al servizio Blob e a tutti i tipi di risorse (Servizio, container e oggetto). Il SAS deve includere anche le seguenti autorizzazioni:</block>
   <block id="eca1274468926e041a10a4b1a84c2e53" category="list-text">Per il contenitore Blob di origine: Read and List (lettura ed elenco)</block>
   <block id="4f3d02d4ca2c2acd501754f1c7f092b8" category="list-text">Per il contenitore Blob di destinazione: Lettura, scrittura, elenco, Aggiungi e Crea</block>
-  <block id="6d984d40359970bc3ca298e54c9c10ee" category="inline-image-macro">Mostra una firma di accesso condivisa, disponibile dal portale Azure selezionando un account di storage e facendo clic su Firma di accesso condivisa.</block>
-  <block id="9e1406ab3768b6fdb53c46936555e01f" category="paragraph"><block ref="9e1406ab3768b6fdb53c46936555e01f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9885ac123b78188871df5097c105004e" category="admonition">Se si sceglie di implementare una relazione di sincronizzazione continua che include un container Azure Blob, è possibile utilizzare una stringa di connessione normale o una stringa di connessione SAS. Se si utilizza una stringa di connessione SAS, non deve essere impostata in modo che scada nel prossimo futuro.</block>
   <block id="46cfdef183861f5cc6c515d080dcee57" category="paragraph">Quando si crea una relazione di sincronizzazione che include Azure Data Lake, è necessario fornire una copia BlueXP e sincronizzarla con la stringa di connessione dell'account di storage. Deve essere una stringa di connessione regolare e non una firma di accesso condivisa (SAS).</block>
   <block id="93751358816dca5a6ae146bcd1bed8e1" category="section-title">Requisito Azure NetApp Files</block>
@@ -695,7 +666,6 @@
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quattro</block>
   <block id="6f03cbd3fc922dc5d183fbe3d74efdce" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Crea la tua prima relazione di sincronizzazione</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link">BlueXP</block>
-  <block id="5a6f95f0d3a768c4ec5fabda878a438c" category="paragraph">Accedere a.<block ref="a52ee1b87e73428b189d0907dc7fe59b" category="inline-link-rx"></block>, Fare clic su *Sync*, quindi trascinare le selezioni per l'origine e la destinazione. Seguire le istruzioni per completare la configurazione. <block ref="484d4f19cf4f8d33cb3a1a91aa23f363" category="inline-link-macro-rx"></block>.</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Cinque</block>
   <block id="157e0bfc3909da4f9907f6377e70c5d2" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Paga le tue relazioni di sincronizzazione al termine della prova gratuita</block>
   <block id="f55ed3a5508f0e4f48d2c11dc6e34613" category="paragraph">Iscriviti ad AWS o Azure per pagare a consumo o per pagare annualmente. Oppure acquistare le licenze direttamente da NetApp. Basta andare alla pagina License Settings (Impostazioni di licenza) in BlueXP copy (Copia BlueXP) e sincronizzarla per configurarla. <block ref="3cd689475b04fdbdf7fafd004b01a742" category="inline-link-macro-rx"></block>.</block>
@@ -711,7 +681,6 @@
   <block id="e83655905b13c4a3bc8d7de2a55ecea8" category="inline-link-macro">Scopri di più sull'opzione Continuous Sync</block>
   <block id="3fb0e4028062069b21887e1408a76464" category="list-text">Le autorizzazioni "pubsub.*" e "storage.bucket.update" sono necessarie solo se si intende attivare l'impostazione di Continuous Sync su una relazione di sincronizzazione tra Google Cloud Storage e un'altra posizione di cloud storage. <block ref="5354423db3737fe63814ca7ea57f2c4c" category="inline-link-macro-rx"></block>.</block>
   <block id="0fbb3a69ab0abf1cabee38002a3846f3" category="paragraph">Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Google Cloud quando si crea una relazione di sincronizzazione.</block>
-  <block id="20ef58d225f15c6c7617c04b34bd0ff8" category="list-text">Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Google Cloud Platform*.</block>
   <block id="3a22f44ed11b974b3666e987fe41b909" category="paragraph"><block ref="3a22f44ed11b974b3666e987fe41b909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc35ce1752664930f658f7059d7b8f9c" category="list-text">Se richiesto, accedere con l'account Google.</block>
   <block id="29b28ad1793cec26548948fbe79ebfd5" category="paragraph">Il modulo è di proprietà e ospitato da Google. Le tue credenziali non vengono fornite a NetApp.</block>
@@ -720,18 +689,14 @@
   <block id="0cbd6997458c08d325b5359db2d6b231" category="inline-image-macro">Una schermata che mostra le informazioni necessarie per implementare un data broker in Google Cloud.</block>
   <block id="dde6927c09ef26c282cb0cbb7b055953" category="paragraph"><block ref="dde6927c09ef26c282cb0cbb7b055953" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a38666aae985ff4945ff1199551e9d0" category="paragraph">Se è necessario un proxy per l'accesso a Internet, il proxy deve trovarsi in Google Cloud e utilizzare lo stesso account di servizio del data broker.</block>
-  <block id="7ba9b4e54874f0450b8869bc6d72ee86" category="list-text">Una volta che il data broker è disponibile, fare clic su *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizzazione BlueXP).</block>
   <block id="d18db3d9c5f8587fa64b4e04218dc914" category="paragraph">L'implementazione dell'istanza richiede da 5 a 10 minuti circa. È possibile monitorare l'avanzamento del servizio di copia e sincronizzazione BlueXP, che si aggiorna automaticamente quando l'istanza è disponibile.</block>
   <block id="ed7160396fcfefca3c1997b02ccbe37c" category="paragraph">Hai implementato un data broker in Google Cloud e creato una nuova relazione di sincronizzazione. Puoi utilizzare questo data broker con ulteriori relazioni di sincronizzazione.</block>
   <block id="8743cf4fd5bd75723f626be1d4af6bb5" category="section-title">Fornire le autorizzazioni per utilizzare i bucket in altri progetti Google Cloud</block>
   <block id="33969e378e95c52b40733d56432c09ea" category="paragraph">Quando crei una relazione di sincronizzazione e scegli Google Cloud Storage come origine o destinazione, BlueXP Copy and Sync ti consente di scegliere tra i bucket che l'account di servizio del broker di dati dispone delle autorizzazioni per l'utilizzo. Per impostazione predefinita, sono inclusi i bucket che si trovano nel _stesso_ progetto dell'account di servizio del broker di dati. Tuttavia, è possibile scegliere i bucket di _altri_ progetti se si forniscono le autorizzazioni necessarie.</block>
   <block id="6ab8649cc222312c90daa98ef292a592" category="list-text">Aprire la console di Google Cloud Platform e caricare il servizio Cloud Storage.</block>
-  <block id="a0f456d59c57c1111f650c11ad24fa5d" category="list-text">Fare clic sul nome del bucket che si desidera utilizzare come origine o destinazione in una relazione di sincronizzazione.</block>
-  <block id="715460ccdde6385d4b2f9b34475e2704" category="list-text">Fare clic su *Permissions*.</block>
   <block id="75d2935b39ceeb13d10ba4ced792a75b" category="list-text">Immettere il nome dell'account di servizio del broker di dati.</block>
   <block id="bee41d170929fb7fc4e79dde87e71a86" category="inline-xref">le stesse autorizzazioni illustrate in precedenza</block>
   <block id="babe42abe7decc70b98a517bfcc466aa" category="list-text">Selezionare un ruolo che fornisce <block ref="bcb4c6e7b3e58289927e5f4cf9be10af" category="inline-xref-macro-rx"></block>.</block>
-  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Fare clic su *Save* (Salva).</block>
   <block id="18e32f4b46f7365779a3d1fe9eb08721" category="paragraph">Quando si imposta una relazione di sincronizzazione, è ora possibile scegliere tale bucket come origine o destinazione nella relazione di sincronizzazione.</block>
   <block id="9177317d32a41a0982be70109425240b" category="section-title">Dettagli sull'istanza di VM del data broker</block>
   <block id="6ea6212f5be2cc7885ac1f6d832f818a" category="paragraph">BlueXP copy and Sync crea un data broker in Google Cloud utilizzando la seguente configurazione.</block>
@@ -767,15 +732,12 @@
   <block id="3a3d1b7e5044442dcfbd5cd464cc3e74" category="list-text">Quando si crea una nuova relazione di sincronizzazione</block>
   <block id="d55c5ae4dbd0da4961b63d579f9712fd" category="inline-link-macro">Scopri come creare un nuovo data broker quando crei una relazione di sincronizzazione</block>
   <block id="c7b4e71c7182550e433faac117c2ecfb" category="paragraph"><block ref="331eae664c6d6049ca8cf9db41aef0e1" category="inline-link-macro-rx"></block>.</block>
-  <block id="6dac2c23bc94d633506738bd36101caa" category="list-text">Dalla pagina *Gestisci data broker* facendo clic su *Aggiungi nuovo data broker* per creare il data broker in un nuovo gruppo</block>
   <block id="33356a7534e9c58e7ebf9c0a2a815a6a" category="list-text">Dalla pagina *Gestisci data broker* creando un nuovo data broker in un gruppo esistente</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">Prima di iniziare</block>
   <block id="035ddc07f088acce2ce7b9f5f3adbf75" category="list-text">Non è possibile aggiungere broker di dati a un gruppo che gestisce una relazione di sincronizzazione crittografata.</block>
   <block id="bd7c77e0797aa0ace4fe53476f5bd1eb" category="list-text">Se si desidera creare un data broker in un gruppo esistente, il data broker deve essere un data broker on-premise o lo stesso tipo di data broker.</block>
   <block id="cdb42fff9480ae666d8bc83254c6669c" category="paragraph">Ad esempio, se un gruppo include un broker di dati AWS, è possibile creare un broker di dati AWS o un broker di dati on-premise in quel gruppo. Non puoi creare un data broker Azure o un data broker Google Cloud perché non sono dello stesso tipo di data broker.</block>
   <block id="df41669b003a060e8aaf939d172dabdc" category="list-title">Procedura per creare un data broker in un nuovo gruppo</block>
-  <block id="01139d234037ac0c0218e33f45274355" category="list-text">Fare clic su *Sync &gt; Manage Data Broker* (Sincronizza &gt; Gestisci data Broker).</block>
-  <block id="ce4433b25c45524977fc8fe7cbdf459c" category="list-text">Fare clic su *Aggiungi nuovo Data Broker*.</block>
   <block id="802f803fcc1e47690eb3743e68b82a33" category="list-text">Seguire le istruzioni per creare il data broker.</block>
   <block id="8eb912b10c5a70a32cb5864415b764bb" category="paragraph">Per assistenza, consultare le seguenti pagine:</block>
   <block id="0b217f05323b361308650155f01a7091" category="inline-link-macro">Creare un data broker in AWS</block>
@@ -787,24 +749,18 @@
   <block id="85e5ddcb30088cd6cfefc0e824599627" category="inline-link-macro">Installazione del data broker su un host Linux</block>
   <block id="5fc5be02ef143289af0e6a031decff5d" category="list-text"><block ref="5fc5be02ef143289af0e6a031decff5d" category="inline-link-macro-rx"></block></block>
   <block id="b20c8730a010d433fedb7241d0a0335a" category="list-title">Procedura per creare un data broker in un gruppo esistente</block>
-  <block id="9c129f9a970d427b507541a4c3a7e53a" category="list-text">Fare clic sul menu delle azioni e selezionare *Add Data Broker*.</block>
   <block id="b65b4c1a581a43f257ad99ae84281816" category="inline-image-macro">Una schermata del menu di azione disponibile per ogni singolo broker di dati in un gruppo.</block>
   <block id="2de4e7eeead88f538b8cd1733c76e3a6" category="paragraph"><block ref="2de4e7eeead88f538b8cd1733c76e3a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b86abc18838bbcc96f4aba5f9e7400b2" category="list-text">Seguire le istruzioni per creare il data broker nel gruppo.</block>
   <block id="f896777e7d9a31e6d6d8eb4d4bbff98b" category="section-title">Modificare il nome di un gruppo</block>
   <block id="d673b528f864db55fcb67876966355b2" category="paragraph">Modificare il nome di un gruppo di broker di dati in qualsiasi momento.</block>
-  <block id="6101d898adb1b689572ae10844666fb9" category="list-text">Fare clic sul menu delle azioni e selezionare *Edit Group Name* (Modifica nome gruppo).</block>
   <block id="81a916358892fc8fbd08a770c2e50715" category="paragraph"><block ref="81a916358892fc8fbd08a770c2e50715" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="155ba6c2c0d0fdfa0760ba73549d665c" category="list-text">Immettere un nuovo nome e fare clic su *Save* (Salva).</block>
   <block id="0be09b84a59e39ca9ea4c3338ff803ea" category="paragraph">BlueXP copy and Sync aggiorna il nome del gruppo di broker di dati.</block>
   <block id="895f6ee3fb48280aa9fdce9f1c30aa6d" category="section-title">Configurare una configurazione unificata</block>
   <block id="b913043c4767c72e8bbb3ed88c33dd15" category="paragraph">Se una relazione di sincronizzazione rileva errori durante il processo di sincronizzazione, unificare la concorrenza del gruppo di broker di dati può aiutare a ridurre il numero di errori di sincronizzazione. Tenere presente che le modifiche alla configurazione del gruppo possono influire sulle prestazioni rallentando il trasferimento.</block>
   <block id="e0341128a5853714165581951816b70b" category="paragraph">Si sconsiglia di modificare la configurazione autonomamente. È necessario consultare NetApp per capire quando modificare la configurazione e come modificarla.</block>
-  <block id="6fea4f8d81c041ddb786f1edf604f6b0" category="list-text">Fare clic su *Manage Data Broker* (Gestisci data Broker).</block>
-  <block id="947dda123a9676ba06895d96ee598405" category="list-text">Fare clic sull'icona Impostazioni per un gruppo di broker di dati.</block>
   <block id="270f82e457e8fa76d7c5a3cc51be200a" category="inline-image-macro">Una schermata che mostra l'icona Impostazioni per un gruppo di broker di dati.</block>
   <block id="e7670e4280933a11f42bb2080cc42f84" category="paragraph"><block ref="e7670e4280933a11f42bb2080cc42f84" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28d40eeab8fd28bbdf5b092f4784b274" category="list-text">Modificare le impostazioni in base alle necessità, quindi fare clic su *Unify Configuration* (Unifica configurazione).</block>
   <block id="63c7b65895eb2fbd662e3ab0e4de3d12" category="list-text">È possibile scegliere e scegliere le impostazioni da modificare, senza dover modificare tutte e quattro le impostazioni contemporaneamente.</block>
   <block id="ee04adf201931e953bab143cd61c5e34" category="list-text">Dopo l'invio di una nuova configurazione a un data broker, il data broker si riavvia automaticamente e utilizza la nuova configurazione.</block>
   <block id="76535c60f4fe9b5bca01e0204ab6c5e3" category="list-text">Questa modifica può richiedere fino a un minuto ed è visibile nell'interfaccia di copia e sincronizzazione di BlueXP.</block>
@@ -818,18 +774,13 @@
   <block id="3e0e9fccf9e35eb1a06e1c36bf885a2f" category="list-text">Non è possibile spostare un broker di dati da o verso un gruppo che gestisce le relazioni di sincronizzazione crittografate.</block>
   <block id="db90b652da494a61a1c01e5e5aef4315" category="list-text">Non è possibile spostare un data broker attualmente in fase di implementazione.</block>
   <block id="40c73a255636bb999d6831cf4ac7e7a1" category="inline-image-macro">Una schermata del pulsante che consente di espandere l'elenco dei broker di dati in un gruppo.</block>
-  <block id="447de7a1cac78a70d6df20a5b1ee66aa" category="list-text">Fare clic su <block ref="787db84ec9404328cdc4a6264b9959c1" category="inline-image-macro-rx" type="image"></block> per espandere l'elenco dei broker di dati in un gruppo.</block>
-  <block id="dda0c1f183c1fccf92fffcd171b23e21" category="list-text">Fare clic sul menu delle azioni di un broker di dati e selezionare *Move Data Broker* (Sposta broker di dati).</block>
   <block id="fa09436a4bdfebc03ee36943e6a1b450" category="inline-image-macro">Una schermata del menu di azione disponibile per ogni singolo gruppo di broker di dati.</block>
   <block id="89c00533408de9d6ad1e44640394b315" category="paragraph"><block ref="89c00533408de9d6ad1e44640394b315" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cfd516ad37b4df608c16efb09914e1fc" category="list-text">Creare un nuovo gruppo di broker di dati o selezionare un gruppo di broker di dati esistente.</block>
-  <block id="55d7c27d3127f4494c358b638f4fc6ff" category="list-text">Fare clic su *Sposta*.</block>
   <block id="3799f9b3d57a6e9275c442207f538a7e" category="paragraph">BlueXP copy and Sync sposta il broker di dati in un nuovo gruppo di broker di dati o in un gruppo di broker di dati esistente. Se nel gruppo precedente non sono presenti altri broker di dati, BlueXP copia e Sync lo elimina.</block>
   <block id="dbe6fde8cda66c70d52ac330a93b530e" category="section-title">Aggiornare la configurazione del proxy</block>
   <block id="f646f203e1dead2c4f220dc5943aa058" category="paragraph">Aggiornare la configurazione del proxy per un data broker aggiungendo dettagli su una nuova configurazione del proxy o modificando la configurazione del proxy esistente.</block>
-  <block id="550a2db189a4eb50771eeb91357d19cd" category="list-text">Fare clic sul menu delle azioni di un data broker e selezionare *Edit Proxy Configuration* (Modifica configurazione proxy).</block>
   <block id="85a4803f127edd3390d65e41d8aaad98" category="list-text">Specificare i dettagli relativi al proxy: Nome host, numero di porta, nome utente e password.</block>
-  <block id="04252e4e5460971d7f33943bd841f366" category="list-text">Fare clic su *Aggiorna*.</block>
   <block id="75ce211e28d904715d9b8261ec131122" category="paragraph">BlueXP copy and Sync aggiorna il data broker per utilizzare la configurazione proxy per l'accesso a Internet.</block>
   <block id="892e03917a339df2d2eb9e4afba21039" category="section-title">Visualizzare la configurazione di un data broker</block>
   <block id="8113db3adc828428b3180d7dd38311d0" category="paragraph">È possibile visualizzare i dettagli di un broker di dati per identificare elementi come il nome host, l'indirizzo IP, la CPU e la RAM disponibili e altro ancora.</block>
@@ -841,7 +792,6 @@
   <block id="594a0b982812cc261e0948d091016333" category="list-text">Configurazione: Dettagli sui due tipi di processi principali del data broker: Scanner e transferrer</block>
   <block id="11a83e6b96c9efdc97f63abd9c00ad55" category="admonition">Lo scanner esegue la scansione dell'origine e della destinazione e decide cosa copiare. Il trasferitore esegue la copia effettiva. Il personale NetApp potrebbe utilizzare questi dettagli di configurazione per suggerire azioni in grado di ottimizzare le performance.</block>
   <block id="4e2a058312f76a6733fa5f04b09d0b12" category="inline-image-macro">Una schermata del pulsante che consente di espandere i dettagli di un broker di dati.</block>
-  <block id="d9428db3891df0c6837599d9004dc84b" category="list-text">Fare clic su <block ref="470bfce73839324984be8a7b9dbc97eb" category="inline-image-macro-rx" type="image"></block> per visualizzare i dettagli di un broker di dati.</block>
   <block id="b3f5b024c925d18f1fad38e34f6adeb7" category="inline-image-macro">Una schermata di informazioni su un broker di dati.</block>
   <block id="2aca713208ede5e338187d8acfc59e45" category="paragraph"><block ref="2aca713208ede5e338187d8acfc59e45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d84b9ff2a26165aea44e08c53ac24735" category="section-title">Affronta i problemi con un data broker</block>
@@ -858,15 +808,11 @@
   <block id="3eabf8e614efa513058a3d3dbb1a59e1" category="list-title">Cose che dovresti sapere</block>
   <block id="9ec234cbc1e7e2a4d0c8060ffabfb32b" category="list-text">BlueXP copy and Sync elimina un gruppo quando si rimuove l'ultimo broker di dati dal gruppo.</block>
   <block id="86809a552db6628d8c5fdff212824259" category="list-text">Non è possibile rimuovere l'ultimo broker di dati da un gruppo se esiste una relazione che utilizza tale gruppo.</block>
-  <block id="9b1ed3beff3574463addd20120a54d9d" category="list-text">Fare clic sul menu delle azioni di un broker di dati e selezionare *Remove Data Broker* (Rimuovi broker di dati).</block>
   <block id="72d8c1c0fb68d009ccb1cae8adc51597" category="paragraph"><block ref="72d8c1c0fb68d009ccb1cae8adc51597" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c3bab48341baf2f6368e3f474352dfef" category="list-text">Fare clic su *Rimuovi Data Broker*.</block>
   <block id="5580b0c0f9a8c805d0867140e619bdbc" category="paragraph">BlueXP copy and Sync rimuove il broker di dati dal gruppo.</block>
   <block id="2bbd7c4d9d525b0e8675bf3663179545" category="section-title">Eliminare un gruppo di broker di dati</block>
   <block id="f76953279bf21baacbab7d3d421f7219" category="paragraph">Se un gruppo di broker di dati non gestisce più alcuna relazione di sincronizzazione, è possibile eliminare il gruppo, che rimuove tutti i broker di dati dalla copia e dalla sincronizzazione di BlueXP.</block>
   <block id="82718ccbb61c848a8534b980ed743b3c" category="paragraph">I broker di dati che BlueXP copia e rimuove vengono cancellati solo dalla copia BlueXP e dai record di Sync. Dovrai eliminare manualmente l'istanza del data broker dal tuo cloud provider e da eventuali risorse cloud aggiuntive.</block>
-  <block id="4caa7a774039d94c9779b6e68946536b" category="list-text">Fare clic sul menu delle azioni e selezionare *Delete Group* (Elimina gruppo).</block>
-  <block id="a6f5a3bf619c49f582460d312e4f123a" category="list-text">Per confermare, inserire il nome del gruppo e fare clic su *Delete Group* (Elimina gruppo).</block>
   <block id="9f6a182b3e5ab93e119458359d7d626f" category="paragraph">BlueXP copy and Sync rimuove i broker di dati ed elimina il gruppo.</block>
   <block id="52c793499d4fd02f2f2330b970f6162b" category="summary">Quando crei un nuovo data broker, scegli l'opzione on-Prem Data Broker per installare il software data broker su un host Linux on-premise o su un host Linux esistente nel cloud. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
   <block id="890130d57677e99876dfa01749264d4d" category="paragraph">Quando crei un nuovo gruppo di broker di dati, scegli l'opzione on-Prem Data Broker per installare il software di broker di dati su un host Linux on-premise o su un host Linux esistente nel cloud. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
@@ -910,7 +856,6 @@
   <block id="7af7eb8440af6bb7f9ffd64569367b5b" category="paragraph">L'accesso ad Azure viene definito in base alla relazione fornendo un account di storage e una stringa di connessione nella procedura guidata delle relazioni di sincronizzazione.</block>
   <block id="b6e5e048443785c8f424048cf1b9e40e" category="section-title">Installazione del data broker</block>
   <block id="1944006c73d02c718c69408861e1307c" category="paragraph">È possibile installare un data broker su un host Linux quando si crea una relazione di sincronizzazione.</block>
-  <block id="20bdbeece7707eb8c81d92234512a38d" category="list-text">Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *on-Prem Data Broker*.</block>
   <block id="df89dda1d1c7ea3cd71a127402ea04d7" category="paragraph"><block ref="df89dda1d1c7ea3cd71a127402ea04d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8020038698547625e7abf1eda36c8877" category="admonition">Anche se l'opzione è denominata *_on-Prem_ Data Broker*, si applica a un host Linux on-premise o nel cloud.</block>
   <block id="023c2e07bedf559d5fb81f1e623f1b6f" category="paragraph">La pagina delle istruzioni viene caricata a breve. È necessario seguire queste istruzioni, che includono un link univoco per scaricare il programma di installazione.</block>
@@ -989,18 +934,14 @@
   <block id="0be7700ba4689baa197ac3c2b94928a5" category="inline-link">Documentazione di Azure: Creare e utilizzare una coppia di chiavi SSH pubblico-privato per macchine virtuali Linux in Azure</block>
   <block id="4e2153a19cb9d86adf7b5ba332e78a45" category="paragraph">Per informazioni sulla creazione di una coppia di chiavi, fare riferimento a.<block ref="3bfff4aa3d3a3eae965cce9b3b615a4a" category="inline-link-rx"></block>.</block>
   <block id="896293b91a375c72889dc16e1c816e72" category="paragraph">Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Azure quando si crea una relazione di sincronizzazione.</block>
-  <block id="01341420bc02ccee78de02f8a53bc10d" category="list-text">Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Microsoft Azure*.</block>
   <block id="ff7156dc72b8081c2a9c6e0150647ace" category="paragraph"><block ref="ff7156dc72b8081c2a9c6e0150647ace" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="75dce0fc68d0351230bf9f9d8de2431c" category="list-text">Se richiesto, accedere all'account Microsoft. Se non viene richiesto, fare clic su *Accedi ad Azure*.</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">Il modulo è di proprietà e ospitato da Microsoft. Le tue credenziali non vengono fornite a NetApp.</block>
   <block id="eb326e1f884a5d84e7b70887f7874b42" category="list-text">Scegliere una posizione per il data broker e inserire i dettagli di base sulla macchina virtuale.</block>
   <block id="4e150fdd87e97e0d1398184219062d41" category="inline-image-macro">Una schermata della pagina di implementazione di Azure che mostra i seguenti campi: Subscription, Azure Region, VNET, Subnet, VM Name, Nome utente, metodo di autenticazione e gruppo di risorse.</block>
   <block id="f38f2fdb5d5d38ec31dd9074ee28e224" category="paragraph"><block ref="f38f2fdb5d5d38ec31dd9074ee28e224" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c8ca1d8358e87cff0b7449f10193445" category="admonition">Se si prevede di implementare una relazione di sincronizzazione continua, è necessario assegnare un ruolo personalizzato al proprio data broker. Questa operazione può essere eseguita anche manualmente dopo la creazione del broker.</block>
   <block id="2eabf7b67b6c5e6d78b08dd754db7951" category="list-text">Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet in VNET.</block>
-  <block id="9a7c0eeeaa34923c384afd6768155386" category="list-text">Fare clic su *Continue* (continua) e mantenere aperta la pagina fino al completamento dell'implementazione.</block>
   <block id="d053334dcf5dac4968bf6d994e4ed7ec" category="paragraph">Il processo può richiedere fino a 7 minuti.</block>
-  <block id="77be4f1e4f287772c97ec1d404c65d79" category="list-text">In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), fare clic su *Continue* (continua) una volta che il data broker è disponibile.</block>
   <block id="affdd8fc6be1e86de36efaee713f54e2" category="paragraph">Hai implementato un data broker in Azure e creato una nuova relazione di sincronizzazione. Puoi utilizzare questo data broker con ulteriori relazioni di sincronizzazione.</block>
   <block id="3ce174ce4b84d9bb24dbad7ede08fc56" category="sidebar-title">Viene visualizzato un messaggio che richiede il consenso dell'amministratore?</block>
   <block id="709a77b53428394651e5702dc1d6cb78" category="paragraph">Se Microsoft notifica che è richiesta l'approvazione dell'amministratore perché la copia e la sincronizzazione di BlueXP richiedono l'autorizzazione per accedere alle risorse dell'organizzazione per conto dell'utente, sono disponibili due opzioni:</block>
@@ -1058,7 +999,6 @@
   <block id="39a513eb21ebe3c708dcaa6942b6d31d" category="list-text">Se il broker di dati di origine agisce come listener, deve essere un nuovo broker di dati.</block>
   <block id="8da3b5473f99b37e0a7e71a701f5a400" category="list-text">Se hai bisogno di un nuovo data broker, BlueXP Copy and Sync ti richiede le istruzioni per l'installazione. Puoi implementare il data broker nel cloud o scaricare uno script di installazione per il tuo host Linux.</block>
   <block id="cdba25c9167c61c57652be77cd6bc4e2" category="list-text">*Directory*: Scegliere le directory che si desidera sincronizzare selezionando tutte le directory oppure eseguendo il drill-down e selezionando una sottodirectory.</block>
-  <block id="de6d5031bb824b97bc739136ed0ca12f" category="paragraph">Fare clic su *Filter Source Objects* (Filtra oggetti origine) per modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.</block>
   <block id="17cc825827711a2fbb35f034caf806fc" category="inline-image-macro">Una schermata che mostra l'opzione per selezionare una directory di primo livello, eseguire il drill-down e selezionare l'opzione Filter Source Objects (Filtra oggetti di origine).</block>
   <block id="ec512e2862c8dda2563d8ba47436b65b" category="paragraph"><block ref="ec512e2862c8dda2563d8ba47436b65b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60af823ef7e6a707f1ea0d358c745e23" category="list-text">*Server NFS di destinazione*/*Azure NetApp Files di destinazione*: Scegliere la versione di NFS, quindi inserire una nuova destinazione NFS o selezionare un server esistente.</block>
@@ -1069,10 +1009,8 @@
   <block id="d7d921b770410daba11fa5b08364a9b2" category="paragraph"><block ref="d7d921b770410daba11fa5b08364a9b2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d745b7ea2fe3a1dffe9d30c5f25e422b" category="list-text">*Directory di destinazione*: Selezionare una directory di primo livello oppure eseguire il drill-down per selezionare una sottodirectory esistente o per creare una nuova cartella all'interno di un'esportazione.</block>
   <block id="b1574b82988204b1ea2b4391bc2b62cc" category="list-text">*Impostazioni*: Consente di definire la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.</block>
-  <block id="376588358d7683b8caa450f37e1678c1" category="list-text">*Revisione*: Esaminare i dettagli della relazione di sincronizzazione, quindi fare clic su *Crea relazione*.</block>
   <block id="31b876010e591a7e8b00068dcabd80b7" category="inline-image-macro">Una schermata che mostra la schermata di revisione. Mostra i server NFS, i broker di dati e le informazioni di rete relative a ciascuno di essi.</block>
   <block id="39cd9e3fa50eeb2b66a750a04c154460" category="paragraph"><block ref="39cd9e3fa50eeb2b66a750a04c154460" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2eda214e743322a19face3c28269f0fc" category="paragraph">BlueXP copy and Sync inizia a creare la nuova relazione di sincronizzazione. Al termine, fare clic su *View in Dashboard* (Visualizza in Dashboard) per visualizzare i dettagli sulla nuova relazione.</block>
   <block id="3d4a1e312061c2a0e1171d137dc166dd" category="summary">Se necessario, eseguire uno script di disinstallazione per rimuovere il data broker, i pacchetti e le directory creati al momento dell'installazione del data broker.</block>
   <block id="e6f506127d5f6704ecc31da23c753df9" category="doc">Disinstallazione del data broker</block>
   <block id="dd8a8a39c3cdcebc155728bf563bc1e1" category="paragraph">Se necessario, eseguire uno script di disinstallazione per rimuovere il data broker e i pacchetti e le directory creati al momento dell'installazione del data broker.</block>
@@ -1250,7 +1188,6 @@
   <block id="b0ca823b10873e7a925ef5adac883c88" category="section-title">Da SFTP a S3</block>
   <block id="cc7323173039fb96b345cbcfd28877b6" category="paragraph">La creazione di una relazione di sincronizzazione da SFTP ad Amazon S3 è ora supportata nell'interfaccia utente. Questa relazione di sincronizzazione era precedentemente supportata solo con l'API.</block>
   <block id="5eafde1d0f1c17904e2751e719da1538" category="section-title">Miglioramento della vista tabella</block>
-  <block id="dae101521243289c0a713ed367646615" category="paragraph">Abbiamo riprogettato la vista tabella sul dashboard per una maggiore facilità di utilizzo. Facendo clic su *ulteriori informazioni*, Cloud Sync filtra la dashboard per visualizzare ulteriori informazioni su tale relazione specifica.</block>
   <block id="90395f713f122ec567368986af441ba7" category="inline-image-macro">Una schermata della vista tabella nella dashboard.</block>
   <block id="464bce8418108e11fbc67663fc64376a" category="paragraph"><block ref="464bce8418108e11fbc67663fc64376a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="55692a3e08e518d1aa7c38db6b703907" category="section-title">Supporto per la regione di Jarkarta</block>
@@ -1450,20 +1387,15 @@
   <block id="3751024f8814dd0f9cc7022c63dd219d" category="section-title">Eseguire una sincronizzazione dei dati immediata</block>
   <block id="01db9e7829acc4899b2e0742925feea9" category="paragraph">Invece di attendere la successiva sincronizzazione pianificata, è possibile premere un pulsante per sincronizzare immediatamente i dati tra l'origine e la destinazione.</block>
   <block id="0f5f1ed19e5f92c9f1aad34019c5c065" category="inline-image-macro">Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione</block>
-  <block id="781a4e1aefac4f9409210de2df0f2992" category="list-text">Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e fare clic su <block ref="1452da4272733702009675a0aac63ae1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="90881819e96a317a0b9cbd8a17bea734" category="list-text">Fare clic su *Sincronizza ora*, quindi su *Sincronizza* per confermare.</block>
   <block id="1c21a7ebb7b558a51c4ebb47b152cbeb" category="paragraph">BlueXP copy and Sync avvia il processo di sincronizzazione dei dati per la relazione.</block>
   <block id="9011e4e296b23e35e2729606b1923581" category="paragraph">Accelera le performance di una relazione di sincronizzazione aggiungendo un broker di dati aggiuntivo al gruppo che gestisce la relazione. Il data broker aggiuntivo deve essere un _new_ data broker.</block>
   <block id="5e096b7a2c33e654f884053c567f3013" category="paragraph-title">Come funziona</block>
   <block id="30da1c6cc964eebe723aacff25362055" category="paragraph">Se il gruppo di broker di dati gestisce altre relazioni di sincronizzazione, anche il nuovo data broker aggiunto al gruppo accelera le performance di tali relazioni di sincronizzazione.</block>
   <block id="77835e3bdea4c9060a1ddb296840c2f2" category="list-text">Assicurarsi che almeno uno dei broker di dati esistenti nella relazione sia online.</block>
-  <block id="f0f405cf23a3551636665b7b031e8fac" category="list-text">Fare clic su *Accelerate* (accelera).</block>
   <block id="bef7c0526a136d74698b8d535b65bafd" category="list-text">Seguire le istruzioni per creare un nuovo data broker.</block>
   <block id="c8b8e3f1fbf3b731011ec3febff4966c" category="paragraph">BlueXP copy and Sync aggiunge il nuovo data broker al gruppo. Le performance della successiva sincronizzazione dei dati dovrebbero essere accelerate.</block>
   <block id="b9d30d436a8a56d3713a2ec699c1b4b4" category="paragraph">È possibile aggiornare il data broker con le credenziali più recenti dell'origine o della destinazione in una relazione di sincronizzazione esistente. L'aggiornamento delle credenziali può essere utile se le policy di sicurezza richiedono l'aggiornamento periodico delle credenziali.</block>
   <block id="9b4881b56a4bc61413ae1472c03cdd82" category="paragraph">L'aggiornamento delle credenziali è supportato con qualsiasi origine o destinazione per la quale BlueXP copy e Sync richiede credenziali per: Azure Blob, Box, IBM Cloud Object Storage, StorageGRID, ONTAP S3 Storage, SFTP e server SMB.</block>
-  <block id="bd815be6d32df77592fb5fe811a33258" category="list-text">Dal pannello di controllo di sincronizzazione, selezionare una relazione di sincronizzazione che richiede credenziali, quindi fare clic su *Aggiorna credenziali*.</block>
-  <block id="78529df6bbf68e1bc56a7c5921101ba9" category="list-text">Immettere le credenziali e fare clic su *Aggiorna*.</block>
   <block id="023dd20b31e9240e9be755e28a211310" category="paragraph">Nota sui server SMB: Se il dominio è nuovo, è necessario specificarlo quando si aggiornano le credenziali. Se il dominio non è stato modificato, non è necessario immetterlo di nuovo.</block>
   <block id="b4063d8a66bb919b1d1c590f9dd60cd7" category="paragraph">Se è stato immesso un dominio al momento della creazione della relazione di sincronizzazione, ma non si inserisce un nuovo dominio al momento dell'aggiornamento delle credenziali, la copia e la sincronizzazione di BlueXP continuano a utilizzare il dominio originale fornito.</block>
   <block id="818818202c085bda0f88a879413f81fd" category="paragraph">BlueXP copy and Sync aggiorna le credenziali sul data broker. Possono essere necessari fino a 10 minuti prima che il data broker inizi a utilizzare le credenziali aggiornate per le sincronizzazioni dei dati.</block>
@@ -1472,9 +1404,7 @@
   <block id="50685346648f799f564787da3aeaa3df" category="list-text">Modificare le impostazioni per una relazione di sincronizzazione:</block>
   <block id="e265f7dc29349c5c09e52af073ae2fdf" category="list-text">Attiva *Notifiche*.</block>
   <block id="f9d4f53357700da18c4c21765dd9a257" category="list-text">Se si desidera ricevere notifiche via email, configurare le impostazioni degli avvisi e delle notifiche:</block>
-  <block id="2c97c497a9405e946d3eb1dd6266fe96" category="list-text">Fare clic su *Impostazioni &gt; Impostazioni avvisi e notifiche*.</block>
   <block id="0f3cd015c1ca0bfb4d2fbb852b3d6a5e" category="list-text">Selezionare uno o più utenti e scegliere il tipo di notifica *Info*.</block>
-  <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">Fare clic su *Apply* (Applica).</block>
   <block id="0fe8794e82e0ba1ca2fb9f90b1e2041a" category="paragraph">Riceverai le notifiche di copia e sincronizzazione BlueXP nel Centro notifiche di BlueXP, con alcune notifiche inviate via email, se hai configurato questa opzione.</block>
   <block id="374e9d4e51accd7075f4287b4b793c1b" category="paragraph">Modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.</block>
   <block id="822ae51936517f095a62c2446cee4c00" category="list-text">Modificare le impostazioni.</block>
@@ -1519,7 +1449,6 @@
   <block id="b92f5c644d05d58f54475c2fe1234f54" category="list-text">ACL - Access Control List (elenco di controllo degli accessi)</block>
   <block id="2f30d04a17f7f45ef1c41f6e15ccc628" category="paragraph">BlueXP copy and Sync modifica la relazione di sincronizzazione con le nuove impostazioni.</block>
   <block id="f493e490805f4eb86f124bae3d9da833" category="paragraph">È possibile eliminare una relazione di sincronizzazione, se non è più necessario sincronizzare i dati tra l'origine e la destinazione. Questa azione non elimina il gruppo di broker di dati (o le singole istanze di broker di dati) e non elimina i dati dalla destinazione.</block>
-  <block id="68771d6d7b1536e9127a6d046d30c825" category="list-text">Fare clic su *Delete* (Elimina), quindi fare nuovamente clic su *Delete* (Elimina) per confermare.</block>
   <block id="d62aff038a63962fec73b4d2639d3ad3" category="paragraph">BlueXP copy and Sync elimina la relazione di sincronizzazione.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp fornisce supporto per BlueXP in diversi modi. Sono disponibili opzioni complete di supporto autonomo gratuito 24 ore su 24, 7 giorni su 7, come articoli della knowledge base (KB) e un forum della community. La registrazione al supporto include il supporto tecnico remoto via web ticketing.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Richiedi assistenza</block>
@@ -1538,10 +1467,7 @@
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Diamo valore al tuo contributo. Invia un feedback per aiutarci a migliorare BlueXP.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Crea un caso con il supporto NetApp</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Oltre alle opzioni di supporto autonomo sopra descritte, puoi collaborare con uno specialista del supporto NetApp per risolvere eventuali problemi dopo l'attivazione del supporto.</block>
-  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">In BlueXP, fare clic su *Guida &gt; supporto*.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Nella pagina *risorse*, scegliere una delle opzioni disponibili in supporto tecnico:</block>
-  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Fai clic su *Chiamaci* per parlare con qualcuno al telefono. Viene visualizzata una pagina su netapp.com che elenca i numeri di telefono che è possibile chiamare.</block>
-  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Fare clic su *Crea un caso* per aprire un ticket con uno specialista del supporto NetApp:</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Servizio*: Selezionare il servizio a cui è associato il problema. Ad esempio, BlueXP quando si tratta di un problema di supporto tecnico relativo a flussi di lavoro o funzionalità all'interno del servizio.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Ambiente di lavoro*: Se applicabile allo storage, selezionare *Cloud Volumes ONTAP* o *on-premise* e quindi l'ambiente di lavoro associato.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">L'elenco degli ambienti di lavoro rientra nell'ambito dell'account, dell'area di lavoro e del connettore BlueXP selezionato nel banner superiore del servizio.</block>
@@ -1553,7 +1479,6 @@
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Gli allegati sono limitati a 25 MB per file. Sono supportate le seguenti estensioni di file: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx e csv.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Schermata del modulo Crea un caso che consente di creare un caso con il supporto NetApp.</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Viene visualizzata una finestra a comparsa con il numero del caso di supporto. Uno specialista del supporto NetApp esaminerà il tuo caso e ti contatterà al più presto.</block>
-  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Per una cronologia dei casi di supporto, fare clic su *Impostazioni &gt; Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">È possibile che venga visualizzato il seguente messaggio di errore quando si tenta di creare un caso:</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"Non sei autorizzato a creare un caso per il servizio selezionato"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Utilizza la chat integrata nel prodotto</block>
@@ -1568,10 +1493,8 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">È possibile aggiungere o rimuovere colonne di interesse e filtrare il contenuto di colonne come priorità e Stato. Altre colonne offrono funzionalità di ordinamento.</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Per ulteriori informazioni, consulta la procedura riportata di seguito.</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">A livello di caso, offriamo la possibilità di aggiornare le note del caso o chiudere un caso che non è già in stato chiuso o in attesa di chiusura.</block>
-  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Fare clic su *Gestione casi* e, se richiesto, aggiungere l'account NSS a BlueXP.</block>
   <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La pagina *Gestione del caso* mostra i casi aperti relativi all'account NSS associato all'account utente BlueXP. Si tratta dello stesso account NSS visualizzato nella parte superiore della pagina *gestione NSS*.</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Se si desidera, modificare le informazioni visualizzate nella tabella:</block>
-  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">In *Organization's Cases* (casi dell'organizzazione), fare clic su *View* (Visualizza) per visualizzare tutti i casi associati alla società.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">Modificare l'intervallo di date scegliendo un intervallo di date esatto o scegliendo un intervallo di tempo diverso.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Una schermata dell'opzione sopra la tabella nella pagina di gestione del caso che consente di scegliere un intervallo di date esatto o gli ultimi 7 giorni, 30 giorni o 3 mesi.</block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrare il contenuto delle colonne.</block>
@@ -1581,7 +1504,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Un'icona con tre punti che compare nell'ultima colonna della tabella</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Visualizza caso*: Visualizza tutti i dettagli relativi a un caso specifico.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aggiorna note sul caso*: Fornisci ulteriori dettagli sul problema oppure seleziona *carica file* per allegare fino a un massimo di cinque file.</block>
-  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e fai clic su *Chiudi caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella.</block>
   <block id="f68b92ee815675ae3018eca060b553b7" category="summary">Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.</block>
   <block id="66a57cf55e06ad77b01c27e38766b83a" category="doc">Creazione e visualizzazione di report per ottimizzare la configurazione</block>
@@ -1589,10 +1511,7 @@
   <block id="d065612e0b27393ca9ed8b8e18bc869f" category="paragraph">Ogni report fornisce dettagli approfonditi su un percorso in una relazione di sincronizzazione. Ad esempio, il report di un file system mostra il numero di directory e file presenti, la distribuzione delle dimensioni dei file, la profondità e l'ampiezza delle directory e molto altro ancora.</block>
   <block id="0389649d1c6e65625a57cd6c84149999" category="section-title">Creazione di report</block>
   <block id="bcd0169de0ca7a58018cf173cdbb86e0" category="paragraph">Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.</block>
-  <block id="f538684aa236fdad4b93e1b71f94526f" category="list-text">Fare clic su *Sync &gt; Reports* (Sincronizza &gt; rapporti).</block>
   <block id="26126443d44ba2723fb7a7ede8dda75c" category="paragraph">I percorsi (origine o destinazione) in ciascuna delle relazioni di sincronizzazione vengono visualizzati in una tabella.</block>
-  <block id="1c64df2a4dcd75c3fa3f6d99a5843437" category="list-text">Nella colonna *azioni report*, selezionare un percorso specifico e fare clic su *Crea* oppure fare clic sul menu delle azioni e selezionare *Crea nuovo*.</block>
-  <block id="575833de1768effbb8d15904d2822d68" category="list-text">Quando il report è pronto, fare clic sul menu delle azioni e selezionare *Visualizza*.</block>
   <block id="94954fba60bab7206fb4f66c4a7750cb" category="paragraph">Ecco un report di esempio per un percorso del file system.</block>
   <block id="3cd71212de067629b841a10ceaf4f32f" category="inline-image-macro">Un report che mostra la quantità di elementi di sincronizzazione, le dimensioni del file, i massimi, i tempi di accesso, i tempi di modifica, e modificare l'ora.</block>
   <block id="a95d57514b72e95aeaca84b9f5d7e43a" category="paragraph"><block ref="a95d57514b72e95aeaca84b9f5d7e43a" category="inline-image-macro-rx" type="image"></block></block>
@@ -1601,23 +1520,17 @@
   <block id="a9c50da4c27210dd95cbf6916b6c3b34" category="paragraph"><block ref="a9c50da4c27210dd95cbf6916b6c3b34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03901baec19e5e2a784f13acaa06127a" category="section-title">Download di report</block>
   <block id="f0d2e62b1c7572c743aab0d7c9b969c5" category="paragraph">È possibile scaricare un report in formato PDF per visualizzarlo offline o condividerlo.</block>
-  <block id="4f1a7b585eef080503c8e5f586b7673e" category="list-text">Nella colonna *azioni report*, fare clic sul menu delle azioni e selezionare *Visualizza*.</block>
-  <block id="17b8d7c4db9e21e8c01f1b793f8bf325" category="list-text">Nella parte superiore destra del report, fare clic sul menu delle azioni e selezionare *Download pdf*.</block>
-  <block id="e45fcd91afd8b29019f92fa0f919f6d2" category="inline-image-macro">Una schermata dell'opzione Download pdf (Scarica pdf) che viene visualizzata dopo aver fatto clic sul menu delle azioni in un report.</block>
-  <block id="ef3e79a56ff208de546ac0714ccae4eb" category="paragraph"><block ref="ef3e79a56ff208de546ac0714ccae4eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90e1319509db72baceccb5d8f4c2c472" category="section-title">Visualizzazione degli errori dei report</block>
   <block id="33e1f542e7541a2a529927e0dfe10d00" category="paragraph">La tabella Paths (percorsi) indica se sono presenti errori nel report più recente. Un errore identifica un problema riscontrato da BlueXP durante la scansione del percorso.</block>
   <block id="3f1413ac0baff3149998bbd9b08637ab" category="paragraph">Ad esempio, un report potrebbe contenere errori di autorizzazione negata. Questo tipo di errore può influire sulla capacità di BlueXP Copy e Sync di eseguire la scansione dell'intero set di file e directory.</block>
   <block id="d86cb2fe66402168c1c894043151d228" category="paragraph">Dopo aver visualizzato l'elenco degli errori, è possibile risolvere i problemi ed eseguire nuovamente il report.</block>
   <block id="57ba4added426d6aea423b1e70f1b94c" category="list-text">Nella colonna *Errors*, identificare se in un report sono presenti errori.</block>
-  <block id="10a0d9a4ad96880fef72d02fd9dcd2c5" category="list-text">Se sono presenti errori, fare clic sulla freccia accanto al numero di errori.</block>
   <block id="d029ebc8f7b2e2aa789dc0e27797846f" category="inline-image-macro">Una schermata della tabella Paths che mostra il numero di errori e una piccola freccia cliccabile nella colonna Errors.</block>
   <block id="e01f862fe61f1c44179e61c69a18938d" category="paragraph"><block ref="e01f862fe61f1c44179e61c69a18938d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="591d860278697b4e6dbce26639961630" category="list-text">Utilizzare le informazioni contenute nell'errore per risolvere il problema.</block>
   <block id="aa8765cc437da97ac36fcf5b9e8bd67c" category="paragraph">Una volta risolto il problema, l'errore non dovrebbe apparire alla successiva esecuzione del report.</block>
   <block id="1b3463b3026822e4c8d6ad54c16a507a" category="section-title">Eliminazione dei report</block>
   <block id="37100a26242d4deb28feac7db8d366de" category="paragraph">È possibile eliminare un report contenente un errore risolto o se il report è correlato a una relazione di sincronizzazione rimossa.</block>
-  <block id="6d084eaa09a94fecc5582a104b0053da" category="list-text">Nella colonna *azioni report*, fare clic sul menu delle azioni di un percorso e selezionare *Elimina ultimo report* o *Elimina tutti i report*.</block>
   <block id="4051a60e091a5882a67c28985f8c22c7" category="list-text">Confermare che si desidera eliminare il rapporto o i rapporti.</block>
   <block id="9884de3e76b128738e9b044e854c59b2" category="summary">Quando si crea una relazione di sincronizzazione, il servizio di copia e sincronizzazione BlueXP copia i file dall'origine alla destinazione. Dopo la copia iniziale, il servizio sincronizza tutti i dati modificati ogni 24 ore.</block>
   <block id="1e0539ed84cecdd095f5fbe996a378b8" category="doc">Creare relazioni di sincronizzazione</block>
@@ -1632,7 +1545,6 @@
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">Lancio di Cloud Volumes ONTAP in Google Cloud</block>
   <block id="366f7e58814bef5e88fbb6881239ff46" category="inline-link">Aggiunta di sistemi Cloud Volumes ONTAP esistenti</block>
   <block id="e845620e391b62ad3163cdb0e100a862" category="inline-link">Alla scoperta dei cluster ONTAP</block>
-  <block id="e17d9d52c8208dfce3fde1af20447264" category="list-text">Fare clic su *Canvas*.</block>
   <block id="b5f4d0a91c515f4bd54cae36d52f1af7" category="list-text">Selezionare un ambiente di lavoro che corrisponda a uno dei tipi elencati sopra.</block>
   <block id="1cffa027f06c83c15096bfe069d63282" category="list-text">Selezionare il menu delle azioni accanto a Sincronizza.</block>
   <block id="ab116a076c96e5657e8e3c778ee684b2" category="inline-image-macro">Una schermata che mostra le azioni disponibili dal menu Sync dopo aver selezionato un ambiente di lavoro.</block>
@@ -1640,7 +1552,6 @@
   <block id="710868057fb37c917b26175735e419f5" category="list-text">Selezionare *Sincronizza dati da questa posizione* o *Sincronizza dati in questa posizione* e seguire le istruzioni per impostare la relazione di sincronizzazione.</block>
   <block id="42fb01b3b779aa7e6922ba7286f27d90" category="section-title">Creare altri tipi di relazioni di sincronizzazione</block>
   <block id="04c2658f3d0148a82630128082746ff3" category="paragraph">Utilizzare questa procedura per sincronizzare i dati da o verso un tipo di storage supportato diverso da Amazon FSX per cluster ONTAP, Azure NetApp Files, Cloud Volumes ONTAP o ONTAP on-premise. I passaggi riportati di seguito forniscono un esempio che mostra come impostare una relazione di sincronizzazione da un server NFS a un bucket S3.</block>
-  <block id="f08beb9a11a66834f5e08f2bd7436fb0" category="list-text">In BlueXP, fare clic su *Sync*.</block>
   <block id="5c9e2eb8a0b6e7b55897a6605105e10a" category="list-text">Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione.</block>
   <block id="ec4f668b0fb93e0352d369b9536e8835" category="paragraph">I passaggi seguenti forniscono un esempio di come creare una relazione di sincronizzazione da un server NFS a un bucket S3.</block>
   <block id="abd3c3afefe991ee73c5762fa2129b96" category="inline-image-macro">Una schermata che mostra NFS come origine e S3 come destinazione in una nuova relazione di sincronizzazione.</block>
@@ -1648,15 +1559,12 @@
   <block id="f40f1d9dc0b9fe761c1fae85c5642f2b" category="list-text">Nella pagina *NFS Server*, inserire l'indirizzo IP o il nome di dominio completo del server NFS che si desidera sincronizzare con AWS.</block>
   <block id="a31f37dcd17877cea841776e751a5c03" category="list-text">Nella pagina *Data Broker Group*, seguire le istruzioni per creare una macchina virtuale per broker di dati in AWS, Azure o Google Cloud Platform, oppure per installare il software per broker di dati su un host Linux esistente.</block>
   <block id="598b1711dd67bf120b85d858cb7087c3" category="paragraph">Per ulteriori informazioni, consultare le seguenti pagine:</block>
-  <block id="8ee76d81cd3bca0a06766cada54e9900" category="list-text">Dopo aver installato il data broker, fare clic su *Continue* (continua).</block>
   <block id="460dd7003c9711e5459ed0a96f7c8281" category="paragraph"><block ref="460dd7003c9711e5459ed0a96f7c8281" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a271de5321e2a04796460ebc14e59eb4" category="list-text">[[filter]]nella pagina *Directory*, selezionare una directory o una sottodirectory di livello superiore.</block>
-  <block id="17a22599667444c8ead2e620d24daa16" category="paragraph">Se BlueXP copy and Sync non riesce a recuperare le esportazioni, fare clic su *Add Export Manually* (Aggiungi esportazione manualmente) e inserire il nome di un'esportazione NFS.</block>
   <block id="af796f24d59aefad2851f40d2e201331" category="admonition">Se si desidera sincronizzare più di una directory sul server NFS, è necessario creare ulteriori relazioni di sincronizzazione al termine dell'operazione.</block>
   <block id="daae3c3e845ae4c3697e01616f4f7b93" category="list-text">Nella pagina *bucket AWS S3*, selezionare un bucket:</block>
   <block id="8e32410b962702f10a4b3b0600f973c1" category="list-text">Eseguire il drill-down per selezionare una cartella esistente all'interno del bucket o per selezionare una nuova cartella creata all'interno del bucket.</block>
   <block id="c0e557736b1b4c22df8edfd8d06214ca" category="inline-link-macro">Al bucket S3 devono essere applicate autorizzazioni specifiche</block>
-  <block id="2ad4a0a772b07953e8d882b7fe21cf11" category="list-text">Fare clic su *Aggiungi all'elenco* per selezionare un bucket S3 non associato all'account AWS. <block ref="772fe08f8ccc4de2babce33261957aed" category="inline-link-macro-rx"></block>.</block>
   <block id="c04f4488434ced226bcb0be4d5ecf0e6" category="list-text">Nella pagina *Bucket Setup*, impostare il bucket:</block>
   <block id="d0108dd861797c657c5b430a731cd0d9" category="list-text">Scegliere se attivare la crittografia del bucket S3, quindi selezionare una chiave AWS KMS, immettere l'ARN di una chiave KMS o selezionare la crittografia AES-256.</block>
   <block id="90970afda72d4e681afa2bb416cbd684" category="inline-link-macro">Visualizzare le classi di storage supportate</block>
@@ -1681,14 +1589,8 @@
   <block id="96eb50fa77567b33546d85a4d6adc2f4" category="inline-image-macro">Una schermata che mostra la pagina Tag/metadati quando si crea una relazione di sincronizzazione con Amazon S3.</block>
   <block id="72786dbf28b6222cb6b90ef1853e64d5" category="paragraph"><block ref="72786dbf28b6222cb6b90ef1853e64d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b2c91269ae0c67c26fe59bbb10eb6a2" category="admonition">Questa stessa funzionalità è disponibile quando si sincronizzano i dati con StorageGRID e IBM Cloud Object Storage. Per Azure e Google Cloud Storage, è disponibile solo l'opzione metadati.</block>
-  <block id="abf843ce80b23a0209755d1e397c8333" category="list-text">Esaminare i dettagli della relazione di sincronizzazione, quindi fare clic su *Crea relazione*.</block>
   <block id="600901e70afccc50e18676048766ba78" category="paragraph">*Risultato*</block>
   <block id="c81b15466cc89faa99024d734f63d070" category="paragraph">BlueXP copy and Sync avvia la sincronizzazione dei dati tra l'origine e la destinazione.</block>
-  <block id="991900a0204b24a05efe45e0b0b3bb96" category="section-title">Crea relazioni di sincronizzazione da Cloud Data Sense</block>
-  <block id="ff3ea06fc0c8f759394b8942315d071f" category="paragraph">BlueXP copy and Sync è integrato con Cloud Data Sense. Da Data Sense, è possibile selezionare i file di origine che si desidera sincronizzare in una posizione di destinazione utilizzando la copia e la sincronizzazione BlueXP.</block>
-  <block id="0a3762f065e87e761291235c3f42e8d4" category="paragraph">Dopo aver avviato una sincronizzazione dei dati da Cloud Data Sense, tutte le informazioni di origine sono contenute in un singolo passaggio e richiedono solo l'immissione di alcuni dettagli chiave. Quindi, scegliere la posizione di destinazione per la nuova relazione di sincronizzazione.</block>
-  <block id="c52509e09917e0e29ac603ef598d3f69" category="paragraph"><block ref="c52509e09917e0e29ac603ef598d3f69" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="20718255a13eb2f29be8b068228e69bc" category="inline-link">Scopri come avviare una relazione di sincronizzazione da Cloud Data Sense</block>
   <block id="04bde9824fe76c12bc97fc0154e2017a" category="sidebar">Documenti di copia e sincronizzazione BlueXP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
@@ -1761,9 +1663,7 @@
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">Modificare le colonne visualizzate nella tabella facendo clic su <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
   <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">Gestire un caso esistente facendo clic su <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="334141378cc136fbeac9f49b8712a21c" category="list-text"><block ref="334141378cc136fbeac9f49b8712a21c" category="inline-link-rx"></block></block>
   <block id="e6e1607e58cd001b7c781a8f8bfa813a" category="list-text"><block ref="e6e1607e58cd001b7c781a8f8bfa813a" category="inline-link-rx"></block></block>
@@ -1772,7 +1672,6 @@
   <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
   <block id="5bef0b78e6ec321bf21d727ac503470d" category="list-text"><block ref="5bef0b78e6ec321bf21d727ac503470d" category="inline-link-rx"></block></block>
   <block id="85cd31980dc6fca292186015e6569783" category="list-text"><block ref="85cd31980dc6fca292186015e6569783" category="inline-link-rx"></block></block>
-  <block id="8e430579de892a93405f336e319e0650" category="paragraph"><block ref="40f48ef5ea0de0b0c1e5b47df6f8470c" category="inline-link-rx"></block>.</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Scopri come gestire le credenziali associate all'accesso a BlueXP</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Per utilizzare la funzione *creazione di un caso*, è necessario prima associare le credenziali del sito di supporto NetApp al login BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Se stai aprendo un caso per un sistema ONTAP con un numero di serie, il tuo account NSS deve essere associato al numero di serie di quel sistema.</block>
@@ -1782,10 +1681,7 @@
   <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Per il supporto tecnico sulle seguenti soluzioni di cloud provider, fare riferimento a "Assistenza" nella documentazione di BlueXP relativa a tale prodotto.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Registrare l'account BlueXP per il supporto NetApp</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Per registrarsi al supporto e attivare i diritti di supporto, un utente del proprio account BlueXP deve associare un account del sito di supporto NetApp al proprio account di accesso BlueXP. La modalità di registrazione al supporto NetApp dipende dal fatto che si disponga già di un account NetApp Support Site (NSS).</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.</block>
-  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">Fare clic su *User Credentials* (credenziali utente).</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Selezionare *Aggiungi credenziali NSS* e seguire la richiesta di autenticazione del sito di supporto NetApp.</block>
-  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">Per confermare che la procedura di registrazione è stata eseguita correttamente, fare clic sull'icona Guida e selezionare *supporto*.</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La pagina *risorse* dovrebbe mostrare che il tuo account è registrato per il supporto.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Una schermata che mostra il numero di serie di un account, una casella di controllo verde e il testo registrato per il supporto.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -1837,7 +1733,6 @@
   <block id="fe59670d5deda9cb753645f774a47c00" category="list-text">Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere <block ref="1452da4272733702009675a0aac63ae1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b838fb1a6e3a063ff847ead6c680b63b" category="section-title">Opzione 2: Eliminazione di più relazioni di sincronizzazione</block>
   <block id="e228b5490db647150a658ff97a26549c" category="list-text">Dal pannello *Dashboard*, selezionare il pulsante "Create New Sync" (Crea nuova sincronizzazione) e scegliere <block ref="1452da4272733702009675a0aac63ae1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="17ae36fbbd79b2ff16d4f9f68caeb794" category="list-text">Selezionare le relazioni di sincronizzazione che si desidera eliminare, fare clic su *Delete* (Elimina), quindi fare nuovamente clic su *Delete* (Elimina) per confermare.</block>
   <block id="8c2d829bea49e9a2588d62f78f366000" category="paragraph">BlueXP copy and Sync elimina le relazioni di sincronizzazione.</block>
   <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">9 luglio 2023</block>
   <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">Rimuovere più relazioni di sincronizzazione contemporaneamente</block>
@@ -1850,4 +1745,107 @@
   <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
   <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Aggiornato a Node.js 20</block>
   <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">Copy and Sync è stato aggiornato a Node.js 20. Tutti i broker di dati disponibili verranno aggiornati. I sistemi operativi incompatibili con questo aggiornamento non possono essere installati e i sistemi esistenti incompatibili potrebbero riscontrare problemi di performance.</block>
+  <block id="9c493a2645deede7e1d634171451c869" category="paragraph">Per trovare il ruolo ARN, accedere alla console EC2, selezionare l'istanza del broker di dati, quindi selezionare il ruolo IAM dalla scheda Description (Descrizione). Viene visualizzata la pagina Summary (Riepilogo) nella console IAM che contiene il ruolo ARN.</block>
+  <block id="d7c075ca906ce69195757260c375322d" category="inline-image-macro">Mostra una stringa di connessione, disponibile dal portale Azure selezionando un account di storage e quindi Access keys (chiavi di accesso).</block>
+  <block id="f73a08b9d40527fb034e3b8e5aea291e" category="paragraph"><block ref="f73a08b9d40527fb034e3b8e5aea291e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="974e187af76d9bdb79160a1747a99efd" category="inline-image-macro">Mostra una firma di accesso condivisa, disponibile dal portale Azure selezionando un account di storage e quindi la firma di accesso condivisa.</block>
+  <block id="440e14da8980c937115a1654cb964bce" category="paragraph"><block ref="440e14da8980c937115a1654cb964bce" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Selezionare *User Credentials* (credenziali utente).</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Per confermare che la procedura di registrazione è stata eseguita correttamente, selezionare l'icona Guida e selezionare *supporto*.</block>
+  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.</block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Selezionare *Gestione NSS &gt; Aggiungi account NSS*.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.</block>
+  <block id="a7cf68034bb0427f14ac8f27b6befc6e" category="list-text">Trascinare un server SMB o uno storage a oggetti come origine e un server SMB o storage a oggetti come destinazione, quindi selezionare *continua*.</block>
+  <block id="07fd1a9bba5ed1d65155cb7196d9fff7" category="cell">Per contattare la classificazione BlueXP quando si utilizza la classificazione per selezionare i file di origine per una nuova relazione di sincronizzazione.</block>
+  <block id="b23f7626598790c5bc3f3411ca8bc647" category="list-text">Selezionare *Crea nuova sincronizzazione*.</block>
+  <block id="a98b7b8c1513bf265104275f8483ba4d" category="list-text">Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.</block>
+  <block id="bb85773e2c6a87875a9bb0f89efa1fab" category="list-text">Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi *Google Cloud Platform*.</block>
+  <block id="768a76795adb85fe8b2001a0f399abf2" category="list-text">Immettere un nome per il data broker e selezionare *continua*.</block>
+  <block id="5cb5a4f4fe6d4cbbe707e63a954ad57b" category="list-text">Una volta che il data broker è disponibile, selezionare *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizza BlueXP).</block>
+  <block id="2367a082ae2ae448b941e4f4c2dabed4" category="list-text">Selezionare il nome del bucket che si desidera utilizzare come origine o destinazione in una relazione di sincronizzazione.</block>
+  <block id="70d2a1a4dce0d4601d9d7ccb4730c171" category="list-text">Selezionare *Permissions*.</block>
+  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">Selezionare *Aggiungi*.</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Selezionare *Salva*.</block>
+  <block id="b3475f82bce5cbf95b975ed65e3d258e" category="paragraph">Abbiamo riprogettato la vista tabella sul dashboard per una maggiore facilità di utilizzo. Se si seleziona *ulteriori informazioni*, Cloud Sync filtra la dashboard per visualizzare ulteriori informazioni sulla relazione specifica.</block>
+  <block id="5850da1fc8b844460820f41143c14a5d" category="list-text">Dalla pagina *Gestisci Data Broker* selezionando *Aggiungi nuovo Data Broker* che crea il data broker in un nuovo gruppo</block>
+  <block id="3f2a5c8d39fecd79e3a2a67e27c89975" category="list-text">Selezionare *Sync &gt; Manage Data Brokers* (Sincronizza &gt; Gestisci data Brokers).</block>
+  <block id="052d8bf5e14a8c511479470d76567896" category="list-text">Selezionare *Aggiungi nuovo Data Broker*.</block>
+  <block id="5062224ebe3fee3febcb171546faa6fb" category="list-text">Selezionare il menu delle azioni e scegliere *Add Data Broker*.</block>
+  <block id="d7b7562790ff23b3cf69ff2d8e2c9135" category="list-text">Selezionare il menu delle azioni e scegliere *Modifica nome gruppo*.</block>
+  <block id="981a53d41f58197b983935d8515a8a1b" category="list-text">Immettere un nuovo nome e selezionare *Salva*.</block>
+  <block id="67633f6453e939bb031824371e27e55f" category="list-text">Selezionare *Manage Data Broker* (Gestisci data Broker).</block>
+  <block id="b61fc711bd2997eb8dddcfe1c68f52d8" category="list-text">Selezionare l'icona Impostazioni per un gruppo di broker di dati.</block>
+  <block id="9c5b22f4eb3a2a84d6f78993d40e5e11" category="list-text">Modificare le impostazioni in base alle necessità, quindi selezionare *Unify Configuration* (Unifica configurazione).</block>
+  <block id="0fa553ef384c02c0ed69820824979c65" category="list-text">Selezionare <block ref="787db84ec9404328cdc4a6264b9959c1" category="inline-image-macro-rx" type="image"></block> per espandere l'elenco dei broker di dati in un gruppo.</block>
+  <block id="68a0287ebcc4f6e28023462e570b7b3e" category="list-text">Selezionare il menu delle azioni di un data broker e selezionare *Move Data Broker* (Sposta data Broker).</block>
+  <block id="c3eb9435da3ee7c0ac02ef30983ba9d2" category="list-text">Selezionare *Sposta*.</block>
+  <block id="84efe326528fa8de6894af686c9ad4a6" category="list-text">Selezionare il menu delle azioni di un data broker e selezionare *Edit Proxy Configuration* (Modifica configurazione proxy).</block>
+  <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">Selezionare *Aggiorna*.</block>
+  <block id="0b84899995529839327fe3051a5f13b0" category="list-text">Selezionare <block ref="470bfce73839324984be8a7b9dbc97eb" category="inline-image-macro-rx" type="image"></block> per visualizzare i dettagli di un broker di dati.</block>
+  <block id="0500ac872687a21fa42b7c0274a1b4b2" category="list-text">Selezionare il menu delle azioni di un data broker e selezionare *Remove Data Broker*.</block>
+  <block id="af625aac66960e71c291115cae745a4e" category="list-text">Selezionare *Rimuovi Data Broker*.</block>
+  <block id="ada3f05f232feeed1dfb7c4afcdffe6a" category="list-text">Selezionare il menu delle azioni e selezionare *Delete Group* (Elimina gruppo).</block>
+  <block id="826f8292d9dd1df0d5e3440a37c5015b" category="list-text">Per confermare, inserire il nome del gruppo e selezionare *Delete Group* (Elimina gruppo).</block>
+  <block id="563b9ebf5f1676e7c73351df0df68d70" category="paragraph">Accedere a.<block ref="a52ee1b87e73428b189d0907dc7fe59b" category="inline-link-rx"></block>, Selezionare *Sync*, quindi trascinare le selezioni per l'origine e la destinazione. Seguire le istruzioni per completare la configurazione. <block ref="484d4f19cf4f8d33cb3a1a91aa23f363" category="inline-link-macro-rx"></block>.</block>
+  <block id="46ea05c6ec616f5482a6ae7265cb289a" category="list-text">Selezionare *Canvas*.</block>
+  <block id="846c0cd63135bcbdaa57f314f9667667" category="list-text">In BlueXP, selezionare *Sync*.</block>
+  <block id="0389f118b4a12f879dace09873bfe8d5" category="list-text">Dopo aver installato il data broker, selezionare *continua*.</block>
+  <block id="2940f879485a90e38c70bad277e952bc" category="paragraph">Se BlueXP copy and Sync non riesce a recuperare le esportazioni, selezionare *Add Export Manually* (Aggiungi esportazione manualmente) e inserire il nome di un'esportazione NFS.</block>
+  <block id="d3b515ad997487682cabad8cc3037528" category="list-text">Selezionare *Aggiungi all'elenco* per selezionare un bucket S3 non associato all'account AWS. <block ref="772fe08f8ccc4de2babce33261957aed" category="inline-link-macro-rx"></block>.</block>
+  <block id="d4882dc545d7780382888fbbe7a423de" category="list-text">Esaminare i dettagli della relazione di sincronizzazione, quindi selezionare *Crea relazione*.</block>
+  <block id="ccb8e8d162cd0852214f94317fe9ff12" category="section-title">Creare relazioni di sincronizzazione dalla classificazione BlueXP</block>
+  <block id="80bf5b29f498d053d7445284d3d93ca5" category="paragraph">BlueXP copy and Sync è integrato con la classificazione BlueXP. Dall'interno della classificazione BlueXP, è possibile selezionare i file di origine che si desidera sincronizzare in una posizione di destinazione utilizzando la copia e la sincronizzazione BlueXP.</block>
+  <block id="539e8564a4ed161824dff3b7104b2470" category="paragraph">Dopo aver avviato una sincronizzazione dei dati dalla classificazione BlueXP, tutte le informazioni di origine sono contenute in un singolo passaggio e richiedono solo l'immissione di alcuni dettagli chiave. Quindi, scegliere la posizione di destinazione per la nuova relazione di sincronizzazione.</block>
+  <block id="42d50bbcb3b366a20657a24b7644e345" category="inline-image-macro">Una schermata che mostra la pagina sull'integrazione della classificazione BlueXP che viene visualizzata dopo l'avvio di una nuova sincronizzazione direttamente dalla classificazione BlueXP.</block>
+  <block id="d849d90980b2ab0f9613bf772807378f" category="paragraph"><block ref="d849d90980b2ab0f9613bf772807378f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf2270b456b1dc7f69b6efb8903adb83" category="inline-link">Scopri come avviare una relazione di sincronizzazione dalla classificazione BlueXP</block>
+  <block id="1139a253d171a7969c094e38ba8066d8" category="paragraph"><block ref="c65a8202f1a26826d29063b255b385d3" category="inline-link-rx"></block>.</block>
+  <block id="0479f6fe1008f761c6bd228300072a66" category="list-text">Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi selezionare *Microsoft Azure*.</block>
+  <block id="f8149e5272474293b308b5387c6e0eab" category="list-text">Se richiesto, accedere all'account Microsoft. Se non viene richiesto, selezionare *Accedi ad Azure*.</block>
+  <block id="62aca030fc0ae0886728293f4df155b2" category="list-text">Selezionare *continua* e mantenere aperta la pagina fino al completamento dell'implementazione.</block>
+  <block id="ad16396812bea804a1980d079b968f53" category="list-text">In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare *Continue* (continua) una volta che il data broker è disponibile.</block>
+  <block id="b9c67bb0bae9993217d3413e493a9d52" category="list-text">Selezionare *Sync &gt; Licensing*.</block>
+  <block id="a5fb6f9fbd972c02e5329e1ff986d9d5" category="list-text">Selezionare *Subscribe*, quindi selezionare *Continue* (continua).</block>
+  <block id="9afef6b2e6bfae3c1516f6a5615e147a" category="list-text">Selezionare *continua per iscriversi*.</block>
+  <block id="7d5dc2ab8bafad8f8a587f44b30dc6f0" category="list-text">Selezionare le opzioni del contratto, quindi selezionare *Crea contratto*.</block>
+  <block id="8bf624ad0ff2e9fd580f8cf2ccbfb01b" category="list-text">Nel portale Azure, selezionare *Crea*, selezionare le opzioni desiderate, quindi selezionare *Iscriviti*.</block>
+  <block id="50663aa7afb45a9a800941c0bc89dcf1" category="list-text">Una volta completata l'implementazione, selezionare il nome della risorsa SaaS nella finestra a comparsa di notifica.</block>
+  <block id="610e8ce14d61f13ee15be5f296487890" category="list-text">Selezionare *Configure account* (Configura account) per tornare alla copia e alla sincronizzazione di BlueXP.</block>
+  <block id="8a16f41efcb781e6645783df6cb0e97b" category="list-text">In BlueXP, selezionare *Sync &gt; Licensing*.</block>
+  <block id="0be0367eff89e989e3751d45bd6caf93" category="list-text">Selezionare *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:</block>
+  <block id="46d344ee2c7e916b914b2b031a79a880" category="list-text">Se l'account non è stato ancora aggiunto, selezionare *Aggiungi credenziali NSS*, immettere il nome utente e la password, selezionare *Registra*, quindi selezionarlo dall'elenco a discesa.</block>
+  <block id="6a44822bf57bcae55604cb610b227f67" category="paragraph">Selezionare *Filter Source Objects* (Filtra oggetti origine) per modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.</block>
+  <block id="1aca046f97c331e986d5fab61366a4e6" category="list-text">*Revisione*: Esaminare i dettagli della relazione di sincronizzazione, quindi selezionare *Crea relazione*.</block>
+  <block id="579c21a9a30c92f081aafc35f6788b43" category="paragraph">BlueXP copy and Sync inizia a creare la nuova relazione di sincronizzazione. Al termine dell'operazione, selezionare *View in Dashboard* (Visualizza nella dashboard) per visualizzare i dettagli sulla nuova relazione.</block>
+  <block id="5eab603ec483095f3786c2e47537d800" category="list-text">Selezionare *Sincronizza ora*, quindi selezionare *Sincronizza* per confermare.</block>
+  <block id="3d18303a8bc1b24ad7263bcc9797e5b5" category="list-text">Selezionare *Accelerate*.</block>
+  <block id="89fd3d02840a539075c4235f4b211573" category="list-text">Dalla dashboard di sincronizzazione*, selezionare una relazione di sincronizzazione che richiede credenziali, quindi selezionare *Aggiorna credenziali*.</block>
+  <block id="206f666b19f13f25bad53b2109edacb4" category="list-text">Immettere le credenziali e selezionare *Aggiorna*.</block>
+  <block id="448fe9f410fc86c359b1bf31ac68cd9f" category="list-text">Selezionare *Impostazioni &gt; Impostazioni avvisi e notifiche*.</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Selezionare *Applica*.</block>
+  <block id="774b7bb8cc1adb7cb5b5605c3d53249f" category="list-text">Selezionare *Delete* (Elimina), quindi selezionare di nuovo *Delete* (Elimina) per confermare.</block>
+  <block id="a06cbdd471532709a20804cd9a60cf7b" category="list-text">Selezionare le relazioni di sincronizzazione che si desidera eliminare, selezionare *Delete* (Elimina), quindi selezionare di nuovo *Delete* (Elimina) per confermare.</block>
+  <block id="6ffcf259f9af8546dcdf4daad239e89b" category="list-text">Selezionare *Sincronizza &gt; Report*.</block>
+  <block id="7caff74e8ad612143e6505e42c480693" category="list-text">Nella colonna *azioni report*, selezionare un percorso specifico e scegliere *Crea* oppure selezionare il menu delle azioni e scegliere *Crea nuovo*.</block>
+  <block id="034ebe64c95d6881f42b9860db62257a" category="list-text">Quando il report è pronto, selezionare il menu delle azioni e selezionare *Visualizza*.</block>
+  <block id="c3e2319c8f33283f02e4d18078c3e026" category="list-text">Nella colonna *azioni report*, selezionare il menu delle azioni e selezionare *Visualizza*.</block>
+  <block id="b6b1c484e920a4cebbc7cdf2ac43d7ef" category="list-text">Nella parte superiore destra del report, selezionare il menu delle azioni e scegliere *Download pdf*.</block>
+  <block id="8bd64cd944e930439dfc9b8d32597010" category="inline-image-macro">Una schermata dell'opzione Download pdf (Scarica pdf) che viene visualizzata dopo aver selezionato il menu delle azioni in un report.</block>
+  <block id="1a9d7b3b25da6533268f3139437f4d3d" category="paragraph"><block ref="1a9d7b3b25da6533268f3139437f4d3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf6097b869b6cd694d1a22235d83341d" category="list-text">Se sono presenti errori, selezionare la freccia accanto al numero di errori.</block>
+  <block id="8f678ca452a56dc17c7c9fc13e2e5f36" category="list-text">Nella colonna *azioni report*, selezionare il menu delle azioni per un percorso e selezionare *Elimina ultimo report* o *Elimina tutti i report*.</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">In BlueXP, selezionare *Guida &gt; supporto*.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Selezionare *Chiamateci* se si desidera parlare con qualcuno al telefono. Viene visualizzata una pagina su netapp.com che elenca i numeri di telefono che è possibile chiamare.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Selezionare *Crea un caso* per aprire un ticket con uno specialista del supporto NetApp:</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Per una cronologia dei casi di supporto, selezionare *Impostazioni &gt; Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Selezionare *Gestione casi* e, se richiesto, aggiungere l'account NSS a BlueXP.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">In *Organization's Cases* (casi dell'organizzazione), selezionare *View* (Visualizza) per visualizzare tutti i casi associati alla società.</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Modificare le colonne visualizzate nella tabella selezionando <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">Gestire un caso esistente selezionando <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e seleziona *Chiudi caso*.</block>
+  <block id="4efee990fd4b83dc06a00811bfa7e55d" category="list-text">Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi selezionare *Amazon Web Services*.</block>
+  <block id="4f63dcacb975691fb706f866f5467707" category="paragraph">Se invece non si desidera fornire le chiavi di accesso, selezionare il collegamento in fondo alla pagina per utilizzare un modello CloudFormation. Quando si utilizza questa opzione, non è necessario fornire le credenziali perché si effettua l'accesso direttamente ad AWS.</block>
+  <block id="417a67ddf3f7a9afe391dcd0968ded03" category="list-text">Una volta disponibile il data broker, selezionare *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizza BlueXP).</block>
+  <block id="8f1cf53c93c91532c10f4779cc067c94" category="list-text">Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi *on-Prem Data Broker*.</block>
 </blocks>

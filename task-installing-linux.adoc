@@ -119,12 +119,12 @@ L'accesso ad Azure viene definito in base alla relazione fornendo un account di 
 È possibile installare un data broker su un host Linux quando si crea una relazione di sincronizzazione.
 
 .Fasi
-. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
-. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.
+. Selezionare *Crea nuova sincronizzazione*.
+. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +
 Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.
 
-. Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *on-Prem Data Broker*.
+. Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi *on-Prem Data Broker*.
 +
 image:screenshot-on-prem.png["Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem."]
 
@@ -132,7 +132,7 @@ image:screenshot-on-prem.png["Schermata della pagina Data Broker che consente di
 
 NOTE: Anche se l'opzione è denominata *_on-Prem_ Data Broker*, si applica a un host Linux on-premise o nel cloud.
 
-. Immettere un nome per il broker di dati e fare clic su *continua*.
+. Immettere un nome per il data broker e selezionare *continua*.
 +
 La pagina delle istruzioni viene caricata a breve. È necessario seguire queste istruzioni, che includono un link univoco per scaricare il programma di installazione.
 
@@ -201,6 +201,6 @@ File JSON:: Si tratta del file JSON che contiene una chiave dell'account di serv
 
 
 
-. Una volta che il data broker è disponibile, fare clic su *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizzazione BlueXP).
+. Una volta che il data broker è disponibile, selezionare *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizza BlueXP).
 . Completare le pagine della procedura guidata per creare la nuova relazione di sincronizzazione.
 

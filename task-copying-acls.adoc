@@ -32,7 +32,7 @@ Questa funzionalità funziona con _qualsiasi_ tipo di data broker: AWS, Azure, G
 
 .Passaggi per una nuova relazione
 . Da BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare *Create New Sync* (Crea nuova sincronizzazione).
-. Trascinare un server SMB o uno storage a oggetti come origine e un server SMB o storage a oggetti come destinazione, quindi fare clic su *continua*.
+. Trascinare un server SMB o uno storage a oggetti come origine e un server SMB o storage a oggetti come destinazione, quindi selezionare *continua*.
 . Nella pagina *SMB Server*:
 +
 .. Immettere un nuovo server SMB o selezionare un server esistente e selezionare *continua*.

@@ -89,7 +89,7 @@ Se non hai ancora implementato un data broker, esamina i requisiti del data brok
 Creare una nuova relazione di sincronizzazione tra due server NFS o tra Azure NetApp Files, attivare l'opzione di crittografia in-flight e seguire le istruzioni.
 
 .Fasi
-. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
+. Selezionare *Crea nuova sincronizzazione*.
 . Trascinare *server NFS* nelle posizioni di origine e destinazione o *Azure NetApp Files* nelle posizioni di origine e destinazione e selezionare *Sì* per attivare la crittografia dei dati in volo.
 . Seguire le istruzioni per creare la relazione:
 +
@@ -107,7 +107,7 @@ Tenere presente quanto segue:
 
 .. *Directory*: Scegliere le directory che si desidera sincronizzare selezionando tutte le directory oppure eseguendo il drill-down e selezionando una sottodirectory.
 +
-Fare clic su *Filter Source Objects* (Filtra oggetti origine) per modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.
+Selezionare *Filter Source Objects* (Filtra oggetti origine) per modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.
 
 +
 image:screenshot_directories.gif["Una schermata che mostra l'opzione per selezionare una directory di primo livello, eseguire il drill-down e selezionare l'opzione Filter Source Objects (Filtra oggetti di origine)."]
@@ -125,7 +125,7 @@ image:screenshot_nfs_encryption_listener.gif["Una schermata che mostra l'opzione
 
 .. *Directory di destinazione*: Selezionare una directory di primo livello oppure eseguire il drill-down per selezionare una sottodirectory esistente o per creare una nuova cartella all'interno di un'esportazione.
 .. *Impostazioni*: Consente di definire la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.
-.. *Revisione*: Esaminare i dettagli della relazione di sincronizzazione, quindi fare clic su *Crea relazione*.
+.. *Revisione*: Esaminare i dettagli della relazione di sincronizzazione, quindi selezionare *Crea relazione*.
 +
 image:screenshot_nfs_encryption_review.gif["Una schermata che mostra la schermata di revisione. Mostra i server NFS, i broker di dati e le informazioni di rete relative a ciascuno di essi."]
 
@@ -134,4 +134,4 @@ image:screenshot_nfs_encryption_review.gif["Una schermata che mostra la schermat
 
 
 .Risultato
-BlueXP copy and Sync inizia a creare la nuova relazione di sincronizzazione. Al termine, fare clic su *View in Dashboard* (Visualizza in Dashboard) per visualizzare i dettagli sulla nuova relazione.
+BlueXP copy and Sync inizia a creare la nuova relazione di sincronizzazione. Al termine dell'operazione, selezionare *View in Dashboard* (Visualizza nella dashboard) per visualizzare i dettagli sulla nuova relazione.

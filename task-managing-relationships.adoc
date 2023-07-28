@@ -26,8 +26,8 @@ Puoi gestire le relazioni di sincronizzazione in qualsiasi momento sincronizzand
 Invece di attendere la successiva sincronizzazione pianificata, è possibile premere un pulsante per sincronizzare immediatamente i dati tra l'origine e la destinazione.
 
 .Fasi
-. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e fare clic su image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-. Fare clic su *Sincronizza ora*, quindi su *Sincronizza* per confermare.
+. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
+. Selezionare *Sincronizza ora*, quindi selezionare *Sincronizza* per confermare.
 
 
 .Risultato
@@ -53,8 +53,8 @@ Vuoi accelerare le performance della relazione 1 in modo da aggiungere un nuovo 
 
 .Fasi
 . Assicurarsi che almeno uno dei broker di dati esistenti nella relazione sia online.
-. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e fare clic su image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-. Fare clic su *Accelerate* (accelera).
+. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
+. Selezionare *Accelerate*.
 . Seguire le istruzioni per creare un nuovo data broker.
 
 
@@ -70,11 +70,11 @@ BlueXP copy and Sync aggiunge il nuovo data broker al gruppo. Le performance del
 L'aggiornamento delle credenziali è supportato con qualsiasi origine o destinazione per la quale BlueXP copy e Sync richiede credenziali per: Azure Blob, Box, IBM Cloud Object Storage, StorageGRID, ONTAP S3 Storage, SFTP e server SMB.
 
 .Fasi
-. Dal pannello di controllo di sincronizzazione, selezionare una relazione di sincronizzazione che richiede credenziali, quindi fare clic su *Aggiorna credenziali*.
+. Dalla dashboard di sincronizzazione*, selezionare una relazione di sincronizzazione che richiede credenziali, quindi selezionare *Aggiorna credenziali*.
 +
 image:screenshot_sync_update_credentials.png["Una schermata che mostra l'opzione Aggiorna credenziali nella pagina Sincronizza relazioni sotto il nome dell'origine o della destinazione."]
 
-. Immettere le credenziali e fare clic su *Aggiorna*.
+. Immettere le credenziali e selezionare *Aggiorna*.
 +
 Nota sui server SMB: Se il dominio è nuovo, è necessario specificarlo quando si aggiornano le credenziali. Se il dominio non è stato modificato, non è necessario immetterlo di nuovo.
 
@@ -99,17 +99,17 @@ Inoltre, è possibile ricevere notifiche via email.
 .Fasi
 . Modificare le impostazioni per una relazione di sincronizzazione:
 +
-.. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e fare clic su image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-.. Fare clic su *Impostazioni*.
+.. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
+.. Selezionare *Impostazioni*.
 .. Attiva *Notifiche*.
-.. Fare clic su *Save Settings* (Salva impostazioni).
+.. Selezionare *Save Settings* (Salva impostazioni).
 
 
 . Se si desidera ricevere notifiche via email, configurare le impostazioni degli avvisi e delle notifiche:
 +
-.. Fare clic su *Impostazioni > Impostazioni avvisi e notifiche*.
+.. Selezionare *Impostazioni > Impostazioni avvisi e notifiche*.
 .. Selezionare uno o più utenti e scegliere il tipo di notifica *Info*.
-.. Fare clic su *Apply* (Applica).
+.. Selezionare *Applica*.
 
 
 
@@ -123,8 +123,8 @@ Riceverai le notifiche di copia e sincronizzazione BlueXP nel Centro notifiche d
 
 Modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.
 
-. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e fare clic su image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-. Fare clic su *Impostazioni*.
+. Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
+. Selezionare *Impostazioni*.
 . Modificare le impostazioni.
 +
 image:screenshot_sync_settings.png["Una schermata che mostra le impostazioni per una relazione di sincronizzazione."]
@@ -192,7 +192,7 @@ Data di creazione:: Quando un server SMB è l'origine, questa impostazione conse
 ACL - Access Control List (elenco di controllo degli accessi):: Copia solo ACL, solo file o ACL e file da un server SMB attivando un'impostazione quando si crea una relazione o dopo la creazione di una relazione.
 
 
-. Fare clic su *Save Settings* (Salva impostazioni).
+. Selezionare *Save Settings* (Salva impostazioni).
 
 
 .Risultato
@@ -210,7 +210,7 @@ BlueXP copy and Sync modifica la relazione di sincronizzazione con le nuove impo
 
 .Fasi
 . Dal pannello *Dashboard*, selezionare la relazione di sincronizzazione e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-. Fare clic su *Delete* (Elimina), quindi fare nuovamente clic su *Delete* (Elimina) per confermare.
+. Selezionare *Delete* (Elimina), quindi selezionare di nuovo *Delete* (Elimina) per confermare.
 
 
 .Risultato
@@ -222,7 +222,7 @@ BlueXP copy and Sync elimina la relazione di sincronizzazione.
 
 .Fasi
 . Dal pannello *Dashboard*, selezionare il pulsante "Create New Sync" (Crea nuova sincronizzazione) e scegliere image:icon-sync-action.png["Schermata del pulsante che consente di eseguire azioni su una relazione di sincronizzazione"]
-. Selezionare le relazioni di sincronizzazione che si desidera eliminare, fare clic su *Delete* (Elimina), quindi fare nuovamente clic su *Delete* (Elimina) per confermare.
+. Selezionare le relazioni di sincronizzazione che si desidera eliminare, selezionare *Delete* (Elimina), quindi selezionare di nuovo *Delete* (Elimina) per confermare.
 
 
 .Risultato

@@ -71,22 +71,22 @@ Seguire i passaggi riportati di seguito per specificare il ruolo IAM durante l'i
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in AWS quando si crea una relazione di sincronizzazione.
 
 .Fasi
-. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
-. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.
+. Selezionare *Crea nuova sincronizzazione*.
+. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +
 Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.
 
-. Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Amazon Web Services*.
+. Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi selezionare *Amazon Web Services*.
 +
 image:screenshot-aws.png["Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem."]
 
-. Immettere un nome per il broker di dati e fare clic su *continua*.
+. Immettere un nome per il data broker e selezionare *continua*.
 . Inserire una chiave di accesso AWS in modo che la copia e la sincronizzazione BlueXP possano creare il data broker in AWS per tuo conto.
 +
 Le chiavi non vengono salvate o utilizzate per altri scopi.
 
 +
-Se invece non si desidera fornire le chiavi di accesso, fare clic sul collegamento in fondo alla pagina per utilizzare un modello CloudFormation. Quando si utilizza questa opzione, non è necessario fornire le credenziali perché si effettua l'accesso direttamente ad AWS.
+Se invece non si desidera fornire le chiavi di accesso, selezionare il collegamento in fondo alla pagina per utilizzare un modello CloudFormation. Quando si utilizza questa opzione, non è necessario fornire le credenziali perché si effettua l'accesso direttamente ad AWS.
 
 +
 [[cft]]il seguente video mostra come avviare l'istanza del data broker utilizzando un modello CloudFormation:
@@ -101,7 +101,7 @@ Se scegli il tuo ruolo IAM, <<iam,è necessario fornire le autorizzazioni necess
 image:screenshot_aws_data_broker.png["Una schermata delle informazioni da fornire durante l'implementazione di un data broker in AWS."]
 
 . Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet nel VPC.
-. Una volta che il data broker è disponibile, fare clic su *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizzazione BlueXP).
+. Una volta disponibile il data broker, selezionare *Continue* (continua) in BlueXP copy and Sync (Copia e sincronizza BlueXP).
 +
 L'immagine seguente mostra un'istanza implementata correttamente in AWS:
 

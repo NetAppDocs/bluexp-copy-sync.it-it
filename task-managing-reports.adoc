@@ -28,12 +28,12 @@ Ogni report fornisce dettagli approfonditi su un percorso in una relazione di si
 Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.
 
 .Fasi
-. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
+. Selezionare *Sincronizza > Report*.
 +
 I percorsi (origine o destinazione) in ciascuna delle relazioni di sincronizzazione vengono visualizzati in una tabella.
 
-. Nella colonna *azioni report*, selezionare un percorso specifico e fare clic su *Crea* oppure fare clic sul menu delle azioni e selezionare *Crea nuovo*.
-. Quando il report è pronto, fare clic sul menu delle azioni e selezionare *Visualizza*.
+. Nella colonna *azioni report*, selezionare un percorso specifico e scegliere *Crea* oppure selezionare il menu delle azioni e scegliere *Crea nuovo*.
+. Quando il report è pronto, selezionare il menu delle azioni e selezionare *Visualizza*.
 +
 Ecco un report di esempio per un percorso del file system.
 
@@ -55,11 +55,11 @@ image:screenshot_sync_report_object.gif["Report che mostra il numero di elementi
 È possibile scaricare un report in formato PDF per visualizzarlo offline o condividerlo.
 
 .Fasi
-. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
-. Nella colonna *azioni report*, fare clic sul menu delle azioni e selezionare *Visualizza*.
-. Nella parte superiore destra del report, fare clic sul menu delle azioni e selezionare *Download pdf*.
+. Selezionare *Sincronizza > Report*.
+. Nella colonna *azioni report*, selezionare il menu delle azioni e selezionare *Visualizza*.
+. Nella parte superiore destra del report, selezionare il menu delle azioni e scegliere *Download pdf*.
 +
-image:screenshot-sync-download-report.png["Una schermata dell'opzione Download pdf (Scarica pdf) che viene visualizzata dopo aver fatto clic sul menu delle azioni in un report."]
+image:screenshot-sync-download-report.png["Una schermata dell'opzione Download pdf (Scarica pdf) che viene visualizzata dopo aver selezionato il menu delle azioni in un report."]
 
 
 
@@ -74,9 +74,9 @@ Ad esempio, un report potrebbe contenere errori di autorizzazione negata. Questo
 Dopo aver visualizzato l'elenco degli errori, è possibile risolvere i problemi ed eseguire nuovamente il report.
 
 .Fasi
-. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
+. Selezionare *Sincronizza > Report*.
 . Nella colonna *Errors*, identificare se in un report sono presenti errori.
-. Se sono presenti errori, fare clic sulla freccia accanto al numero di errori.
+. Se sono presenti errori, selezionare la freccia accanto al numero di errori.
 +
 image:screenshot_sync_report_errors.gif["Una schermata della tabella Paths che mostra il numero di errori e una piccola freccia cliccabile nella colonna Errors."]
 
@@ -93,7 +93,7 @@ Una volta risolto il problema, l'errore non dovrebbe apparire alla successiva es
 È possibile eliminare un report contenente un errore risolto o se il report è correlato a una relazione di sincronizzazione rimossa.
 
 .Fasi
-. Fare clic su *Sync > Reports* (Sincronizza > rapporti).
-. Nella colonna *azioni report*, fare clic sul menu delle azioni di un percorso e selezionare *Elimina ultimo report* o *Elimina tutti i report*.
+. Selezionare *Sincronizza > Report*.
+. Nella colonna *azioni report*, selezionare il menu delle azioni per un percorso e selezionare *Elimina ultimo report* o *Elimina tutti i report*.
 . Confermare che si desidera eliminare il rapporto o i rapporti.
 

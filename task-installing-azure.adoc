@@ -149,17 +149,17 @@ Per informazioni sulla creazione di una coppia di chiavi, fare riferimento a. ht
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Azure quando si crea una relazione di sincronizzazione.
 
 .Fasi
-. Fare clic su *Create New Sync* (Crea nuova sincronizzazione).
-. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e fare clic su *continua*.
+. Selezionare *Crea nuova sincronizzazione*.
+. Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +
 Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.
 
-. Nella pagina *Data Broker Group*, fare clic su *Create Data Broker*, quindi selezionare *Microsoft Azure*.
+. Nella pagina *Data Broker Group*, selezionare *Create Data Broker*, quindi selezionare *Microsoft Azure*.
 +
 image:screenshot-azure.png["Schermata della pagina Data Broker che consente di scegliere tra un data broker AWS, Azure, Google Cloud e on-Prem."]
 
-. Immettere un nome per il broker di dati e fare clic su *continua*.
-. Se richiesto, accedere all'account Microsoft. Se non viene richiesto, fare clic su *Accedi ad Azure*.
+. Immettere un nome per il data broker e selezionare *continua*.
+. Se richiesto, accedere all'account Microsoft. Se non viene richiesto, selezionare *Accedi ad Azure*.
 +
 Il modulo è di proprietà e ospitato da Microsoft. Le tue credenziali non vengono fornite a NetApp.
 
@@ -172,11 +172,11 @@ image:screenshot_azure_data_broker.gif["Una schermata della pagina di implementa
 NOTE: Se si prevede di implementare una relazione di sincronizzazione continua, è necessario assegnare un ruolo personalizzato al proprio data broker. Questa operazione può essere eseguita anche manualmente dopo la creazione del broker.
 
 . Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet in VNET.
-. Fare clic su *Continue* (continua) e mantenere aperta la pagina fino al completamento dell'implementazione.
+. Selezionare *continua* e mantenere aperta la pagina fino al completamento dell'implementazione.
 +
 Il processo può richiedere fino a 7 minuti.
 
-. In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), fare clic su *Continue* (continua) una volta che il data broker è disponibile.
+. In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare *Continue* (continua) una volta che il data broker è disponibile.
 . Completare le pagine della procedura guidata per creare la nuova relazione di sincronizzazione.
 
 

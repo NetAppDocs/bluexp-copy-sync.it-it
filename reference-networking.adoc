@@ -106,7 +106,7 @@ Un broker di dati contatta i seguenti endpoint:
 | https://sts.amazonaws.com | Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato. 
 
 
-| https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com | Per contattare Cloud Data Sense quando si utilizza Data Sense per selezionare i file di origine per una nuova relazione di sincronizzazione. 
+| https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com | Per contattare la classificazione BlueXP quando si utilizza la classificazione per selezionare i file di origine per una nuova relazione di sincronizzazione. 
 
 
 | https://pubsub.googleapis.com | Se si crea una relazione di sincronizzazione continua da un account di storage Google. 
