@@ -89,11 +89,14 @@ Quando si implementa il data broker, è necessario selezionare un account di ser
 - pubsub.topics.list
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
 ----
 Note:
 
 . L'autorizzazione "iam.serviceAccounts.signJwt" è necessaria solo se si intende configurare il data broker per l'utilizzo di un vault HashiCorp esterno.
 . Le autorizzazioni "pubsub.*" e "storage.bucket.update" sono necessarie solo se si intende attivare l'impostazione di Continuous Sync su una relazione di sincronizzazione tra Google Cloud Storage e un'altra posizione di cloud storage. link:task-creating-relationships.html#settings["Scopri di più sull'opzione Continuous Sync"].
+. Le autorizzazioni "cloudkms.cryptKeys.list" e "cloudkms.keyrings.list" sono richieste solo se si prevede di utilizzare una chiave KMS gestita dal cliente su un bucket Google Cloud Storage di destinazione.
 
 
 

@@ -171,6 +171,8 @@ Se si attiva questa opzione, è necessario modificare anche un parametro nel fil
 }
 }
 ----
+Dopo aver aggiornato il file local.json, è necessario riavviare: `pm2 restart all`.
+
 --
 Eliminare i file di destinazione:: Scegliere di eliminare i file dalla posizione di destinazione, se sono stati eliminati dall'origine. Per impostazione predefinita, non elimina mai i file dalla posizione di destinazione.
 Tipi di file:: Definire i tipi di file da includere in ogni sincronizzazione: File, directory, collegamenti simbolici e collegamenti hardware.

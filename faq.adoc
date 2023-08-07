@@ -249,6 +249,7 @@ Uno qualsiasi di questi metodi stabilisce una connessione sicura tra i server NA
 La copia e la sincronizzazione BlueXP non possono crittografare i dati SMB.
 
 * Quando un bucket Amazon S3 è la destinazione di una relazione di sincronizzazione, puoi scegliere se attivare la crittografia dei dati utilizzando la crittografia AWS KMS o AES-256.
+* Quando un bucket Google Storage è la destinazione in una relazione di sincronizzazione, è possibile scegliere se utilizzare la chiave di crittografia predefinita, gestita da Google o la propria chiave KMS.
 
 
 

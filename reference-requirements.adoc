@@ -220,6 +220,14 @@ Se l'origine di una relazione di sincronizzazione è una destinazione SnapMirror
 
 
 
+=== Crittografia di un bucket Google Cloud
+
+Puoi crittografare un bucket Google Cloud di destinazione con una chiave KMS gestita dal cliente o la chiave predefinita gestita da Google. Se nel bucket è già stata aggiunta una crittografia KMS, verrà sovrascritta la crittografia predefinita gestita da Google.
+
+Per aggiungere una chiave KMS gestita dal cliente, è necessario utilizzare un broker di dati con https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-for-the-service-account["correggere le autorizzazioni"], e la chiave deve trovarsi nella stessa regione del bucket.
+
+
+
 == Google Drive
 
 Quando si imposta una relazione di sincronizzazione che include Google Drive, è necessario fornire quanto segue:

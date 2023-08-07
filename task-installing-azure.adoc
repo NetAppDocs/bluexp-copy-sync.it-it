@@ -101,6 +101,8 @@ Assicurarsi che l'account utente Azure utilizzato per implementare il data broke
                     "Microsoft.Storage/storageAccounts/write"
                     "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read"
                     "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write"
+                    "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        	        "Microsoft.Network/networkSecurityGroups/read",
 ----
 ....
     ],
@@ -112,7 +114,7 @@ Assicurarsi che l'account utente Azure utilizzato per implementare il data broke
 ....
 Nota:
 
-. Le seguenti autorizzazioni sono necessarie solo se si intende attivare l'impostazione di Continuous Sync su una relazione di sincronizzazione da Azure a un'altra posizione di cloud storage:
+. Le seguenti autorizzazioni sono necessarie solo se si prevede di attivare https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Impostazione sincronizzazione continua"] Su una relazione di sincronizzazione da Azure a un'altra posizione di cloud storage:
 +
 ** "Microsoft.Storage/storageAccounts/Read",
 ** "Microsoft.EventGrid/systemTopics/eventSubscriptions/write",
@@ -130,9 +132,13 @@ Nota:
 +
 Inoltre, l'ambito assegnabile deve essere impostato sull'ambito della sottoscrizione e sull'ambito del gruppo di risorse *NOF* se si intende implementare la sincronizzazione continua in Azure.
 
+. Le seguenti autorizzazioni sono necessarie solo se si intende scegliere una propria sicurezza per la creazione del broker di dati:
++
+** "Microsoft.Network/networkSecurityGroups/securityRules/read"
+** "Microsoft.Network/networkSecurityGroups/read"
 
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione della sincronizzazione continua"].
+
 
 
 
@@ -165,7 +171,7 @@ Il modulo è di proprietà e ospitato da Microsoft. Le tue credenziali non vengo
 
 . Scegliere una posizione per il data broker e inserire i dettagli di base sulla macchina virtuale.
 +
-image:screenshot_azure_data_broker.gif["Una schermata della pagina di implementazione di Azure che mostra i seguenti campi: Subscription, Azure Region, VNET, Subnet, VM Name, Nome utente, metodo di autenticazione e gruppo di risorse."]
+image:screenshot_azure_data_broker.png["Una schermata della pagina di implementazione di Azure che mostra i seguenti campi: Subscription, Azure Region, VNET, Subnet, VM Name, Nome utente, metodo di autenticazione e gruppo di risorse."]
 
 +
 
