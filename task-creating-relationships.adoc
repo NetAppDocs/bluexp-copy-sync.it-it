@@ -121,6 +121,37 @@ Se si attiva questa impostazione, questa influisce sulle altre funzioni nel modo
 ** Vengono ripristinati i valori predefiniti delle seguenti impostazioni: Timeout di sincronizzazione, file modificati di recente e Data di modifica.
 ** Se S3 è l'origine, il filtro per dimensione sarà attivo solo per gli eventi di copia (non per gli eventi di eliminazione).
 ** Una volta creata la relazione, è possibile solo accelerare o eliminare la relazione. Non è possibile interrompere le sincronizzazioni, modificare le impostazioni o visualizzare i report.
++
+È possibile creare una relazione di sincronizzazione continua con un bucket esterno. A tale scopo, attenersi alla seguente procedura:
+
++
+... Vai alla console di Google Cloud per il progetto del bucket esterno.
+... Accedere a *archiviazione cloud > Impostazioni > account del servizio archiviazione cloud*.
+... Aggiornare il file local.json:
++
+[source, json]
+----
+{
+"protocols": {
+    "gcp": {
+        "storage-account-email": <storage account email>
+}
+}
+}
+----
+... Riavviare il data broker:
++
+.... sudo pm2 stop all
+.... sudo pm2 avvia tutto
+
+
+... Creare una relazione di sincronizzazione continua con il bucket esterno pertinente.
++
+
+NOTE: Un broker di dati utilizzato per creare un rapporto di sincronizzazione continua con un bucket esterno non sarà in grado di creare un'altra relazione di sincronizzazione continua con un bucket nel progetto.
+
+
+
 
 
 --
