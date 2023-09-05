@@ -169,7 +169,6 @@
   <block id="c825d05ceebe5978107395d2dffdbcff" category="cell">Per contattare il supporto NetApp quando si utilizza una licenza BYOL per le relazioni di sincronizzazione.</block>
   <block id="cabe1b04cc3c96ae849f8fd810dfecdb" category="cell">https://fedoraproject.org</block>
   <block id="ebd974875888e4cb1567f55e3466cda1" category="cell">Per installare 7z sulla macchina virtuale del data broker durante l'installazione e gli aggiornamenti. 7z è necessario per inviare messaggi AutoSupport al supporto tecnico NetApp.</block>
-  <block id="6af6c652626660023ec712f6c15bbc0a" category="cell">https://sts.amazonaws.com</block>
   <block id="89100474e7faee0c34727c4b2b471007" category="cell">Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato.</block>
   <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com</block>
   <block id="8f606ab2764de8092de1ca0d967cfb8d" category="cell">https://pubsub.googleapis.com</block>
@@ -1431,7 +1430,6 @@
   <block id="d00f5267d50bd8fc291109206d3ad858" category="list-text">Definire i tipi di file da includere in ogni sincronizzazione: File, directory, collegamenti simbolici e collegamenti hardware.</block>
   <block id="e6bb715f6ce6607fa13566339effdb48" category="admonition">I collegamenti hardware sono disponibili solo per le relazioni NFS-NFS non protette. Gli utenti saranno limitati a un processo scanner e a una concorrenza scanner e le scansioni devono essere eseguite da una directory principale.</block>
   <block id="ab02bb0c1a43b674af1de544e1af3831" category="list-text">Escludi estensioni file</block>
-  <block id="3ac7c94d925c145faa4e821d6da327ac" category="list-text">Specificare le estensioni dei file da escludere dalla sincronizzazione digitando l'estensione del file e premendo *Invio*. Ad esempio, digitare _log_ o _.log_ per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:</block>
   <block id="9e1b606dc521567131be8e8f6b621511" category="list-text">Escludi directory</block>
   <block id="303de3e45b2f15b7f37aa50b2824f981" category="list-text">Specificare un massimo di 15 directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita. Se desideri includerli nella sincronizzazione, contattaci.</block>
   <block id="a00fe904aecabd4bff74d8776e6da2c5" category="list-text">Dimensione del file</block>
@@ -1884,4 +1882,17 @@
   <block id="04a9fd8958892dd025a4cc8dbf674cd3" category="list-text">sudo pm2 avvia tutto</block>
   <block id="536e5d919b8f1f2a0ce12ecc4d2a34c7" category="list-text">Creare una relazione di sincronizzazione continua con il bucket esterno pertinente.</block>
   <block id="e08fb6f08b7850e04ea43026fc6e9def" category="admonition">Un broker di dati utilizzato per creare un rapporto di sincronizzazione continua con un bucket esterno non sarà in grado di creare un'altra relazione di sincronizzazione continua con un bucket nel progetto.</block>
+  <block id="feb32d3372b2c412782aaf89f4c3468c" category="list-text">Specificare il regex o le estensioni del file da escludere dalla sincronizzazione digitando l'estensione del file e premendo *Invio*. Ad esempio, digitare _log_ o _.log_ per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:</block>
+  <block id="e8896d6ca3648d230a610f352be679de" category="admonition">Le espressioni regex, o regolari, differiscono dai caratteri jolly o dalle espressioni glob. Questa caratteristica *only* funziona con regex.</block>
+  <block id="2869c1b7d6055fd39cb65435bce896fd" category="cell">\https://sts.amazonaws.com
+\https://sts.us-east-1.amazonaws.com</block>
+  <block id="3034670f33afeb69347c1f076680bc54" category="list-text">Selezionare *continua*. Per aggiungere permessi S3 al tuo broker di dati, inserisci l'accesso ad AWS e le chiavi segrete.</block>
+  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 settembre 2023</block>
+  <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">Escludi file tramite regex</block>
+  <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">Gli utenti hanno ora la possibilità di escludere i file utilizzando regex.</block>
+  <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">Ulteriori informazioni sulla funzione *Escludi estensioni file*.</block>
+  <block id="8ca7330f80b3c6b405f94cdadf97a80c" category="paragraph"><block ref="8ca7330f80b3c6b405f94cdadf97a80c" category="inline-link-rx"></block></block>
+  <block id="f32e3be81b145c34740db00a44c46e93" category="section-title">Aggiungi S3 chiavi durante la creazione di broker dati Azure</block>
+  <block id="7631c04fd88511e09fd26f0ce9f65ce1" category="paragraph">Ora gli utenti possono aggiungere chiavi di accesso e chiavi segrete di AWS S3 durante la creazione di un broker dati Azure.</block>
+  <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
 </blocks>

@@ -103,7 +103,8 @@ Un broker di dati contatta i seguenti endpoint:
 | https://fedoraproject.org | Per installare 7z sulla macchina virtuale del data broker durante l'installazione e gli aggiornamenti. 7z è necessario per inviare messaggi AutoSupport al supporto tecnico NetApp. 
 
 
-| https://sts.amazonaws.com | Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato. 
+| \https://sts.amazonaws.com
+\https://sts.us-east-1.amazonaws.com | Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato. 
 
 
 | https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com | Per contattare la classificazione BlueXP quando si utilizza la classificazione per selezionare i file di origine per una nuova relazione di sincronizzazione. 

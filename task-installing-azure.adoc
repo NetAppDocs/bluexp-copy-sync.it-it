@@ -178,6 +178,7 @@ image:screenshot_azure_data_broker.png["Una schermata della pagina di implementa
 NOTE: Se si prevede di implementare una relazione di sincronizzazione continua, è necessario assegnare un ruolo personalizzato al proprio data broker. Questa operazione può essere eseguita anche manualmente dopo la creazione del broker.
 
 . Specificare una configurazione proxy, se è richiesto un proxy per l'accesso a Internet in VNET.
+. Selezionare *continua*. Per aggiungere permessi S3 al tuo broker di dati, inserisci l'accesso ad AWS e le chiavi segrete.
 . Selezionare *continua* e mantenere aperta la pagina fino al completamento dell'implementazione.
 +
 Il processo può richiedere fino a 7 minuti.

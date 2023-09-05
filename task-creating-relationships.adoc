@@ -211,10 +211,13 @@ Tipi di file:: Definire i tipi di file da includere in ogni sincronizzazione: Fi
 NOTE: I collegamenti hardware sono disponibili solo per le relazioni NFS-NFS non protette. Gli utenti saranno limitati a un processo scanner e a una concorrenza scanner e le scansioni devono essere eseguite da una directory principale.
 
 --
-Escludi estensioni file:: Specificare le estensioni dei file da escludere dalla sincronizzazione digitando l'estensione del file e premendo *Invio*. Ad esempio, digitare _log_ o _.log_ per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:
+Escludi estensioni file:: Specificare il regex o le estensioni del file da escludere dalla sincronizzazione digitando l'estensione del file e premendo *Invio*. Ad esempio, digitare _log_ o _.log_ per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:
 +
 --
 video::video_file_extensions.mp4[width=840,height=240]
+
+NOTE: Le espressioni regex, o regolari, differiscono dai caratteri jolly o dalle espressioni glob. Questa caratteristica *only* funziona con regex.
+
 --
 Escludi directory:: Specificare un massimo di 15 directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita. Se desideri includerli nella sincronizzazione, contattaci.
 Dimensione del file:: Scegliere di sincronizzare tutti i file indipendentemente dalle dimensioni o solo i file che si trovano in un intervallo di dimensioni specifico.
