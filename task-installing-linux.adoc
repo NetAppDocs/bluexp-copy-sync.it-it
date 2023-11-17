@@ -27,7 +27,7 @@ Quando crei un nuovo gruppo di broker di dati, scegli l'opzione on-Prem Data Bro
 +
 CentOS Stream non è supportato.
 
-** Red Hat Enterprise Linux 8.0 e 8.5
+** Red Hat Enterprise Linux 8,0, 8,5 e 8,8
 ** Rocky Linux 9
 ** Ubuntu Server 20.04 LTS
 ** SUSE Linux Enterprise Server 15 SP1
