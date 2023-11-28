@@ -166,7 +166,7 @@ Quando si imposta una relazione di sincronizzazione, è ora possibile scegliere 
 
 BlueXP copy and Sync crea un data broker in Google Cloud utilizzando la seguente configurazione.
 
-Compatibilità Node.js:: v20
+Compatibilità Node.js:: v21,2.0
 Tipo di macchina:: n2-standard-4
 VCPU:: 4
 RAM:: 15 GB

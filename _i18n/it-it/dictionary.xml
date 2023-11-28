@@ -1698,7 +1698,6 @@
   <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">Scopri di più sull'impostazione Copia per oggetti</block>
   <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
   <block id="b9a11b90960ff803269429887ab4cff3" category="admonition">L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati.</block>
-  <block id="c6d95123ce00e1d2940e9547ed9e800e" category="list-text">*Node.js Compatibility*: v20</block>
   <block id="029bf19b5ab4e2409feefba3e8d94200" category="section-title">Impostare la copia BlueXP e la sincronizzazione per copiare gli ACL</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Prima di iniziare</block>
   <block id="31bea9e85b096361bd5e056000e559fa" category="list-text">Da BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare *Create New Sync* (Crea nuova sincronizzazione).</block>
@@ -1711,7 +1710,6 @@
   <block id="7c2e6ea8a3aea68b51b8b85907eabea5" category="section-title">Copia manualmente gli ACL tra le condivisioni SMB</block>
   <block id="59e767a49496d7be5777e4cf48d4105c" category="list-text">Copia solo ACL, solo file o ACL e file da un server SMB attivando un'impostazione quando si crea una relazione o dopo la creazione di una relazione.</block>
   <block id="e0c7c4832f74beb01a9b0b7f4ceb62b9" category="list-text">Compatibilità Node.js</block>
-  <block id="8286e09aa759584d6fd8292ccdc241cc" category="list-text">v20</block>
   <block id="e0536b4ae9bb49a9633b77ce78d68e0a" category="section-title">Accelera le performance di sincronizzazione</block>
   <block id="baf8ddab0e1f4d03b84d74129178e3e2" category="section-title">Updatecreentials (credenziali di aggiornamento)</block>
   <block id="11d4a32f12cfcb43ae53ae70017809c1" category="section-title">Impostare le notifiche</block>
@@ -1897,4 +1895,15 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Per supporto tecnico relativo a un file service di un cloud provider, alla sua infrastruttura o a una soluzione che utilizza il servizio, fare riferimento a "Guida in linea" nella documentazione BlueXP relativa a quel prodotto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Per ricevere supporto tecnico specifico di BlueXP e delle relative soluzioni e servizi storage, utilizza le opzioni di supporto descritte di seguito.</block>
   <block id="78e61c832f461b7daf55a1dcd92749e0" category="list-text">Red Hat Enterprise Linux 8,0, 8,5 e 8,8</block>
+  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">26 novembre 2023</block>
+  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Supporto di classe Cold Storage per Azure Blob</block>
+  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">Il Tier Azure Blob del Cold Storage è ora disponibile quando si crea una relazione di sincronizzazione.</block>
+  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">Ulteriori informazioni sulla creazione di una relazione di sincronizzazione.</block>
+  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
+  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">Supporto della regione di Tel Aviv in AWS data broker</block>
+  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">Tel Aviv è ora una regione supportata quando si crea un broker di dati in AWS.</block>
+  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">Effettua l'update alla versione del nodo per i broker di dati</block>
+  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Tutti i nuovi broker di dati utilizzeranno ora la versione del nodo 21,2.0. I broker di dati non compatibili con questo aggiornamento, ad esempio CentOS 7,0 e Ubuntu Server 18,0, non funzionano più con la copia e sincronizzazione BlueXP.</block>
+  <block id="067302a61f4ac3cb10bab96cf4753092" category="list-text">v21,2.0</block>
+  <block id="3677e4449a81dc7f1c8db056eade76dd" category="list-text">*Compatibilità Node.js*: v21,2.0</block>
 </blocks>

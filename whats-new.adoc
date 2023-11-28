@@ -18,6 +18,32 @@ Scopri le novità di BlueXP Copy and Sync.
 
 
 
+== 26 novembre 2023
+
+
+
+=== Supporto di classe Cold Storage per Azure Blob
+
+Il Tier Azure Blob del Cold Storage è ora disponibile quando si crea una relazione di sincronizzazione.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["Ulteriori informazioni sulla creazione di una relazione di sincronizzazione."]
+
+
+
+=== Supporto della regione di Tel Aviv in AWS data broker
+
+Tel Aviv è ora una regione supportata quando si crea un broker di dati in AWS.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Scopri di più sulla creazione di un data broker in AWS"].
+
+
+
+=== Effettua l'update alla versione del nodo per i broker di dati
+
+Tutti i nuovi broker di dati utilizzeranno ora la versione del nodo 21,2.0. I broker di dati non compatibili con questo aggiornamento, ad esempio CentOS 7,0 e Ubuntu Server 18,0, non funzionano più con la copia e sincronizzazione BlueXP.
+
+
+
 == 3 settembre 2023
 
 
