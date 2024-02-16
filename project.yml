@@ -82,32 +82,6 @@ sidebar:
       url: "/task-get-help.html"
   - title: Note legali
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: Inizia subito
-    links:
-    - title: Panoramica sulla copia e la sincronizzazione BlueXP
-      url: concept-cloud-sync.html
-    - title: Avvio rapido
-      url: task-quick-start.html
-    - title: FAQ
-      url: faq.html
-  - title: USA copia e sincronizzazione BlueXP
-    links:
-    - title: Creare una relazione di sincronizzazione
-      url: task-creating-relationships.html
-    - title: Impostare la licenza
-      url: task-licensing.html
-    - title: Gestire i gruppi di broker di dati
-      url: task-managing-data-brokers.html
-  - title: Blog e community
-    links:
-    - title: Community NetApp
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Blog BlueXP
-      url: https://cloud.netapp.com/blog
-    - title: Webinar sul cloud
-      url: https://cloud.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family

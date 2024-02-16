@@ -219,7 +219,13 @@ video::video_file_extensions.mp4[width=840,height=240]
 NOTE: Le espressioni regex, o regolari, differiscono dai caratteri jolly o dalle espressioni glob. Questa caratteristica *only* funziona con regex.
 
 --
-Escludi directory:: Specificare un massimo di 15 directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita. Se desideri includerli nella sincronizzazione, contattaci.
+Escludi directory:: Specificare un massimo di 15 regex o directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita.
++
+--
+
+NOTE: Le espressioni regex, o regolari, differiscono dai caratteri jolly o dalle espressioni glob. Questa caratteristica *only* funziona con regex.
+
+--
 Dimensione del file:: Scegliere di sincronizzare tutti i file indipendentemente dalle dimensioni o solo i file che si trovano in un intervallo di dimensioni specifico.
 Data di modifica:: Scegliere tutti i file indipendentemente dalla data dell'ultima modifica, i file modificati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo.
 Data di creazione:: Quando un server SMB è l'origine, questa impostazione consente di sincronizzare i file creati dopo una data specifica, prima di una data specifica o tra un intervallo di tempo specifico.

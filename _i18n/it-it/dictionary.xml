@@ -204,7 +204,6 @@
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Se disponi di un account a livello di cliente, puoi aggiungere uno o più account NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Se disponi di un account partner o reseller, puoi aggiungere uno o più account NSS, ma non possono essere aggiunti insieme agli account a livello di cliente.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Queste azioni consentono a BlueXP di utilizzare il tuo account NSS per download di licenze, verifica dell'aggiornamento software e registrazioni di supporto future.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenere presente quanto segue:</block>
@@ -1429,7 +1428,6 @@
   <block id="e6bb715f6ce6607fa13566339effdb48" category="admonition">I collegamenti hardware sono disponibili solo per le relazioni NFS-NFS non protette. Gli utenti saranno limitati a un processo scanner e a una concorrenza scanner e le scansioni devono essere eseguite da una directory principale.</block>
   <block id="ab02bb0c1a43b674af1de544e1af3831" category="list-text">Escludi estensioni file</block>
   <block id="9e1b606dc521567131be8e8f6b621511" category="list-text">Escludi directory</block>
-  <block id="303de3e45b2f15b7f37aa50b2824f981" category="list-text">Specificare un massimo di 15 directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita. Se desideri includerli nella sincronizzazione, contattaci.</block>
   <block id="a00fe904aecabd4bff74d8776e6da2c5" category="list-text">Dimensione del file</block>
   <block id="9c8cecb2075d9547b74e5e71bf16ab79" category="list-text">Scegliere di sincronizzare tutti i file indipendentemente dalle dimensioni o solo i file che si trovano in un intervallo di dimensioni specifico.</block>
   <block id="80ccccd39ce6134340fccbf76eb379ae" category="list-text">Data di modifica</block>
@@ -1453,8 +1451,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Unisciti alla community BlueXP per seguire le discussioni in corso o crearne di nuove.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentazione</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">La documentazione BlueXP attualmente visualizzata.</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Mailto:ng-cloudmanager-feedback@netapp.com[email di feedback]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Diamo valore al tuo contributo. Invia un feedback per aiutarci a migliorare BlueXP.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Crea un caso con il supporto NetApp</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Oltre alle opzioni di supporto autonomo sopra descritte, puoi collaborare con uno specialista del supporto NetApp per risolvere eventuali problemi dopo l'attivazione del supporto.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Nella pagina *risorse*, scegliere una delle opzioni disponibili in supporto tecnico:</block>
@@ -1609,10 +1605,6 @@
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="sidebar">Licensing</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
@@ -1906,4 +1898,11 @@
   <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Tutti i nuovi broker di dati utilizzeranno ora la versione del nodo 21,2.0. I broker di dati non compatibili con questo aggiornamento, ad esempio CentOS 7,0 e Ubuntu Server 18,0, non funzionano più con la copia e sincronizzazione BlueXP.</block>
   <block id="067302a61f4ac3cb10bab96cf4753092" category="list-text">v21,2.0</block>
   <block id="3677e4449a81dc7f1c8db056eade76dd" category="list-text">*Compatibilità Node.js*: v21,2.0</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilizza Microsoft Entra ID come provider di identità per i servizi di autenticazione specifici per il supporto e la licenza.</block>
+  <block id="4b51a8df678b7448fbc55b79ad365ed7" category="section-title">11 febbraio 2024</block>
+  <block id="66a743c4896414f00b485685ab377a19" category="section-title">Filtra le directory per regex</block>
+  <block id="df5c4f17d479f00c828a9edc617f2277" category="paragraph">Gli utenti hanno ora la possibilità di filtrare le directory usando regex.</block>
+  <block id="32d736bf69b032967c9ca2f284cd6218" category="inline-link">Ulteriori informazioni sulla funzione *Escludi directory*.</block>
+  <block id="9afa1c757f9d9c1d7a951ff852629645" category="paragraph"><block ref="9afa1c757f9d9c1d7a951ff852629645" category="inline-link-rx"></block></block>
+  <block id="65f2edc14f4a65d07600885b4ca1a56f" category="list-text">Specificare un massimo di 15 regex o directory da escludere dalla sincronizzazione digitando il nome o il percorso completo della directory e premendo *Invio*. Le directory .copy-offload, .snapshot, ~snapshot sono escluse per impostazione predefinita.</block>
 </blocks>
