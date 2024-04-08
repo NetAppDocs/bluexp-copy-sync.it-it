@@ -13,6 +13,7 @@ summary: La guida introduttiva al servizio di copia e sincronizzazione BlueXP in
 :imagesdir: ./media/
 
 
+[role="lead"]
 La guida introduttiva al servizio di copia e sincronizzazione BlueXP include alcuni passaggi.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Accedere e configurare BlueXP

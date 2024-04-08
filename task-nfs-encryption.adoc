@@ -13,6 +13,7 @@ summary: Se la tua azienda ha policy di sicurezza rigorose, sincronizza i dati t
 :imagesdir: ./media/
 
 
+[role="lead"]
 Se la tua azienda ha policy di sicurezza rigorose, puoi sincronizzare i dati NFS utilizzando la crittografia data-in-flight. Questa funzionalità è supportata da un server NFS a un altro server NFS e da Azure NetApp Files a Azure NetApp Files.
 
 Ad esempio, è possibile sincronizzare i dati tra due server NFS che si trovano in reti diverse. In alternativa, potrebbe essere necessario trasferire in modo sicuro i dati su Azure NetApp Files tra sottoreti o regioni.
