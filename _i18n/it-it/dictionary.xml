@@ -1494,7 +1494,6 @@
   <block id="f68b92ee815675ae3018eca060b553b7" category="summary">Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.</block>
   <block id="66a57cf55e06ad77b01c27e38766b83a" category="doc">Creazione e visualizzazione di report per ottimizzare la configurazione</block>
   <block id="428c9ca45dc8f0b8e1eda231aef5b08f" category="paragraph">Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.</block>
-  <block id="d065612e0b27393ca9ed8b8e18bc869f" category="paragraph">Ogni report fornisce dettagli approfonditi su un percorso in una relazione di sincronizzazione. Ad esempio, il report di un file system mostra il numero di directory e file presenti, la distribuzione delle dimensioni dei file, la profondità e l'ampiezza delle directory e molto altro ancora.</block>
   <block id="0389649d1c6e65625a57cd6c84149999" category="section-title">Creazione di report</block>
   <block id="bcd0169de0ca7a58018cf173cdbb86e0" category="paragraph">Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.</block>
   <block id="26126443d44ba2723fb7a7ede8dda75c" category="paragraph">I percorsi (origine o destinazione) in ciascuna delle relazioni di sincronizzazione vengono visualizzati in una tabella.</block>
@@ -1576,7 +1575,6 @@
   <block id="72786dbf28b6222cb6b90ef1853e64d5" category="paragraph"><block ref="72786dbf28b6222cb6b90ef1853e64d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b2c91269ae0c67c26fe59bbb10eb6a2" category="admonition">Questa stessa funzionalità è disponibile quando si sincronizzano i dati con StorageGRID e IBM Cloud Object Storage. Per Azure e Google Cloud Storage, è disponibile solo l'opzione metadati.</block>
   <block id="600901e70afccc50e18676048766ba78" category="paragraph">*Risultato*</block>
-  <block id="c81b15466cc89faa99024d734f63d070" category="paragraph">BlueXP copy and Sync avvia la sincronizzazione dei dati tra l'origine e la destinazione.</block>
   <block id="04bde9824fe76c12bc97fc0154e2017a" category="sidebar">Documenti di copia e sincronizzazione BlueXP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
@@ -1605,7 +1603,6 @@
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="sidebar">Licensing</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
@@ -1910,4 +1907,13 @@
   <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Visualizza i requisiti dell'host Linux</block>
   <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>.</block>
   <block id="62839d4e5d5a9de91b6f7d896439934b" category="list-text">Red Hat Enterprise Linux 8,5, 8,8 e 8,9</block>
+  <block id="0d76b6f5f7ef4feb4ba34ba4dc8a3356" category="section-title">Quali tipi di relazioni di sincronizzazione conservano i metadati dello storage a oggetti?</block>
+  <block id="b0f6c5b9e24f06b742cf40691ecda0a1" category="section-title">Quali tipi di metadati vengono replicati durante le sincronizzazioni in cui sono sorgente NFS o SMB?</block>
+  <block id="fca3645c4b9c57a087d67f345e46b21a" category="paragraph">I metadati quali ID utente, ora di modifica, ora di accesso e GID vengono replicati per impostazione predefinita. Gli utenti possono optare per la replica dell'ACL da CIFS contrassegnandolo come necessario quando creano una relazione di sincronizzazione.</block>
+  <block id="7051698c4825bdf5a52d58a440b9a6da" category="inline-link">relazioni di sincronizzazione</block>
+  <block id="5c4c20a350a01bcba51403b5971c1e55" category="inline-link">gestione dei broker di dati</block>
+  <block id="81671387dfc9496bbb584683131ed0ba" category="inline-link">crea rapporti per ottimizzare le tue prestazioni e la tua configurazione</block>
+  <block id="67eba5ff5953726e26983c2f64f794dc" category="paragraph">BlueXP copy and Sync avvia la sincronizzazione dei dati tra l'origine e la destinazione. Sono disponibili le statistiche di sincronizzazione relative al tempo impiegato dalla sincronizzazione, all'interruzione e al numero di file copiati, acquisiti o eliminati. È quindi possibile gestire il<block ref="036850536ef01bc8377a10d87d2c60f6" category="inline-link-rx"></block>,<block ref="afaf0e8700f6eb5774590916b99650a2" category="inline-link-rx"></block>, o.<block ref="04f03004f9e0603b9348762faa7e67f2" category="inline-link-rx"></block>.</block>
+  <block id="b9f1a0da291ab3c6b115c407d28d1ab9" category="inline-link">creazione e completamento di una sincronizzazione riusciti</block>
+  <block id="62ef189d2125efd4e054bda2fe60e56f" category="paragraph">Ogni report fornisce dettagli approfonditi su un percorso in una relazione di sincronizzazione. Include il numero di directory, file e collegamenti simbolici, la distribuzione delle dimensioni dei file, la profondità e l'ampiezza delle directory, il tempo di modifica e il tempo di accesso. Questo differisce dagli statics di sincronizzazione, che sono disponibili dal dashboard dopo<block ref="633d339dd1720ad54a63284823a9045d" category="inline-link-rx"></block>.</block>
 </blocks>

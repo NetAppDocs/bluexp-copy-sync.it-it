@@ -5,15 +5,12 @@ keywords: manage data brokers, manage data broker groups, data broker performanc
 summary: Un broker di dati sincronizza i dati da una posizione di origine a una posizione di destinazione. Per ogni relazione di sincronizzazione creata, è necessario un data broker. Gestisci i data broker aggiungendo un nuovo data broker a un gruppo, visualizzando informazioni sui data broker e molto altro ancora. 
 ---
 = Gestire i gruppi di broker di dati
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -283,6 +283,10 @@ BlueXP copy and Sync copia automaticamente le autorizzazioni NFS tra i server NF
 
 == Metadati dello storage a oggetti
 
+
+
+=== Quali tipi di relazioni di sincronizzazione conservano i metadati dello storage a oggetti?
+
 BlueXP copy and Sync copia i metadati dello storage a oggetti dall'origine alla destinazione per i seguenti tipi di relazioni di sincronizzazione:
 
 * Amazon S3 -> Amazon S3 ^1^
@@ -301,6 +305,12 @@ BlueXP copy and Sync copia i metadati dello storage a oggetti dall'origine alla 
 
 
 ^1^ per queste relazioni di sincronizzazione, è necessario link:task-creating-relationships.html["Attivare l'impostazione Copia per oggetti quando si crea la relazione di sincronizzazione"].
+
+
+
+=== Quali tipi di metadati vengono replicati durante le sincronizzazioni in cui sono sorgente NFS o SMB?
+
+I metadati quali ID utente, ora di modifica, ora di accesso e GID vengono replicati per impostazione predefinita. Gli utenti possono optare per la replica dell'ACL da CIFS contrassegnandolo come necessario quando creano una relazione di sincronizzazione.
 
 
 
