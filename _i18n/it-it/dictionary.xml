@@ -1916,4 +1916,8 @@
   <block id="67eba5ff5953726e26983c2f64f794dc" category="paragraph">BlueXP copy and Sync avvia la sincronizzazione dei dati tra l'origine e la destinazione. Sono disponibili le statistiche di sincronizzazione relative al tempo impiegato dalla sincronizzazione, all'interruzione e al numero di file copiati, acquisiti o eliminati. È quindi possibile gestire il<block ref="036850536ef01bc8377a10d87d2c60f6" category="inline-link-rx"></block>,<block ref="afaf0e8700f6eb5774590916b99650a2" category="inline-link-rx"></block>, o.<block ref="04f03004f9e0603b9348762faa7e67f2" category="inline-link-rx"></block>.</block>
   <block id="b9f1a0da291ab3c6b115c407d28d1ab9" category="inline-link">creazione e completamento di una sincronizzazione riusciti</block>
   <block id="62ef189d2125efd4e054bda2fe60e56f" category="paragraph">Ogni report fornisce dettagli approfonditi su un percorso in una relazione di sincronizzazione. Include il numero di directory, file e collegamenti simbolici, la distribuzione delle dimensioni dei file, la profondità e l'ampiezza delle directory, il tempo di modifica e il tempo di accesso. Questo differisce dagli statics di sincronizzazione, che sono disponibili dal dashboard dopo<block ref="633d339dd1720ad54a63284823a9045d" category="inline-link-rx"></block>.</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
 </blocks>
