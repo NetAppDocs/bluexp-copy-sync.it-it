@@ -32,7 +32,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -51,7 +51,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -71,7 +71,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Storage ONTAP S3
 * Server SMB
 * StorageGRID
@@ -90,7 +90,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -123,7 +123,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -155,7 +155,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -173,7 +173,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -191,7 +191,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Storage ONTAP S3
 * Server SMB
 * StorageGRID
@@ -219,7 +219,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -239,7 +239,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Google Drive
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Storage ONTAP S3
 * Server SMB
 * StorageGRID
@@ -247,7 +247,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 
 
 
-| Cluster ONTAP on-premise  a| 
+| Cluster ONTAP on-premise (NFS o SMB)  a| 
 * Amazon EFS
 * Amazon FSX per ONTAP
 * Amazon S3
@@ -259,7 +259,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Server SMB
 * StorageGRID
 
@@ -294,7 +294,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Google Drive
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Storage ONTAP S3
 * Server SMB
 * StorageGRID
@@ -315,7 +315,7 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
-* Cluster ONTAP on-premise
+* Cluster ONTAP on-premise (NFS o SMB)
 * Storage ONTAP S3
 * Server SMB
 * StorageGRID

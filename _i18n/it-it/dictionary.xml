@@ -284,7 +284,6 @@
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX per ONTAP</block>
   <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">ONTAP on-premise</block>
   <block id="e0daf39823ec1a1a7878c9718f063d5f" category="cell">Google Drive</block>
-  <block id="c17ce6a7cdcb97581c6d5603ec7d447a" category="cell">Cluster ONTAP on-premise</block>
   <block id="c01bb6a5867adae467a31539eda72b37" category="cell">SFTP ^2^</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="cell">S3</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">Note:</block>
@@ -1922,4 +1921,5 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2 giugno 2024</block>
   <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">Il servizio di copia e sincronizzazione di BlueXP è stato aggiornato per correggere alcuni bug. Anche il broker di dati è stato aggiornato per applicare gli aggiornamenti per la sicurezza. La nuova versione del broker di dati è la 1,0.52.</block>
+  <block id="8c5259dd9c9515862d9ef62edaaa899d" category="list-text">Cluster ONTAP on-premise (NFS o SMB)</block>
 </blocks>
