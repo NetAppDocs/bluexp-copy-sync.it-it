@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-prepare-object-storage.html 
+keywords: prepare data broker, data broker, object storage, sync, scanner, configure scanner 
+summary: 'Se stai pianificando di sincronizzare i dati dallo storage a oggetti allo storage a oggetti (ad esempio, Amazon S3 in Azure Blob), devi preparare il gruppo di broker dati prima di creare la relazione di sincronizzazione.' 
+---
+= Prepara un broker di dati per sincronizzare i dati tra storage a oggetti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se stai pianificando di sincronizzare i dati dallo storage a oggetti allo storage a oggetti (ad esempio, Amazon S3 in Azure Blob), devi preparare il gruppo di broker dati prima di creare la relazione di sincronizzazione.
+
+.A proposito di questa attività
+Per preparare il gruppo di broker dati, è necessario modificare la configurazione dello scanner. Se non si modifica la configurazione, potrebbero verificarsi problemi di prestazioni per questa relazione di sincronizzazione.
+
+.Prima di iniziare
+Il gruppo di broker di dati utilizzato per sincronizzare i dati dallo storage a oggetti allo storage a oggetti deve gestire solo questi tipi di relazioni di sincronizzazione. Se il gruppo di broker di dati gestisce un diverso tipo di relazione di sincronizzazione (ad esempio, NFS su NFS o storage a oggetti su SMB), le performance di queste relazioni di sincronizzazione potrebbero essere negativamente influenzate.
+
+.Fasi
+. Dalla copia e sincronizzazione di BlueXP, seleziona *Manage Data Brokers*.
+. Selezionare image:icon-settings.png["Schermata dell'icona delle impostazioni"]
+. Aggiornare la configurazione dello scanner:
++
+.. Modificare *concorrenza scanner* in *1*.
+.. Modificare *limite processi scanner* in *1*.
+
+
+. Selezionare *Unify Configuration* (unifica configurazione).
+
+
+.Risultato
+La copia e sincronizzazione di BlueXP aggiorna la configurazione del gruppo di broker di dati.
+
+.Quali sono le prossime novità?
+Ora puoi creare la relazione di sincronizzazione tra lo storage a oggetti utilizzando il gruppo di broker dei dati appena configurato.

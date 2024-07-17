@@ -46,6 +46,8 @@ sidebar:
     entries:
     - title: Sincronizza i dati tra un'origine e una destinazione
       entries:
+      - title: Prepara un broker di dati per sincronizzare i dati tra storage a oggetti
+        url: "/task-prepare-object-storage.html"
       - title: Creare una relazione di sincronizzazione
         url: "/task-creating-relationships.html"
       - title: Copia degli ACL da una condivisione SMB

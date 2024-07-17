@@ -60,7 +60,7 @@ BlueXP copy and Sync aggiunge il nuovo data broker al gruppo. Le performance del
 
 
 
-== Updatecreentials (credenziali di aggiornamento)
+== Aggiornare le credenziali
 
 È possibile aggiornare il data broker con le credenziali più recenti dell'origine o della destinazione in una relazione di sincronizzazione esistente. L'aggiornamento delle credenziali può essere utile se le policy di sicurezza richiedono l'aggiornamento periodico delle credenziali.
 
