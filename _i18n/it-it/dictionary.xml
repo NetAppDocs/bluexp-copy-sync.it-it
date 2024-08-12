@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="0073db80af56fecd7f6a58608d77ced7" category="summary">Quando si crea un nuovo data broker, scegliere l'opzione AWS Data Broker per implementare il software data broker su una nuova istanza EC2 in un VPC. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
-  <block id="8268a9d045ec667e304233d6a99374e0" category="doc">Creazione di un nuovo data broker in AWS</block>
   <block id="91ef58bec9fef8fa136d0d216dbd523e" category="paragraph">Quando crei un nuovo gruppo di broker di dati, scegli Amazon Web Services per implementare il software di broker di dati su una nuova istanza EC2 in un VPC. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">Scopri di più</block>
   <block id="c43a6988e9fb943699097296d5eabba0" category="paragraph">È inoltre possibile installare il data broker su un host Linux esistente nel cloud o on-premise. <block ref="556c1c240ec0090f5d153e6b793bb5bc" category="inline-link-macro-rx"></block>.</block>
@@ -25,7 +24,6 @@
   <block id="ea85396da38480bdcd66e09456ac3fd4" category="inline-link-macro">Le autorizzazioni definite in questo file JSON</block>
   <block id="8e4350880011b411db7b27aa380a60d0" category="list-text"><block ref="1a8d8995001884ca8ca83a93f0897f4a" category="inline-link-macro-rx"></block> Deve essere associato al ruolo IAM in modo che il data broker possa funzionare correttamente.</block>
   <block id="63430717bb1e3b33a858e3661c1627a0" category="paragraph">Seguire i passaggi riportati di seguito per specificare il ruolo IAM durante l'implementazione del data broker.</block>
-  <block id="9727c41167b4d3a89168d9e2a6bf1fbe" category="section-title">Creazione del data broker</block>
   <block id="c371ecc54445590f3e356493638d02db" category="paragraph">Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in AWS quando si crea una relazione di sincronizzazione.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Fasi</block>
   <block id="f0fff4676c779987735fc7ee633da03c" category="paragraph">Completa i passaggi fino a raggiungere la pagina *Data Broker Group*.</block>
@@ -59,7 +57,6 @@
   <block id="c03f3cc8275a0a87d7784cf12a264c0b" category="list-text">Dimensione e tipo di disco</block>
   <block id="c5a333964ee323aaba5e5b42ff247d6b" category="list-text">SSD GP2 DA 10 GB</block>
   <block id="febdb5376a041b31f655e631de8dd5d8" category="summary">Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nel pagare a consumo. La seconda opzione consiste nell'acquistare le licenze direttamente da NetApp.</block>
-  <block id="4ecb33900aad1706afbc34f19bd2f2e9" category="doc">Pagamento delle relazioni di sincronizzazione al termine della prova gratuita</block>
   <block id="97ff8a17f533b6d33b6dd9059ff062e9" category="paragraph">Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nell'abbonarsi ad AWS o Azure per il pagamento a consumo o per il pagamento annuale. La seconda opzione consiste nell'acquistare le licenze direttamente da NetApp.</block>
   <block id="97a214da03586723b3eda5c2057276c9" category="paragraph">Puoi iscriverti da AWS Marketplace o Azure Marketplace. Non puoi iscriverti a entrambi.</block>
   <block id="55430fccd9c75a6ec1bc44bb1d637619" category="paragraph">È possibile utilizzare le licenze di NetApp con un abbonamento a Marketplace. Ad esempio, se si dispone di 25 relazioni di sincronizzazione, è possibile pagare le prime 20 relazioni di sincronizzazione utilizzando una licenza e quindi pagare a consumo da AWS o Azure con le restanti 5 relazioni di sincronizzazione.</block>
@@ -67,7 +64,6 @@
   <block id="f65ca7baf45cc92aec55770c0b36841f" category="paragraph"><block ref="7cfabb5964e9e36c902fe67d3082ea34" category="inline-link-macro-rx"></block>.</block>
   <block id="ea456f2c2f8433045e0abd1d56195f2d" category="paragraph">Se non pagherai subito dopo la fine della prova gratuita, non potrai creare ulteriori relazioni. Le relazioni esistenti non vengono eliminate, ma non è possibile apportare modifiche fino a quando non si sottoscrive o si inserisce una licenza.</block>
   <block id="e779a177cfac02ea5631f78a57600f50" category="paragraph">Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.</block>
-  <block id="ed14d70dad7ae627497350bc4e3868e5" category="section-title">[[aws]]sottoscrizione da AWS</block>
   <block id="7f1e5fcf21192da891eea1c1f4f6e6f0" category="paragraph">AWS ti consente di pagare a consumo o di pagare annualmente.</block>
   <block id="f06e94914580a228484d54783ffeb2bb" category="list-title">Procedura per il pagamento a consumo</block>
   <block id="af3298973678fbb2b80974a8030f07ac" category="list-text">Selezionare *AWS*</block>
@@ -76,20 +72,17 @@
   <block id="d95d2545b9702aaa44811f90fd798b70" category="list-title">Passi da pagare annualmente</block>
   <block id="b857da0ad28712a25e73c0907a2b3740" category="inline-link">Accedere alla pagina AWS Marketplace</block>
   <block id="b84483eacee20411f642e9b32a1532d3" category="list-text"><block ref="9a55e6c904391172078e71a0186ef751" category="inline-link-rx"></block>.</block>
-  <block id="b6a5a78c3221a73b92bf2f602e64a9cc" category="section-title">[[Azure]]sottoscrizione a Azure</block>
   <block id="5b708f827f75588e652438e8d2977fb4" category="paragraph">Azure ti consente di pagare in base alle tue esigenze o di pagare ogni anno.</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">Di cosa hai bisogno</block>
   <block id="251910634a1b47d0359b6171382f3f9a" category="paragraph">Un account utente Azure che dispone delle autorizzazioni Contributor o Owner nell'abbonamento pertinente.</block>
   <block id="2164db8f01d0c0a0dc250abc3b9556f5" category="list-text">Selezionare *Azure*.</block>
   <block id="981e7253aa8df6872dfd3d544c12ef23" category="paragraph">Seleziona *mensile* per pagare in base all'ora o *annuale* per pagare in anticipo un anno.</block>
-  <block id="b5ee50058b36eec1b9d5e452251d8123" category="section-title">[[licenses]]Acquisto di licenze NetApp e aggiunta a BlueXP copy e Sync</block>
   <block id="a1c678174ddff43ed8cf229a96c7a003" category="paragraph">Per pagare anticipatamente le relazioni di sincronizzazione, è necessario acquistare una o più licenze e aggiungerle al servizio di copia e sincronizzazione BlueXP.</block>
   <block id="97e3031ee8bcd0a19765ddc808e71590" category="paragraph">Sono necessari il numero di serie della licenza e il nome utente e la password per l'account NetApp Support Site a cui è associata la licenza.</block>
   <block id="0f5161c9e18f97b653442fef34de1024" category="list-text">Acquista una licenza inviando un messaggio di posta:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[come contattare NetApp].</block>
   <block id="a7a65c558a31a52f3a2570581f5170c2" category="list-text">Inserire il numero di serie.</block>
   <block id="441eaafe617acae90fac942cbac1d2a0" category="list-text">Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere:</block>
   <block id="8d91fda63040409e75bebd4d14b9a825" category="list-text">Se l'account è già stato aggiunto a BlueXP, selezionarlo dall'elenco a discesa.</block>
-  <block id="e0fd71ec05fc637037be9da3ff2103b0" category="section-title">Aggiornamento di una licenza</block>
   <block id="b69b60c6eae94cb020b628bd40e1db2a" category="paragraph">Se hai esteso una licenza di copia e sincronizzazione BlueXP acquistata da NetApp, la nuova data di scadenza non verrà aggiornata automaticamente in BlueXP Copy and Sync. È necessario aggiungere nuovamente la licenza per aggiornare la data di scadenza. Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.</block>
   <block id="83893211fb004302e2b1216eda1eb1f8" category="list-text">Selezionare l'account NetApp Support Site associato alla licenza che si desidera aggiungere.</block>
   <block id="a6aa4333de4bce96807c6d015f47bea5" category="paragraph">BlueXP Copy and Sync aggiorna la licenza esistente con la nuova data di scadenza.</block>
@@ -98,20 +91,15 @@
   <block id="ffa8ff6da490712b483bfedc14c83df0" category="paragraph">Le funzionalità di copia e sincronizzazione di BlueXP disponibili tramite l'interfaccia utente Web sono disponibili anche tramite l'API RESTful.</block>
   <block id="cb59b87e00d11222bfd9159d0d23836f" category="section-title">Per iniziare</block>
   <block id="60fd7829aef330c094a09224909d9e11" category="paragraph">Per iniziare a utilizzare l'API di copia e sincronizzazione BlueXP, è necessario ottenere un token utente e l'ID account BlueXP. Quando si effettua una chiamata API, è necessario aggiungere il token e l'ID dell'account all'intestazione Authorization (autorizzazione).</block>
-  <block id="b53e2cff9f1417fcc84365e2d567011e" category="list-text">Ottenere un token utente da NetApp BlueXP.</block>
   <block id="109c4a4872ddbe9910e974f2b3dd0211" category="admonition">Se si utilizza un account di posta elettronica personale senza ID client, è possibile utilizzare l'ID client predefinito "QC3AgHk6qdbmC7Yyr82ApBwaaJLwRrNO".</block>
-  <block id="415019870d0741b8c872f4ef1a528769" category="list-text">Ottenere l'ID account BlueXp.</block>
   <block id="eda59d7eb3739f93f444f0e8c16f18e5" category="paragraph">Questa API restituirà una risposta come la seguente:</block>
   <block id="b4d5fd65d29290d42a4161d3362d1326" category="list-text">Aggiungere il token utente e l'ID account nell'intestazione Authorization di ogni chiamata API.</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">*Esempio*</block>
   <block id="b55b4937f8ff2471222d040f06b7807e" category="paragraph">Nell'esempio seguente viene illustrata una chiamata API per creare un data broker in Microsoft Azure. È sufficiente sostituire &lt;user_token&gt; e &lt;accountId&gt; con il token e l'ID ottenuti nei passaggi precedenti.</block>
-  <block id="d6f4f4fada8d5c3952a90492c3138e97" category="sidebar-title">Cosa devo fare quando il token scade?</block>
-  <block id="79eae7ffaa22e2815a503a0776cb13d0" category="paragraph">Il token utente di NetApp BlueXp ha una data di scadenza. Per aggiornare il token, è necessario richiamare nuovamente l'API dal passaggio 1.</block>
   <block id="5c5cd253b66501facf455779c806ee88" category="paragraph">La risposta API include un campo "expires_in" che indica la scadenza del token.</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="section-title">Riferimento API</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="07df581e602eee7539f9e6e4e8d97e00" category="paragraph">La documentazione per ciascuna API di copia e sincronizzazione BlueXP è disponibile all'interno del sito<block ref="692cab94d93982d3f8e96928c3c0e2c6" category="inline-link-rx"></block>.</block>
-  <block id="92e2b06a1709caf91e74da4a3fb021fe" category="section-title">Utilizzo delle API di elenco</block>
   <block id="89b39aae22e72765b6582ae0db1ba186" category="paragraph">Le API di elenco sono API asincrone, pertanto il risultato non viene restituito immediatamente (ad esempio:<block ref="864d13ef380f3fcf3b49246b9c7bdaa7" prefix=" " category="inline-code"></block> e.<block ref="1cbadbd550c11d29a3a6c7ea25987154" prefix=" " category="inline-code"></block>). L'unica risposta dal server è lo stato HTTP 202. Per ottenere il risultato effettivo, è necessario utilizzare<block ref="63d435ec5649100ee5f04824a6382226" prefix=" " category="inline-code"></block> API.</block>
   <block id="6d89cb53dacaf941bbf56d09d3dc21de" category="list-text">Chiamare l'API dell'elenco che si desidera utilizzare.</block>
   <block id="50879b5593dd20bf23b085383f4beb91" category="list-text">Utilizzare<block ref="63d435ec5649100ee5f04824a6382226" prefix=" " category="inline-code"></block> API per visualizzare il risultato dell'operazione.</block>
@@ -236,12 +224,9 @@
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Al termine</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp dovrebbe contattarti durante questo processo. Si tratta di un esercizio di assunzione per i nuovi utenti.</block>
   <block id="d4dc0f2ea6e5e1538c8a19c6a4577fd8" category="summary">BlueXP copy and Sync può copiare gli elenchi di controllo degli accessi (ACL) tra le condivisioni SMB e tra una condivisione SMB e lo storage a oggetti (ad eccezione di ONTAP S3). Se necessario, puoi anche mantenere manualmente gli ACL tra le condivisioni SMB utilizzando robocopy.</block>
-  <block id="64d7746bed65d4dc86191fc514e7ebbf" category="doc">Copia degli ACL dalle condivisioni SMB</block>
   <block id="6ef697f11922be2e4de0971f7d70997f" category="list-title">Scelte</block>
   <block id="81a977665d31d193ae870e9766c60880" category="inline-xref">Impostare la copia e la sincronizzazione di BlueXP per copiare automaticamente gli ACL</block>
-  <block id="d19dc7040ab8dc466773d35695363957" category="list-text"><block ref="55b2d1445c700d9bab1004cc9ff792c1" category="inline-xref-macro-rx"></block></block>
   <block id="3ac19332a9012b7586dca2b8b7c57b58" category="inline-xref">Copiare manualmente gli ACL tra le condivisioni SMB</block>
-  <block id="6690de55a41e5eebc0f748de2f508fb2" category="list-text"><block ref="677048ca203ed360a1f7fefc6961b7a3" category="inline-xref-macro-rx"></block></block>
   <block id="c5c953c152db5adea8fcd2fc1ce5c904" category="paragraph">Copiare gli ACL tra le condivisioni SMB e tra le condivisioni SMB e lo storage a oggetti attivando un'impostazione quando si crea una relazione o dopo la creazione di una relazione.</block>
   <block id="e9e23d944b5ba04f7bd10800f3536393" category="inline-link-macro">qualsiasi sistema operativo supportato</block>
   <block id="b82aab2ce8ba96a1adcef93a4d0f2e7a" category="paragraph">Questa funzionalità funziona con _qualsiasi_ tipo di data broker: AWS, Azure, Google Cloud Platform o data broker on-premise. Il data broker on-premise può essere eseguito <block ref="21c422ddfc59d696be9e90956009904f" category="inline-link-macro-rx"></block>.</block>
@@ -379,7 +364,6 @@
   <block id="bdc71bda13a615bcc29169c368c82126" category="section-title">Il gruppo di broker di dati riprova quando un file non riesce a sincronizzarsi? O il timeout?</block>
   <block id="486538f3b2cf30dbac185ae48dbcd398" category="paragraph">Un gruppo di broker di dati non esegue il timeout quando un singolo file non viene trasferito. Il gruppo di broker di dati tenta di nuovo 3 volte prima di saltare il file. Il valore di RETRY è configurabile nelle impostazioni per una relazione di sincronizzazione.</block>
   <block id="16577fe9b5ad3fc74ec2a37327b4f98f" category="inline-link-macro">Scopri come modificare le impostazioni per una relazione di sincronizzazione</block>
-  <block id="13b1f6a5b87aad329fe4a0f0b0a24671" category="paragraph"><block ref="4b47cfecc7a5fed36fcab91191b9686f" category="inline-link-macro-rx"></block>.</block>
   <block id="e7fc2a48e6896c10c00e2e0d0f42df0a" category="section-title">E se si dispone di un set di dati molto grande?</block>
   <block id="1a76a33306f63cd222193be36e2aab28" category="paragraph">Se una singola directory contiene almeno 600,000 file, mailto:ng-cloudsync-support@netapp.com[contattaci] per aiutarti a configurare il gruppo di broker di dati per gestire il payload. Potrebbe essere necessario aggiungere ulteriore memoria al gruppo di broker di dati.</block>
   <block id="5272c1335a923889fee61138f9c644e0" category="paragraph">Tenere presente che non esiste un limite al numero totale di file nel punto di montaggio. La memoria aggiuntiva è necessaria per le directory di grandi dimensioni con 600,000 o più file, indipendentemente dal livello nella gerarchia (directory superiore o sottodirectory).</block>
@@ -447,7 +431,6 @@
   <block id="c6bdda7b88c4f51edb4d0ca671f8c528" category="paragraph">Diversi fattori possono influire sulle performance di trasferimento dei dati. Le performance di sincronizzazione complessive potrebbero risentire della larghezza di banda, della latenza e della topologia di rete, delle specifiche delle macchine virtuali del data broker e delle performance del sistema storage. Ad esempio, un singolo broker di dati in un gruppo può raggiungere i 100 MB/s, mentre il throughput del disco sulla destinazione potrebbe consentire solo i 64 MB/s. Di conseguenza, il gruppo di broker di dati continua a cercare di copiare i dati, ma la destinazione non può soddisfare le performance del gruppo di broker di dati.</block>
   <block id="7d222e095bb95fdb1e26be04106ab252" category="paragraph">Pertanto, verificare le prestazioni della rete e il throughput del disco sulla destinazione.</block>
   <block id="6f22195a8ef8575adc498fb44d8a075c" category="inline-link-macro">Scopri come accelerare le performance di sincronizzazione</block>
-  <block id="0154df452f9453f942ba55a04f2fdbee" category="paragraph">Quindi, puoi prendere in considerazione l'accelerazione delle performance di sincronizzazione aggiungendo altri broker di dati a un gruppo per condividere il carico di tale relazione. <block ref="355055ed36bda4d96dcf1f665e0d51c2" category="inline-link-macro-rx"></block>.</block>
   <block id="e5fbd5081321543a8bad7a8d1fea419c" category="section-title">Eliminare le cose</block>
   <block id="1d341849ed5b4388c424bd97c39d9c07" category="paragraph">Le seguenti domande si riferiscono all'eliminazione di relazioni di sincronizzazione e dati da origini e destinazioni.</block>
   <block id="3aae18e000d4ad381323091fc6aca3d0" category="section-title">Cosa succede se si elimina la copia BlueXP e la relazione di sincronizzazione?</block>
@@ -538,7 +521,6 @@
   <block id="9ecbc2d9f6b6ab0392906cca0b95b920" category="list-text">Concorrenza del transferrer</block>
   <block id="ac0fac9f0c454d2eb07769d1359bbe40" category="list-text">Limiti dei processi di trasferimento</block>
   <block id="ec7e38030033a02298c5a717c0397281" category="inline-link-macro">Scopri come definire una configurazione unificata per un gruppo di broker di dati</block>
-  <block id="f34ca0a61f713db3f7223ea730746e00" category="paragraph"><block ref="76b1d1355d80ad25cf7c1c2af9610053" category="inline-link-macro-rx"></block>.</block>
   <block id="07c04fea0b1e27f12c0ac9f6c5f76af6" category="section-title">[[google]]requisiti del bucket di storage Google Cloud</block>
   <block id="017c5900c1d43fddb24f60e2fcc3f6fc" category="paragraph">Assicurati che il tuo bucket di storage Google Cloud soddisfi i seguenti requisiti.</block>
   <block id="e649787bac6e0b31cc56d488858d8e89" category="section-title">Posizioni dei data broker supportate per Google Cloud Storage</block>
@@ -662,7 +644,6 @@
   <block id="157e0bfc3909da4f9907f6377e70c5d2" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Paga le tue relazioni di sincronizzazione al termine della prova gratuita</block>
   <block id="f55ed3a5508f0e4f48d2c11dc6e34613" category="paragraph">Iscriviti ad AWS o Azure per pagare a consumo o per pagare annualmente. Oppure acquistare le licenze direttamente da NetApp. Basta andare alla pagina License Settings (Impostazioni di licenza) in BlueXP copy (Copia BlueXP) e sincronizzarla per configurarla. <block ref="3cd689475b04fdbdf7fafd004b01a742" category="inline-link-macro-rx"></block>.</block>
   <block id="48fdd045e3712fe8b8bf348baef2a5e3" category="summary">Quando crei un nuovo data broker, scegli l'opzione Google Cloud Data Broker per implementare il software data broker su una nuova istanza di macchina virtuale in un VPC. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
-  <block id="bc3f4614483a5cee9737e251b527f30b" category="doc">Creazione di un nuovo data broker in Google Cloud</block>
   <block id="ff0ab6e5cc918d0f34784d6b8fd73746" category="paragraph">Quando crei un nuovo gruppo di broker di dati, scegli Google Cloud Platform per implementare il software di broker di dati su una nuova istanza di macchina virtuale in un VPC Google Cloud. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
   <block id="617fa6ca8941919927e9677f8acb97f8" category="paragraph">Quando BlueXP copy and Sync implementa il broker di dati in Google Cloud, crea un gruppo di sicurezza che abilita la comunicazione in uscita richiesta.</block>
   <block id="23c5a36a4e18015e399e97b3a48f2255" category="section-title">Autorizzazioni necessarie per implementare il data broker in Google Cloud</block>
@@ -683,7 +664,6 @@
   <block id="2a38666aae985ff4945ff1199551e9d0" category="paragraph">Se è necessario un proxy per l'accesso a Internet, il proxy deve trovarsi in Google Cloud e utilizzare lo stesso account di servizio del data broker.</block>
   <block id="d18db3d9c5f8587fa64b4e04218dc914" category="paragraph">L'implementazione dell'istanza richiede da 5 a 10 minuti circa. È possibile monitorare l'avanzamento del servizio di copia e sincronizzazione BlueXP, che si aggiorna automaticamente quando l'istanza è disponibile.</block>
   <block id="ed7160396fcfefca3c1997b02ccbe37c" category="paragraph">Hai implementato un data broker in Google Cloud e creato una nuova relazione di sincronizzazione. Puoi utilizzare questo data broker con ulteriori relazioni di sincronizzazione.</block>
-  <block id="8743cf4fd5bd75723f626be1d4af6bb5" category="section-title">Fornire le autorizzazioni per utilizzare i bucket in altri progetti Google Cloud</block>
   <block id="33969e378e95c52b40733d56432c09ea" category="paragraph">Quando crei una relazione di sincronizzazione e scegli Google Cloud Storage come origine o destinazione, BlueXP Copy and Sync ti consente di scegliere tra i bucket che l'account di servizio del broker di dati dispone delle autorizzazioni per l'utilizzo. Per impostazione predefinita, sono inclusi i bucket che si trovano nel _stesso_ progetto dell'account di servizio del broker di dati. Tuttavia, è possibile scegliere i bucket di _altri_ progetti se si forniscono le autorizzazioni necessarie.</block>
   <block id="6ab8649cc222312c90daa98ef292a592" category="list-text">Aprire la console di Google Cloud Platform e caricare il servizio Cloud Storage.</block>
   <block id="75d2935b39ceeb13d10ba4ced792a75b" category="list-text">Immettere il nome dell'account di servizio del broker di dati.</block>
@@ -825,7 +805,6 @@
   <block id="a43f5cf69d6af0c6e17bed7ff726625e" category="list-text">L'host Linux deve disporre di una connessione all'origine e alla destinazione.</block>
   <block id="e7b55bccb60334ca631527b050553022" category="list-text">Il file server deve consentire all'host Linux di accedere alle esportazioni.</block>
   <block id="7bea0411e1c1d113bc62197206637112" category="list-text">La porta 443 deve essere aperta sull'host Linux per il traffico in uscita verso AWS (il data broker comunica costantemente con il servizio Amazon SQS).</block>
-  <block id="c9e33dfa8b5904f2c5eeefbab35a3d9b" category="section-title">Abilitazione dell'accesso ad AWS</block>
   <block id="21182c7c99920ebad46cc371d317499a" category="paragraph">Se si prevede di utilizzare il data broker con una relazione di sincronizzazione che include un bucket S3, è necessario preparare l'host Linux per l'accesso AWS. Quando si installa il data broker, è necessario fornire le chiavi AWS per un utente AWS che dispone di un accesso programmatico e di autorizzazioni specifiche.</block>
   <block id="8668bc285e00b6f9e578112045a4865d" category="list-text">Creare un criterio IAM utilizzando<block ref="6d7c79584b67fdfc254e7699a61c1e8d" category="inline-link-rx"></block></block>
   <block id="f9b866c4ff602b4a3215745c79cfe7e4" category="inline-link">Visualizzare le istruzioni AWS</block>
@@ -833,7 +812,6 @@
   <block id="b3c98a582bb953058ccaf9a71307fa93" category="list-text">Creare un utente IAM con accesso programmatico.</block>
   <block id="dd9d9810864a1e7938f32b3eaa8dd049" category="paragraph"><block ref="dd9d9810864a1e7938f32b3eaa8dd049" category="inline-link-rx"></block></block>
   <block id="564482440eb08d11894ec114af427f21" category="paragraph">Assicurarsi di copiare le chiavi AWS perché è necessario specificarle quando si installa il software data broker.</block>
-  <block id="71921838fce69c9d045aeb2ad30c1eb5" category="section-title">Abilitazione dell'accesso a Google Cloud</block>
   <block id="9bb2d547aba26d64f54ee705473214d6" category="paragraph">Se intendi utilizzare il data broker con una relazione di sincronizzazione che include un bucket di storage Google Cloud, devi preparare l'host Linux per l'accesso a Google Cloud. Quando si installa il data broker, è necessario fornire una chiave per un account di servizio che dispone di autorizzazioni specifiche.</block>
   <block id="3c5f750427f50f4edf7cb574473c42a8" category="list-text">Creare un account di servizio Google Cloud con autorizzazioni Storage Admin, se non ne hai già uno.</block>
   <block id="6cb9b02ae49aa68f97de615d923b228a" category="list-text">Creare una chiave dell'account di servizio salvata in formato JSON.</block>
@@ -842,9 +820,7 @@
   <block id="902d86db753e123639feaba47a0e34ff" category="paragraph">Il file deve contenere almeno le seguenti proprietà: "Project_id", "private_key" e "client_email"</block>
   <block id="a6c2835cfd7f21086d62be199ba39d44" category="admonition">Quando si crea una chiave, il file viene generato e scaricato sul computer.</block>
   <block id="be2c33a07b84816f411d04d45ac1e4a3" category="list-text">Salvare il file JSON nell'host Linux.</block>
-  <block id="8269fd6e9d75dd954301e8ba35641805" category="section-title">Abilitazione dell'accesso a Microsoft Azure</block>
   <block id="7af7eb8440af6bb7f9ffd64569367b5b" category="paragraph">L'accesso ad Azure viene definito in base alla relazione fornendo un account di storage e una stringa di connessione nella procedura guidata delle relazioni di sincronizzazione.</block>
-  <block id="b6e5e048443785c8f424048cf1b9e40e" category="section-title">Installazione del data broker</block>
   <block id="1944006c73d02c718c69408861e1307c" category="paragraph">È possibile installare un data broker su un host Linux quando si crea una relazione di sincronizzazione.</block>
   <block id="df89dda1d1c7ea3cd71a127402ea04d7" category="paragraph"><block ref="df89dda1d1c7ea3cd71a127402ea04d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8020038698547625e7abf1eda36c8877" category="admonition">Anche se l'opzione è denominata *_on-Prem_ Data Broker*, si applica a un host Linux on-premise o nel cloud.</block>
@@ -863,7 +839,6 @@
   <block id="d23756d0938d8a0d5fe2458da8764d29" category="paragraph"><block ref="ee1abfe3266c2211d4c3e356c7f57d2a" prefix="" category="inline-code"></block></block>
   <block id="8447306210a0972ac94b7d774799df1a" category="list-text">URI</block>
   <block id="43fa66f5d7cb7b0c6940f346a2840e44" category="inline-xref">Per ottenere l'URI dalla copia e dalla sincronizzazione BlueXP, procedere come segue</block>
-  <block id="fdf038d5164429a9481528d1a4ae0b9a" category="list-text">BlueXP copy and Sync visualizza l'URI del file di installazione nella pagina delle istruzioni, che viene caricato quando si seguono le istruzioni per implementare on-Prem Data Broker. L'URI non viene ripetuto in questo caso perché il collegamento viene generato dinamicamente e può essere utilizzato una sola volta. <block ref="0c33a94f9c890b9aae239faccb0a58b1" category="inline-xref-macro-rx"></block>.</block>
   <block id="dd1f3e7a0e13a53a0d39dc15cd7aaadb" category="list-text">Passare a superuser, rendere eseguibile il programma di installazione e installare il software:</block>
   <block id="9f758ef6cf58bc19a4e4cc3d238fd812" category="admonition">Ciascun comando elencato di seguito include i parametri per l'accesso AWS e Google Cloud. Seguire la pagina delle istruzioni per ottenere il comando esatto in base all'opzione di installazione.</block>
   <block id="49dc0392ba36ada3c1af45ba75b28797" category="list-text">Nessuna configurazione proxy:</block>
@@ -874,9 +849,7 @@
   <block id="2d9b81de771115c9968d6eabf73e8b3f" category="paragraph"><block ref="a11452dc07fc62bfb0d109a404da87bc" prefix="" category="inline-code"></block></block>
   <block id="e656cb1ebc2e559e3bcc2002585434ed" category="list-text">Tasti AWS</block>
   <block id="18bbccaaba098ea1a676d4d7e5810ac9" category="inline-xref">seguire questa procedura</block>
-  <block id="d60ded7a040145d82fa326559c4753bf" category="list-text">Queste sono le chiavi per l'utente che si dovrebbe aver preparato <block ref="a969db4de6d1a440b2352a74869c6d78" category="inline-xref-macro-rx"></block>. Le chiavi AWS vengono memorizzate nel data broker, che viene eseguito nella rete on-premise o cloud. NetApp non utilizza le chiavi esterne al data broker.</block>
   <block id="a6c9e3a7671c1fd9d7328c3be5d107b5" category="list-text">File JSON</block>
-  <block id="40a402e2af1a2cefda63b0a1c268470d" category="list-text">Si tratta del file JSON che contiene una chiave dell'account di servizio che si dovrebbe preparare <block ref="7d6ea8fc5746e04de57c4e2ea5f20d13" category="inline-xref-macro-rx"></block>.</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="doc">Panoramica sulle licenze</block>
   <block id="f856f3b97c80815883c23bfe0ce6d8c2" category="section-title">Iscrizione al Marketplace</block>
   <block id="89630329851b5245d4f57e1a8b8f1aa6" category="inline-link-macro">Puoi iscriverti tramite AWS o Azure</block>
@@ -899,7 +872,6 @@
   <block id="05bec3dc9de263528ef947ed16ae20f6" category="summary">BlueXP copy and Sync è un servizio di replica e sincronizzazione cloud per il trasferimento dei dati NAS tra archivi di oggetti on-premise e cloud.</block>
   <block id="db75f0488f4e9bbad86a02da9a572896" category="doc">Copia BlueXP e documentazione di sincronizzazione</block>
   <block id="957b35928b8a0bf847c922e00243690d" category="summary">Quando crei un nuovo data broker, scegli l'opzione Azure Data Broker per implementare il software del data broker su una nuova macchina virtuale in una VNET. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
-  <block id="540d36f51d945cde427519036203dde6" category="doc">Creazione di un nuovo data broker in Azure</block>
   <block id="a151aef665e52178b0d84244ecf2215e" category="paragraph">Quando si crea un nuovo gruppo di broker di dati, scegliere Microsoft Azure per implementare il software di broker di dati su una nuova macchina virtuale in una VNET. BlueXP copy and Sync guida l'utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all'installazione.</block>
   <block id="07eb137be0de3d4ec4faeb42baa5f82c" category="paragraph">Quando BlueXP copy and Sync implementa il data broker in Azure, crea un gruppo di sicurezza che abilita la comunicazione in uscita richiesta.</block>
   <block id="c658fd4f091c10877f154fbf84fbee89" category="section-title">Autorizzazioni necessarie per implementare il data broker in Azure</block>
@@ -946,7 +918,6 @@
   <block id="472d573b9b96b332aa4fd565b8a78c68" category="list-text">28 GB</block>
   <block id="d6856312a90199668ecb7d8f4a9f1322" category="list-text">SSD Premium da 64 GB</block>
   <block id="71904eaffc2ec470e49ce1a710f5e878" category="summary">Se la tua azienda ha policy di sicurezza rigorose, sincronizza i dati tra server NFS in reti diverse utilizzando la crittografia data-in-flight.</block>
-  <block id="8df3b832ae4d464c11ed34e0c6f3da2f" category="doc">Sincronizzazione dei dati NFS con crittografia data-in-flight</block>
   <block id="72bf4a1584bf5735615bab52725bb4a4" category="paragraph">Se la tua azienda ha policy di sicurezza rigorose, puoi sincronizzare i dati NFS utilizzando la crittografia data-in-flight. Questa funzionalità è supportata da un server NFS a un altro server NFS e da Azure NetApp Files a Azure NetApp Files.</block>
   <block id="81c917d52736001d7efd43b0f0ddc92c" category="paragraph">Ad esempio, è possibile sincronizzare i dati tra due server NFS che si trovano in reti diverse. In alternativa, potrebbe essere necessario trasferire in modo sicuro i dati su Azure NetApp Files tra sottoreti o regioni.</block>
   <block id="d6dc650d0d220e29e9345f6a653d7ec3" category="section-title">Come funziona la crittografia dei dati in volo</block>
@@ -962,7 +933,6 @@
   <block id="9ebc239fb878b360de7460c36e393e15" category="list-text">Il broker di dati di destinazione decrta i dati prima di inviarli alla destinazione.</block>
   <block id="09cf96cd35454a72d72eda24f5a5324a" category="list-text">Dopo la copia iniziale, il servizio sincronizza tutti i dati modificati ogni 24 ore. Se sono presenti dati da sincronizzare, il processo inizia con l'iniziatore che apre una connessione crittografata con l'altro data broker.</block>
   <block id="aaf881bd7230ab8408f75fc7a5701e2e" category="inline-link-macro">è possibile modificare la pianificazione dopo aver creato la relazione</block>
-  <block id="06a32f9c3008d75facbe41d9e59fdb13" category="paragraph">Se preferisci sincronizzare i dati più frequentemente, <block ref="8047278fff8ae1b9eca053a56dd7adfd" category="inline-link-macro-rx"></block>.</block>
   <block id="4f6582928260ec95d5382830f415104b" category="section-title">Versioni NFS supportate</block>
   <block id="30fe527571ab3736d66f7bc649438aab" category="list-text">Per i server NFS, la crittografia data-in-flight è supportata con le versioni NFS 3, 4.0, 4.1 e 4.2.</block>
   <block id="e58f770a9e62d5d72c5f922745500d31" category="list-text">Per Azure NetApp Files, la crittografia data-in-flight è supportata con NFS versioni 3 e 4.1.</block>
@@ -1000,7 +970,6 @@
   <block id="31b876010e591a7e8b00068dcabd80b7" category="inline-image-macro">Una schermata che mostra la schermata di revisione. Mostra i server NFS, i broker di dati e le informazioni di rete relative a ciascuno di essi.</block>
   <block id="39cd9e3fa50eeb2b66a750a04c154460" category="paragraph"><block ref="39cd9e3fa50eeb2b66a750a04c154460" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d4a1e312061c2a0e1171d137dc166dd" category="summary">Se necessario, eseguire uno script di disinstallazione per rimuovere il data broker, i pacchetti e le directory creati al momento dell'installazione del data broker.</block>
-  <block id="e6f506127d5f6704ecc31da23c753df9" category="doc">Disinstallazione del data broker</block>
   <block id="dd8a8a39c3cdcebc155728bf563bc1e1" category="paragraph">Se necessario, eseguire uno script di disinstallazione per rimuovere il data broker e i pacchetti e le directory creati al momento dell'installazione del data broker.</block>
   <block id="1216bef3d5a3c80340882e3c0b1b21f1" category="list-text">Accedere all'host del data broker.</block>
   <block id="c3007d2919ca918bead8275d47f7541a" category="list-text">Passare alla directory del data broker:<block ref="aa1f842da4e7092d77436fb9b206da9c" prefix=" " category="inline-code"></block></block>
@@ -1190,7 +1159,6 @@
   <block id="ba898f89df5c39db3aedca30b0dd9585" category="paragraph">È ora possibile aggiornare le licenze Cloud Sync estese.</block>
   <block id="9c36a4a5f20a34725e3200409f20a65a" category="paragraph">Se si estende una licenza Cloud Sync acquistata da NetApp, è possibile aggiungerla nuovamente per aggiornare la data di scadenza.</block>
   <block id="e8b8928cc2b3188c3209a7c67ffeb87a" category="inline-link-macro">Scopri come aggiornare una licenza</block>
-  <block id="38e00e64912a31a6e9ba56d502615fce" category="paragraph"><block ref="c554cb9dd2842cfffcc3e3678513553a" category="inline-link-macro-rx"></block>.</block>
   <block id="625212f75a40ffe67e47fee287c2f6b1" category="section-title">Aggiorna le credenziali Box</block>
   <block id="9b441f4afbb53f4c8d5b7fc8bc6b9301" category="paragraph">Ora puoi aggiornare le credenziali Box per una relazione di sincronizzazione esistente.</block>
   <block id="b4ef038c5650fac60f2434cad75645e5" category="inline-link-macro">Scopri come aggiornare le credenziali</block>
@@ -1269,7 +1237,6 @@
   <block id="d8ca60d2627899ef9a840f93d0a59cec" category="section-title">Confronta gli attributi</block>
   <block id="3f31cdfbb217ec6fa9a858a46cfd3290" category="paragraph">È ora disponibile una nuova impostazione *Confronta per* per ogni relazione di sincronizzazione.</block>
   <block id="dabc7e1b7880be887fd2898786c6c925" category="paragraph">Questa impostazione avanzata consente di scegliere se Cloud Sync deve confrontare determinati attributi quando si determina se un file o una directory è stata modificata e deve essere nuovamente sincronizzato.</block>
-  <block id="1df5e86c2f922b55e7a126736aa3fdc8" category="paragraph"><block ref="4d121b48d2c287fff78a725ca3d42ec9" category="inline-link-macro-rx"></block>.</block>
   <block id="13c380d451c296cda1d1289b9dc25114" category="section-title">11 Apr 2021</block>
   <block id="5e224a35cc2a8810465ced83c84d4a8b" category="section-title">Il servizio Cloud Sync standalone viene ritirato</block>
   <block id="e0c9c98f02dabde677a2634ba4ffa251" category="paragraph">Il servizio Cloud Sync standalone è stato ritirato. Ora dovresti accedere a Cloud Sync direttamente da BlueXP, dove sono disponibili tutte le stesse funzionalità.</block>
@@ -1293,7 +1260,6 @@
   <block id="580e905670d084cfe8e8e4ce2cd2899b" category="list-text">Regioni governative di Azure</block>
   <block id="ae54a5c026f31ada088992587d92cb3a" category="list-text">Cina</block>
   <block id="4163e7a84b8caa61a8947b85097371ab" category="summary">Quando si crea una relazione di sincronizzazione che richiede credenziali Amazon S3, Azure o Google Cloud, è necessario specificare tali credenziali tramite l'interfaccia utente o l'API di copia e sincronizzazione BlueXP. Un'alternativa è impostare il data broker per accedere alle credenziali direttamente da un vault HashiCorp esterno.</block>
-  <block id="34a36f0a41c390743b7c28311304c570" category="doc">Impostazione di un gruppo di broker di dati per l'utilizzo di un vault HashiCorp esterno</block>
   <block id="3ad5b6ee0c2d7a718cd4dbaad5b800fd" category="paragraph">Quando si crea una relazione di sincronizzazione che richiede credenziali Amazon S3, Azure o Google Cloud, è necessario specificare tali credenziali tramite l'interfaccia utente o l'API di copia e sincronizzazione BlueXP. Un'alternativa è impostare il gruppo di broker di dati per accedere alle credenziali (o _secrets_) direttamente da un vault HashiCorp esterno.</block>
   <block id="ff28fc9ed3f494e0ac7eaca5fd242e0a" category="paragraph">Questa funzionalità è supportata tramite l'API di copia e sincronizzazione BlueXP con relazioni di sincronizzazione che richiedono credenziali Amazon S3, Azure o Google Cloud.</block>
   <block id="ecd6e1541fc4ccde6f2831ef5fce68b5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Preparare il vault</block>
@@ -1302,7 +1268,6 @@
   <block id="e0e88dfcd253d5d5ea89a9985f2101cf" category="paragraph">Preparare il gruppo di broker di dati a recuperare le credenziali dal vault esterno modificando il file di configurazione locale per ogni broker di dati nel gruppo.</block>
   <block id="90ebbe09b37441e9a7bffcb3531bb740" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Creare una relazione di sincronizzazione utilizzando l'API</block>
   <block id="f3a79eb1d3d4b75537affb3a4efa8775" category="paragraph">Una volta configurato tutto, è possibile inviare una chiamata API per creare una relazione di sincronizzazione che utilizzi il vault per ottenere i segreti.</block>
-  <block id="7fe706ca34bea852c8a7b5a01aac8705" category="section-title">Preparazione del vault</block>
   <block id="57a7f745a91d7775408a8d994e5b2949" category="paragraph">È necessario fornire una copia BlueXP e sincronizzarla con l'URL con i segreti nel vault. Preparare il vault impostando questi URL. È necessario impostare gli URL in base alle credenziali per ciascuna origine e destinazione nelle relazioni di sincronizzazione che si intende creare.</block>
   <block id="b97d94a4af6f2da3a68d05d4577e517f" category="paragraph">L'URL deve essere impostato come segue:</block>
   <block id="011dd3c441f07d89289a23db496f2046" category="paragraph"><block ref="c32e6c72f3e658282a4d5702bdbdb091" prefix="" category="inline-code"></block></block>
@@ -1323,7 +1288,6 @@
   <block id="01bcd05b36ee78f5e7558380e1c441c1" category="list-text">Esempio di URL completo e percorso per le credenziali di destinazione</block>
   <block id="2af8dca9bc89c0d31fe796e59b5f370e" category="list-text">http://example.vault.com:8200/my-path/all-secrets/n32hcbnejk2/AZURECreds</block>
   <block id="3aefad44bc64b2ff412966cd4518c970" category="paragraph">Il percorso del prefisso è _/my-path/all-secrets/_, l'ID della richiesta è _n32hcbnejk2_ e l'endpoint di destinazione è Azure.</block>
-  <block id="6bdc241f7d9a3a1b035cb0ebe9d563d1" category="section-title">Preparazione del gruppo di broker di dati</block>
   <block id="e53c4e755ce10f21750aef31f9cb474c" category="list-text">SSH a un broker di dati del gruppo.</block>
   <block id="57e9628679cc186593a986def13cfc2b" category="list-text">Modificare il file local.json che risiede in /opt/netapp/databroker/config.</block>
   <block id="d04d9c6e802e9e399fbf311275a4e180" category="list-text">Impostare enable su *true* e i campi dei parametri di configurazione in _external-integrations.hashicorp_ come segue:</block>
@@ -1353,7 +1317,6 @@
   <block id="1151673efbf1139445cf28b9c2a5e870" category="list-text">Ripetere questa procedura per tutti gli altri broker di dati del gruppo.</block>
   <block id="df538d67a969b99ad10c96736d0e3de8" category="section-title">Esempio di autenticazione con ruolo aws</block>
   <block id="7464ab636ff7b666832693357d2dae63" category="section-title">Esempio di autenticazione gcp-iam</block>
-  <block id="c4e8f9bc954572562912e03c9f2fbe19" category="section-title">Impostazione delle autorizzazioni quando si utilizza l'autenticazione gcp-iam</block>
   <block id="e32a252e42df40beaff7e5a1ce821572" category="paragraph">Se si utilizza il metodo di autenticazione _gcp-iam_, il data broker deve disporre della seguente autorizzazione GCP:</block>
   <block id="b872e6417139366489f4ec46ed47e57d" category="inline-link-macro">Scopri di più sui requisiti di autorizzazione GCP per il data broker</block>
   <block id="6c6f477f7b70d038eaa27d83b51ba533" category="paragraph"><block ref="e85dc3fc664e427ab39e5c87730a03a3" category="inline-link-macro-rx"></block>.</block>
@@ -1490,9 +1453,7 @@
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aggiorna note sul caso*: Fornisci ulteriori dettagli sul problema oppure seleziona *carica file* per allegare fino a un massimo di cinque file.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella.</block>
   <block id="f68b92ee815675ae3018eca060b553b7" category="summary">Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.</block>
-  <block id="66a57cf55e06ad77b01c27e38766b83a" category="doc">Creazione e visualizzazione di report per ottimizzare la configurazione</block>
   <block id="428c9ca45dc8f0b8e1eda231aef5b08f" category="paragraph">Creare e visualizzare report per ottenere informazioni da utilizzare con l'aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.</block>
-  <block id="0389649d1c6e65625a57cd6c84149999" category="section-title">Creazione di report</block>
   <block id="bcd0169de0ca7a58018cf173cdbb86e0" category="paragraph">Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.</block>
   <block id="26126443d44ba2723fb7a7ede8dda75c" category="paragraph">I percorsi (origine o destinazione) in ciascuna delle relazioni di sincronizzazione vengono visualizzati in una tabella.</block>
   <block id="94954fba60bab7206fb4f66c4a7750cb" category="paragraph">Ecco un report di esempio per un percorso del file system.</block>
@@ -1501,9 +1462,7 @@
   <block id="92e47f2f14756e088762306ae29dfb31" category="paragraph">Ecco un report di esempio per lo storage a oggetti.</block>
   <block id="321073ad07dd4a09f0eaadfb4561181a" category="inline-image-macro">Report che mostra il numero di elementi del percorso, la dimensione degli oggetti, l'ora di modifica e la classe di storage.</block>
   <block id="a9c50da4c27210dd95cbf6916b6c3b34" category="paragraph"><block ref="a9c50da4c27210dd95cbf6916b6c3b34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="03901baec19e5e2a784f13acaa06127a" category="section-title">Download di report</block>
   <block id="f0d2e62b1c7572c743aab0d7c9b969c5" category="paragraph">È possibile scaricare un report in formato PDF per visualizzarlo offline o condividerlo.</block>
-  <block id="90e1319509db72baceccb5d8f4c2c472" category="section-title">Visualizzazione degli errori dei report</block>
   <block id="33e1f542e7541a2a529927e0dfe10d00" category="paragraph">La tabella Paths (percorsi) indica se sono presenti errori nel report più recente. Un errore identifica un problema riscontrato da BlueXP durante la scansione del percorso.</block>
   <block id="3f1413ac0baff3149998bbd9b08637ab" category="paragraph">Ad esempio, un report potrebbe contenere errori di autorizzazione negata. Questo tipo di errore può influire sulla capacità di BlueXP Copy e Sync di eseguire la scansione dell'intero set di file e directory.</block>
   <block id="d86cb2fe66402168c1c894043151d228" category="paragraph">Dopo aver visualizzato l'elenco degli errori, è possibile risolvere i problemi ed eseguire nuovamente il report.</block>
@@ -1512,7 +1471,6 @@
   <block id="e01f862fe61f1c44179e61c69a18938d" category="paragraph"><block ref="e01f862fe61f1c44179e61c69a18938d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="591d860278697b4e6dbce26639961630" category="list-text">Utilizzare le informazioni contenute nell'errore per risolvere il problema.</block>
   <block id="aa8765cc437da97ac36fcf5b9e8bd67c" category="paragraph">Una volta risolto il problema, l'errore non dovrebbe apparire alla successiva esecuzione del report.</block>
-  <block id="1b3463b3026822e4c8d6ad54c16a507a" category="section-title">Eliminazione dei report</block>
   <block id="37100a26242d4deb28feac7db8d366de" category="paragraph">È possibile eliminare un report contenente un errore risolto o se il report è correlato a una relazione di sincronizzazione rimossa.</block>
   <block id="4051a60e091a5882a67c28985f8c22c7" category="list-text">Confermare che si desidera eliminare il rapporto o i rapporti.</block>
   <block id="9884de3e76b128738e9b044e854c59b2" category="summary">Quando si crea una relazione di sincronizzazione, il servizio di copia e sincronizzazione BlueXP copia i file dall'origine alla destinazione. Dopo la copia iniziale, il servizio sincronizza tutti i dati modificati ogni 24 ore.</block>
@@ -1628,7 +1586,6 @@
   <block id="01523e5fc16052f503921585b0698ab3" category="paragraph"><block ref="ee9222b07587eb2c3ffe563d1a2c6106" category="inline-link-rx"></block>.</block>
   <block id="5272ee17dd9d75e3474f45c3e2ce72c0" category="paragraph"><block ref="5272ee17dd9d75e3474f45c3e2ce72c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="404965498641a1a56cc0fa3373515d7a" category="paragraph"><block ref="404965498641a1a56cc0fa3373515d7a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="246b0e9609672cddcf038daaa946671b" category="paragraph"><block ref="bbd18c81f756c2aa65d18a49f39abc0e" category="inline-link-rx"></block>.</block>
   <block id="b4e33a0f7ed5ccdaa3ecce4c47daf31f" category="paragraph"><block ref="b4e33a0f7ed5ccdaa3ecce4c47daf31f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="858b6b26381ac0e28fd0ab2919dbe947" category="paragraph"><block ref="0e57eb14c04befe90ef141b40df96648" category="inline-link-rx"></block>.</block>
   <block id="607c524b181fcf51f1c3bf2bd8544f62" category="paragraph"><block ref="607c524b181fcf51f1c3bf2bd8544f62" category="inline-image-macro-rx" type="image"></block></block>
@@ -1938,4 +1895,47 @@
   <block id="c28d873efe941bde2e3f61ce0bfc122b" category="paragraph">Ora puoi creare la relazione di sincronizzazione tra lo storage a oggetti utilizzando il gruppo di broker dei dati appena configurato.</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">14 luglio 2024</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.53.</block>
+  <block id="688afeddfca9191ad2c185d0d60558c9" category="list-text">Ottenere un token utente da BlueXP .</block>
+  <block id="8ce9552d4501ab462ee2bb5bc9e6477c" category="list-text">Ottenere l'ID account BlueXP.</block>
+  <block id="c9abe9ccf2c537d5ccca15e2909fe38c" category="paragraph">Il token utente di BlueXP  ha una data di scadenza. Per aggiornare il token, è necessario richiamare nuovamente l'API dal passaggio 1.</block>
+  <block id="70eae86d00c0e60d5d2336fb08d92f98" category="section-title">Utilizzare le API di elenco</block>
+  <block id="0be41d4f1d149c5666f23118d262e4bf" category="paragraph"><block ref="aab50d0c938d39ea193b352a6eaceb1a" category="inline-link-macro-rx"></block>.</block>
+  <block id="b3df85a57daa191df008fcf99148c146" category="paragraph">Quindi, puoi prendere in considerazione l'accelerazione delle performance di sincronizzazione aggiungendo altri broker di dati a un gruppo per condividere il carico di tale relazione. <block ref="c6533be9d7045c2121f63bb9e696588d" category="inline-link-macro-rx"></block>.</block>
+  <block id="9e98e2282b4f1a041c72ac033de7f22a" category="paragraph"><block ref="abdcd6d0b6bdd2b55e8073eafc2a0a0e" category="inline-link-macro-rx"></block>.</block>
+  <block id="fae10cbd0637c2a3b4fb64d15eceda07" category="doc">Copiare gli ACL dalle condivisioni SMB</block>
+  <block id="9d0b349dc26d3347b52099aea6d0df8a" category="list-text"><block ref="88aa7b5029e91473e8ba3a71d0a852b3" category="inline-xref-macro-rx"></block></block>
+  <block id="980591db29a9690a93f634902684c663" category="list-text"><block ref="4bcbb68a064879ef2119198c0f50e143" category="inline-xref-macro-rx"></block></block>
+  <block id="b3f60c33ab58886b68b322d1b01f37bf" category="doc">Impostare un gruppo di broker di dati per utilizzare un archivio HashiCorp esterno</block>
+  <block id="1cecbb005f6de325852717fe83c80fd0" category="section-title">Preparare il vault</block>
+  <block id="ec6e3650e66c60637209ea5c501ac6fc" category="section-title">Preparare il gruppo di broker di dati</block>
+  <block id="10d5963a9f08d8ec5852d2bfb5d2b1b5" category="section-title">Impostare le autorizzazioni quando si utilizza l'autenticazione gcp-iam</block>
+  <block id="484f1332663a70bcce7f8a43073b4e93" category="doc">Crea un nuovo broker di dati in AWS</block>
+  <block id="c40f18ad7e0d1fbd9bc3465015dbf13c" category="section-title">Creare il broker di dati</block>
+  <block id="1c87bfdc8a1515b9980559428b3741a1" category="doc">Crea un nuovo broker di dati in Azure</block>
+  <block id="a2094db7080bd56823e029ea04ef4e75" category="doc">Crea un nuovo broker di dati in Google Cloud</block>
+  <block id="f653c6f4c0e09b6ff0ca76fdc83f8972" category="section-title">Fornisci autorizzazioni per l'utilizzo dei bucket in altri progetti Google Cloud</block>
+  <block id="00ceb73d9f24801bad28c1c27a9659a3" category="doc">Installare il broker di dati su un host Linux</block>
+  <block id="78d8524b476ff2ade5b94c9c29b7fb4f" category="section-title">Consenti l'accesso ad AWS</block>
+  <block id="97cf58702dd7c3aca1a35f9563af69e3" category="section-title">Abilita l'accesso a Google Cloud</block>
+  <block id="294480d8cbf4410fbc88cfbb4e3ce0cd" category="section-title">Abilita l'accesso a Microsoft Azure</block>
+  <block id="dc06ddbd32d43560edacfaa29183ccbc" category="section-title">Installazione del broker di dati</block>
+  <block id="85dd96f2329cfefba214bd7ea96ccfa4" category="list-text">BlueXP copy and Sync visualizza l'URI del file di installazione nella pagina delle istruzioni, che viene caricato quando si seguono le istruzioni per implementare on-Prem Data Broker. L'URI non viene ripetuto in questo caso perché il collegamento viene generato dinamicamente e può essere utilizzato una sola volta. <block ref="0bcf9f6d0f5343297a10b1cf9ff5c95a" category="inline-xref-macro-rx"></block>.</block>
+  <block id="86e1fbfc21141a428e91434596659972" category="list-text">Queste sono le chiavi per l'utente che si dovrebbe preparare <block ref="402ff04efabc9c4f56b72b684c2e10c6" category="inline-xref-macro-rx"></block>. Le chiavi AWS vengono memorizzate nel data broker, che viene eseguito nella rete on-premise o cloud. NetApp non utilizza le chiavi esterne al data broker.</block>
+  <block id="da71e727ce602ce0df332bf7acd04f2b" category="list-text">Questo è il file JSON che contiene una chiave di account di servizio che si dovrebbe preparare <block ref="8e7eb0db1ee4fd6a97230ce733e6c0b1" category="inline-xref-macro-rx"></block>.</block>
+  <block id="5a0b6969e1a00c9d4229b18d599f709e" category="doc">Paga le relazioni di sincronizzazione al termine della prova gratuita</block>
+  <block id="e028f7fc834047902996d4b3faec74ef" category="section-title">[[aws]]effettua l'iscrizione ad AWS</block>
+  <block id="930f43b5351f67a33978fe5e38509494" category="section-title">[[Azure]]Iscriviti da Azure</block>
+  <block id="8b677a97b89f60dc6d50f9e94c7d249b" category="section-title">[[licenses]]acquistare licenze da NetApp e aggiungerle alla copia e alla sincronizzazione di BlueXP </block>
+  <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="section-title">Aggiornare una licenza</block>
+  <block id="5a93bfc26914da58fc866410768013aa" category="doc">Creare e visualizzare rapporti per ottimizzare la configurazione</block>
+  <block id="ef7a7b1bec08bef324977926c1fc910c" category="section-title">Creare report</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="section-title">Scarica i report</block>
+  <block id="4e81b9817b77a04417209233aa6770e7" category="section-title">Visualizzazione degli errori del rapporto</block>
+  <block id="cbb776f3d96dc88fa5b9bf1fc5bdb830" category="section-title">Eliminare i referti</block>
+  <block id="3a6eb754876597bc8ab6133e13e9140a" category="doc">Sincronizza i dati NFS utilizzando la crittografia dei dati in-flight</block>
+  <block id="5143828323383cafd31bc198ee983675" category="paragraph">Se si preferisce sincronizzare i dati con maggiore frequenza, <block ref="ab2166e3b7a3bfd46d319139e30ee953" category="inline-link-macro-rx"></block>.</block>
+  <block id="b82bc2fd6e7ab1667187072565c0de89" category="doc">Disinstallare il broker di dati</block>
+  <block id="5b34dda5c871fed8b9821e47e0d34ede" category="paragraph"><block ref="9ff383ddf2525d802b02fb0151232700" category="inline-link-rx"></block>.</block>
+  <block id="24410e37408a11f41e4c63fb9cc48dd1" category="paragraph"><block ref="25a5ae570a2c9cafee62695215e5e759" category="inline-link-macro-rx"></block>.</block>
+  <block id="cf2c9be412cc589b7ecf399ad3d2b5c5" category="paragraph"><block ref="ae034bb53c84075bda58d513fc152e63" category="inline-link-macro-rx"></block>.</block>
 </blocks>

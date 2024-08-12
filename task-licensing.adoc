@@ -4,7 +4,7 @@ permalink: task-licensing.html
 keywords: license, subscription, registering, subscribing, subscribing in aws, subscribing in azure, subscribing to aws, subscribing to azure, aws marketplace, azure marketplace, netapp license, byol license, purchase a license, license settings, pay for relationships, paygo, annual, pay-as-you-go 
 summary: 'Esistono due modi per pagare le relazioni di sincronizzazione dopo la fine della prova gratuita di 14 giorni. La prima opzione consiste nel pagare a consumo. La seconda opzione consiste nell"acquistare le licenze direttamente da NetApp.' 
 ---
-= Pagamento delle relazioni di sincronizzazione al termine della prova gratuita
+= Paga le relazioni di sincronizzazione al termine della prova gratuita
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,7 +28,7 @@ Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web appl
 
 
 
-== [[aws]]sottoscrizione da AWS
+== [[aws]]effettua l'iscrizione ad AWS
 
 AWS ti consente di pagare a consumo o di pagare annualmente.
 
@@ -52,7 +52,7 @@ video::video_cloud_sync_registering.mp4[width=848,height=480]
 
 
 
-== [[Azure]]sottoscrizione a Azure
+== [[Azure]]Iscriviti da Azure
 
 Azure ti consente di pagare in base alle tue esigenze o di pagare ogni anno.
 
@@ -78,7 +78,7 @@ video::video_cloud_sync_registering_azure.mp4[width=848,height=480]
 
 
 
-== [[licenses]]Acquisto di licenze NetApp e aggiunta a BlueXP copy e Sync
+== [[licenses]]acquistare licenze da NetApp e aggiungerle alla copia e alla sincronizzazione di BlueXP 
 
 Per pagare anticipatamente le relazioni di sincronizzazione, è necessario acquistare una o più licenze e aggiungerle al servizio di copia e sincronizzazione BlueXP.
 
@@ -104,7 +104,7 @@ Sono necessari il numero di serie della licenza e il nome utente e la password p
 
 
 
-== Aggiornamento di una licenza
+== Aggiornare una licenza
 
 Se hai esteso una licenza di copia e sincronizzazione BlueXP acquistata da NetApp, la nuova data di scadenza non verrà aggiornata automaticamente in BlueXP Copy and Sync. È necessario aggiungere nuovamente la licenza per aggiornare la data di scadenza. Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.
 

@@ -4,7 +4,7 @@ permalink: task-installing-aws.html
 keywords: data broker, install, aws, networking, permissions, regions, install data broker in aws, install in aws, deploy in aws, deploy data broker in aws, cft, template, iam role, use your own iam role, regions, supported regions, networking requirements, port, ports, 443, port 443, ntp, network time protocol, permissions, iam role, iam permissions, aws data broker 
 summary: 'Quando si crea un nuovo data broker, scegliere l"opzione AWS Data Broker per implementare il software data broker su una nuova istanza EC2 in un VPC. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
 ---
-= Creazione di un nuovo data broker in AWS
+= Crea un nuovo broker di dati in AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -66,7 +66,7 @@ Seguire i passaggi riportati di seguito per specificare il ruolo IAM durante l'i
 
 
 
-== Creazione del data broker
+== Creare il broker di dati
 
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in AWS quando si crea una relazione di sincronizzazione.
 

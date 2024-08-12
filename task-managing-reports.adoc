@@ -4,7 +4,7 @@ permalink: task-managing-reports.html
 keywords: reports, sync reports, BlueXP copy and sync reports, report errors, path reports 
 summary: 'Creare e visualizzare report per ottenere informazioni da utilizzare con l"aiuto del personale NetApp per ottimizzare la configurazione di un data broker e migliorare le performance.' 
 ---
-= Creazione e visualizzazione di report per ottimizzare la configurazione
+= Creare e visualizzare rapporti per ottimizzare la configurazione
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Ogni report fornisce dettagli approfonditi su un percorso in una relazione di si
 
 
 
-== Creazione di report
+== Creare report
 
 Ogni volta che si crea un report, BlueXP copia e sincronizza il percorso e compila i dettagli in un report.
 
@@ -47,7 +47,7 @@ image:screenshot_sync_report_object.gif["Report che mostra il numero di elementi
 
 
 
-== Download di report
+== Scarica i report
 
 È possibile scaricare un report in formato PDF per visualizzarlo offline o condividerlo.
 
@@ -62,7 +62,7 @@ image:screenshot-sync-download-report.png["Una schermata dell'opzione Download p
 
 
 
-== Visualizzazione degli errori dei report
+== Visualizzazione degli errori del rapporto
 
 La tabella Paths (percorsi) indica se sono presenti errori nel report più recente. Un errore identifica un problema riscontrato da BlueXP durante la scansione del percorso.
 
@@ -85,7 +85,7 @@ Una volta risolto il problema, l'errore non dovrebbe apparire alla successiva es
 
 
 
-== Eliminazione dei report
+== Eliminare i referti
 
 È possibile eliminare un report contenente un errore risolto o se il report è correlato a una relazione di sincronizzazione rimossa.
 

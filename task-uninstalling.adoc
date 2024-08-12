@@ -4,7 +4,7 @@ permalink: task-uninstalling.html
 keywords: uninstall, uninstall data broker, remove data broker 
 summary: 'Se necessario, eseguire uno script di disinstallazione per rimuovere il data broker, i pacchetti e le directory creati al momento dell"installazione del data broker.' 
 ---
-= Disinstallazione del data broker
+= Disinstallare il broker di dati
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

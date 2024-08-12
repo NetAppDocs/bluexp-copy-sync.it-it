@@ -4,7 +4,7 @@ permalink: task-nfs-encryption.html
 keywords: encryption, in flight, data in flight, in-flight, data-in-flight, nfs, initiator, listener, port 
 summary: Se la tua azienda ha policy di sicurezza rigorose, sincronizza i dati tra server NFS in reti diverse utilizzando la crittografia data-in-flight. 
 ---
-= Sincronizzazione dei dati NFS con crittografia data-in-flight
+= Sincronizza i dati NFS utilizzando la crittografia dei dati in-flight
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -38,7 +38,7 @@ Ecco come funziona la crittografia in-flight:
 . Il broker di dati di destinazione decrta i dati prima di inviarli alla destinazione.
 . Dopo la copia iniziale, il servizio sincronizza tutti i dati modificati ogni 24 ore. Se sono presenti dati da sincronizzare, il processo inizia con l'iniziatore che apre una connessione crittografata con l'altro data broker.
 +
-Se preferisci sincronizzare i dati più frequentemente, link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["è possibile modificare la pianificazione dopo aver creato la relazione"].
+Se si preferisce sincronizzare i dati con maggiore frequenza, link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship["è possibile modificare la pianificazione dopo aver creato la relazione"].
 
 
 
@@ -85,7 +85,7 @@ Se non hai ancora implementato un data broker, esamina i requisiti del data brok
 
 
 
-== Sincronizzazione dei dati NFS con crittografia data-in-flight
+== Sincronizza i dati NFS utilizzando la crittografia dei dati in-flight
 
 Creare una nuova relazione di sincronizzazione tra due server NFS o tra Azure NetApp Files, attivare l'opzione di crittografia in-flight e seguire le istruzioni.
 

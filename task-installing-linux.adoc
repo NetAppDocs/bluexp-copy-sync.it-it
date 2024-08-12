@@ -4,7 +4,7 @@ permalink: task-installing-linux.html
 keywords: data broker, install, linux, on-prem data broker, on-prem, on prem, on premises, networking, permissions, os, operating system, rhel, red hat, ram, cpu, disk space, install data broker, installing data broker, install a data broker, data broker installation, linux installation, linux operating system, aws access, aws keys, keys, gcp access, aws permissions, gcp permissions, google permissions 
 summary: 'Quando crei un nuovo data broker, scegli l"opzione on-Prem Data Broker per installare il software data broker su un host Linux on-premise o su un host Linux esistente nel cloud. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
 ---
-= Installazione del data broker su un host Linux
+= Installare il broker di dati su un host Linux
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -66,7 +66,7 @@ Il software del data broker viene eseguito automaticamente come root sull'host L
 
 
 
-== Abilitazione dell'accesso ad AWS
+== Consenti l'accesso ad AWS
 
 Se si prevede di utilizzare il data broker con una relazione di sincronizzazione che include un bucket S3, è necessario preparare l'host Linux per l'accesso AWS. Quando si installa il data broker, è necessario fornire le chiavi AWS per un utente AWS che dispone di un accesso programmatico e di autorizzazioni specifiche.
 
@@ -86,7 +86,7 @@ Assicurarsi di copiare le chiavi AWS perché è necessario specificarle quando s
 
 
 
-== Abilitazione dell'accesso a Google Cloud
+== Abilita l'accesso a Google Cloud
 
 Se intendi utilizzare il data broker con una relazione di sincronizzazione che include un bucket di storage Google Cloud, devi preparare l'host Linux per l'accesso a Google Cloud. Quando si installa il data broker, è necessario fornire una chiave per un account di servizio che dispone di autorizzazioni specifiche.
 
@@ -108,13 +108,13 @@ NOTE: Quando si crea una chiave, il file viene generato e scaricato sul computer
 
 
 
-== Abilitazione dell'accesso a Microsoft Azure
+== Abilita l'accesso a Microsoft Azure
 
 L'accesso ad Azure viene definito in base alla relazione fornendo un account di storage e una stringa di connessione nella procedura guidata delle relazioni di sincronizzazione.
 
 
 
-== Installazione del data broker
+== Installazione del broker di dati
 
 È possibile installare un data broker su un host Linux quando si crea una relazione di sincronizzazione.
 
@@ -163,7 +163,7 @@ I seguenti passaggi forniscono dettagli su ciascuna opzione di installazione pos
 `curl <URI> -o data_broker_installer.sh -x <proxy_username>:<proxy_password>@<proxy_host>:<proxy_port>`
 
 +
-URI:: BlueXP copy and Sync visualizza l'URI del file di installazione nella pagina delle istruzioni, che viene caricato quando si seguono le istruzioni per implementare on-Prem Data Broker. L'URI non viene ripetuto in questo caso perché il collegamento viene generato dinamicamente e può essere utilizzato una sola volta. <<Installazione del data broker,Per ottenere l'URI dalla copia e dalla sincronizzazione BlueXP, procedere come segue>>.
+URI:: BlueXP copy and Sync visualizza l'URI del file di installazione nella pagina delle istruzioni, che viene caricato quando si seguono le istruzioni per implementare on-Prem Data Broker. L'URI non viene ripetuto in questo caso perché il collegamento viene generato dinamicamente e può essere utilizzato una sola volta. <<Installazione del broker di dati,Per ottenere l'URI dalla copia e dalla sincronizzazione BlueXP, procedere come segue>>.
 
 
 
@@ -193,8 +193,8 @@ chmod +x data_broker_installer.sh
 ./data_broker_installer.sh -a <aws_access_key> -s <aws_secret_key> -g <absolute_path_to_the_json_file> -h <proxy_host> -p <proxy_port> -u <proxy_username> -w <proxy_password>`
 
 +
-Tasti AWS:: Queste sono le chiavi per l'utente che si dovrebbe aver preparato <<Abilitazione dell'accesso ad AWS,seguire questa procedura>>. Le chiavi AWS vengono memorizzate nel data broker, che viene eseguito nella rete on-premise o cloud. NetApp non utilizza le chiavi esterne al data broker.
-File JSON:: Si tratta del file JSON che contiene una chiave dell'account di servizio che si dovrebbe preparare <<Abilitazione dell'accesso a Google Cloud,seguire questa procedura>>.
+Tasti AWS:: Queste sono le chiavi per l'utente che si dovrebbe preparare <<Consenti l'accesso ad AWS,seguire questa procedura>>. Le chiavi AWS vengono memorizzate nel data broker, che viene eseguito nella rete on-premise o cloud. NetApp non utilizza le chiavi esterne al data broker.
+File JSON:: Questo è il file JSON che contiene una chiave di account di servizio che si dovrebbe preparare <<Abilita l'accesso a Google Cloud,seguire questa procedura>>.
 
 
 

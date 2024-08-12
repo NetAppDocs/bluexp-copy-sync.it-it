@@ -4,7 +4,7 @@ permalink: task-installing-azure.html
 keywords: data broker, install, azure, networking, permissions, regions, install data broker in azure, install in azure, deploy in azure, deploy data broker in azure, networking requirements, port, ports, 443, port 443, ntp, network time protocol, azure data broker 
 summary: 'Quando crei un nuovo data broker, scegli l"opzione Azure Data Broker per implementare il software del data broker su una nuova macchina virtuale in una VNET. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
 ---
-= Creazione di un nuovo data broker in Azure
+= Crea un nuovo broker di dati in Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -150,7 +150,7 @@ Per informazioni sulla creazione di una coppia di chiavi, fare riferimento a. ht
 
 
 
-== Creazione del data broker
+== Creare il broker di dati
 
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Azure quando si crea una relazione di sincronizzazione.
 

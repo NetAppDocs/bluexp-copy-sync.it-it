@@ -206,7 +206,7 @@ La pianificazione predefinita è impostata per la sincronizzazione giornaliera. 
 
 Un gruppo di broker di dati non esegue il timeout quando un singolo file non viene trasferito. Il gruppo di broker di dati tenta di nuovo 3 volte prima di saltare il file. Il valore di RETRY è configurabile nelle impostazioni per una relazione di sincronizzazione.
 
-link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
+link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
 
 
 
@@ -360,7 +360,7 @@ Diversi fattori possono influire sulle performance di trasferimento dei dati. Le
 
 Pertanto, verificare le prestazioni della rete e il throughput del disco sulla destinazione.
 
-Quindi, puoi prendere in considerazione l'accelerazione delle performance di sincronizzazione aggiungendo altri broker di dati a un gruppo per condividere il carico di tale relazione. link:task-managing-relationships.html#accelerating-sync-performance["Scopri come accelerare le performance di sincronizzazione"].
+Quindi, puoi prendere in considerazione l'accelerazione delle performance di sincronizzazione aggiungendo altri broker di dati a un gruppo per condividere il carico di tale relazione. link:task-managing-relationships.html#accelerate-sync-performance["Scopri come accelerare le performance di sincronizzazione"].
 
 
 
@@ -380,7 +380,7 @@ L'eliminazione di una relazione interrompe tutte le future sincronizzazioni dei 
 
 Per impostazione predefinita, se si dispone di una relazione di sincronizzazione attiva, l'elemento eliminato sul server di origine non viene eliminato dalla destinazione durante la sincronizzazione successiva. Tuttavia, esiste un'opzione nelle impostazioni di sincronizzazione per ciascuna relazione, in cui è possibile definire che la copia e la sincronizzazione di BlueXP elimineranno i file nella posizione di destinazione se sono stati eliminati dall'origine.
 
-link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
+link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship["Scopri come modificare le impostazioni per una relazione di sincronizzazione"].
 
 
 

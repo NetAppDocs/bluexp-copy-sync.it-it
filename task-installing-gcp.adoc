@@ -4,7 +4,7 @@ permalink: task-installing-gcp.html
 keywords: data broker, install, gcp, google, networking, permissions, regions, install data broker in gcp, install in gcp, deploy in gcp, deploy data broker in gcp, install data broker in google, install in google, deploy in google, deploy data broker in google, networking requirements, port, ports, 443, port 443, ntp, network time protocol, gcp data broker, service account 
 summary: 'Quando crei un nuovo data broker, scegli l"opzione Google Cloud Data Broker per implementare il software data broker su una nuova istanza di macchina virtuale in un VPC. BlueXP copy and Sync guida l"utente attraverso il processo di installazione, ma i requisiti e i passaggi sono ripetuti in questa pagina per aiutarti a prepararti all"installazione.' 
 ---
-= Creazione di un nuovo data broker in Google Cloud
+= Crea un nuovo broker di dati in Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -101,7 +101,7 @@ Note:
 
 
 
-== Creazione del data broker
+== Creare il broker di dati
 
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Google Cloud quando si crea una relazione di sincronizzazione.
 
@@ -143,7 +143,7 @@ Hai implementato un data broker in Google Cloud e creato una nuova relazione di 
 
 
 
-== Fornire le autorizzazioni per utilizzare i bucket in altri progetti Google Cloud
+== Fornisci autorizzazioni per l'utilizzo dei bucket in altri progetti Google Cloud
 
 Quando crei una relazione di sincronizzazione e scegli Google Cloud Storage come origine o destinazione, BlueXP Copy and Sync ti consente di scegliere tra i bucket che l'account di servizio del broker di dati dispone delle autorizzazioni per l'utilizzo. Per impostazione predefinita, sono inclusi i bucket che si trovano nel _stesso_ progetto dell'account di servizio del broker di dati. Tuttavia, è possibile scegliere i bucket di _altri_ progetti se si forniscono le autorizzazioni necessarie.
 
