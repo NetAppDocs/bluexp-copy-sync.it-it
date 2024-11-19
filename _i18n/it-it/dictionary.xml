@@ -158,7 +158,6 @@
   <block id="cabe1b04cc3c96ae849f8fd810dfecdb" category="cell">https://fedoraproject.org</block>
   <block id="ebd974875888e4cb1567f55e3466cda1" category="cell">Per installare 7z sulla macchina virtuale del data broker durante l'installazione e gli aggiornamenti. 7z è necessario per inviare messaggi AutoSupport al supporto tecnico NetApp.</block>
   <block id="89100474e7faee0c34727c4b2b471007" category="cell">Per verificare le credenziali AWS quando il data broker viene implementato in AWS o quando viene implementato in sede e vengono fornite le credenziali AWS. Il data broker contatta questo endpoint durante l'implementazione, quando viene aggiornato e quando viene riavviato.</block>
-  <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ https://netapp-cloud-account.auth0.com</block>
   <block id="8f606ab2764de8092de1ca0d967cfb8d" category="cell">https://pubsub.googleapis.com</block>
   <block id="df94b5032f4c4edc418da1de5a985935" category="cell">Se si crea una relazione di sincronizzazione continua da un account di storage Google.</block>
   <block id="cfcdd9e78004b91f8c395165fdb5e282" category="cell"><block ref="e36a49efb19686edd0dc8263877ab168" category="inline-link-rx"></block>https://management.azure.com/subscriptions/${_subscriptionId_} /resourceGroups/{_resourceGroup_}/provider/Microsoft.EventGrid/* dove _storage-account_ è l'account storage di origine dell'utente, _subscriptionid_ è l'ID dell'abbonamento di origine e _resourceGroup_ è il gruppo di risorse di origine.</block>
@@ -797,8 +796,6 @@
   <block id="b4951d06315b1f9ffb6d04ceb4346101" category="list-text">*RAM*: 16 GB</block>
   <block id="53a3e84f8dd7775216fa9eaac8d2ba6d" category="list-text">*CPU*: 4 core</block>
   <block id="1187c6e89712492c48d5d9a1e68f3b42" category="list-text">*Spazio libero su disco*: 10 GB</block>
-  <block id="1a3d8802d280d4ec910f54042cd62998" category="inline-link">SELinux</block>
-  <block id="6388693da9b6d4d4012711303b71d780" category="list-text">*SELinux*: Si consiglia di disattivarlo<block ref="59f91e142e660e7d393df4005d7488a3" category="inline-link-rx"></block> sull'host.</block>
   <block id="3d64791fb8102a78b642b754f758f4b9" category="paragraph">SELinux applica una policy che blocca gli aggiornamenti del software del data broker e impedisce al data broker di contattare gli endpoint necessari per il normale funzionamento.</block>
   <block id="a43f5cf69d6af0c6e17bed7ff726625e" category="list-text">L'host Linux deve disporre di una connessione all'origine e alla destinazione.</block>
   <block id="e7b55bccb60334ca631527b050553022" category="list-text">Il file server deve consentire all'host Linux di accedere alle esportazioni.</block>
@@ -1943,4 +1940,6 @@
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">L'associazione delle credenziali NSS all'organizzazione BlueXP  è diversa dall'account NSS associato a un accesso utente BlueXP .</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Queste credenziali NSS sono associate all'ID organizzazione BlueXP  specifico dell'utente. Gli utenti che appartengono all'organizzazione BlueXP  possono accedere a queste credenziali da *supporto &gt; Gestione NSS*.</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="doc">Correzioni dei bug</block>
+  <block id="60b6724cc91011c88aedcdfe5a1554f0" category="cell">\https://api.BlueXP .NetApp.com \https://NetApp-cloud-account.auth0.com</block>
+  <block id="6a16108e082698a01703a8570c1c83ab" category="list-text">*SELinux*: Si consiglia di disabilitare SELinux sull'host.</block>
 </blocks>

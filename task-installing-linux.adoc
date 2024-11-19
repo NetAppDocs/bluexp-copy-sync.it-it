@@ -42,7 +42,7 @@ Un sistema Red Hat Enterprise Linux deve essere registrato con Red Hat Subscript
 * *RAM*: 16 GB
 * *CPU*: 4 core
 * *Spazio libero su disco*: 10 GB
-* *SELinux*: Si consiglia di disattivarlo https://selinuxproject.org/["SELinux"^] sull'host.
+* *SELinux*: Si consiglia di disabilitare SELinux sull'host.
 +
 SELinux applica una policy che blocca gli aggiornamenti del software del data broker e impedisce al data broker di contattare gli endpoint necessari per il normale funzionamento.
 
