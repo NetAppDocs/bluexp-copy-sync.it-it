@@ -18,6 +18,16 @@ Scopri le novità di BlueXP Copy and Sync.
 
 
 
+== 27 ottobre 2024
+
+
+
+=== Correzioni dei bug
+
+Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.56.
+
+
+
 == 16 settembre 2024
 
 
