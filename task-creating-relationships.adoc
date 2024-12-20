@@ -214,7 +214,8 @@ NOTE: I collegamenti hardware sono disponibili solo per le relazioni NFS-NFS non
 Escludi estensioni file:: Specificare il regex o le estensioni del file da escludere dalla sincronizzazione digitando l'estensione del file e premendo *Invio*. Ad esempio, digitare _log_ o _.log_ per escludere i file *.log. Non è necessario un separatore per più interni. Il seguente video fornisce una breve demo:
 +
 --
-video::video_file_extensions.mp4[width=840,height=240]
+.Escludi estensioni file per una relazione di sincronizzazione
+video::7f957dbf-9215-41ea-a705-b24c010b2212[panopto]
 
 NOTE: Le espressioni regex, o regolari, differiscono dai caratteri jolly o dalle espressioni glob. Questa caratteristica *only* funziona con regex.
 

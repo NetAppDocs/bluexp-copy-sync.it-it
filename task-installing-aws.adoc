@@ -71,6 +71,7 @@ Seguire i passaggi riportati di seguito per specificare il ruolo IAM durante l'i
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in AWS quando si crea una relazione di sincronizzazione.
 
 .Fasi
+. Dal menu di navigazione di BlueXP , selezionare *mobilità > Copia e sincronizza*.
 . Selezionare *Crea nuova sincronizzazione*.
 . Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +
@@ -92,7 +93,8 @@ Se invece non si desidera fornire le chiavi di accesso, selezionare il collegame
 [[cft]]il seguente video mostra come avviare l'istanza del data broker utilizzando un modello CloudFormation:
 
 +
-video::video_cloud_sync.mp4[width=848,height=480]
+.Lancio di un data broker da un modello AWS CloudFormation
+video::abaf0898-ea15-4f84-938e-b24c010b21e8[panopto]
 . Se è stata inserita una chiave di accesso AWS, selezionare una posizione per l'istanza, selezionare una coppia di chiavi, scegliere se attivare un indirizzo IP pubblico e selezionare un ruolo IAM esistente oppure lasciare vuoto il campo in modo che BlueXP copy and Sync crei il ruolo per te. È inoltre possibile crittografare il data broker utilizzando una chiave KMS.
 +
 Se scegli il tuo ruolo IAM, <<iam,è necessario fornire le autorizzazioni necessarie>>.

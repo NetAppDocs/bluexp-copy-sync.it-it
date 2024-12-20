@@ -119,6 +119,7 @@ L'accesso ad Azure viene definito in base alla relazione fornendo un account di 
 È possibile installare un data broker su un host Linux quando si crea una relazione di sincronizzazione.
 
 .Fasi
+. Dal menu di navigazione di BlueXP , selezionare *mobilità > Copia e sincronizza*.
 . Selezionare *Crea nuova sincronizzazione*.
 . Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +

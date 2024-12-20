@@ -66,7 +66,6 @@
   <block id="e779a177cfac02ea5631f78a57600f50" category="paragraph">Le licenze devono essere gestite tramite BlueXP Copy and Sync o il sito Web applicabile e *non* tramite un portafoglio digitale.</block>
   <block id="7f1e5fcf21192da891eea1c1f4f6e6f0" category="paragraph">AWS ti consente di pagare a consumo o di pagare annualmente.</block>
   <block id="f06e94914580a228484d54783ffeb2bb" category="list-title">Procedura per il pagamento a consumo</block>
-  <block id="af3298973678fbb2b80974a8030f07ac" category="list-text">Selezionare *AWS*</block>
   <block id="6169c8d461dd7f9996b17fcf210180a3" category="list-text">Iscriviti a AWS Marketplace, quindi accedi nuovamente al servizio di copia e sincronizzazione BlueXP per completare la registrazione.</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">Il seguente video mostra il processo:</block>
   <block id="d95d2545b9702aaa44811f90fd798b70" category="list-title">Passi da pagare annualmente</block>
@@ -1721,14 +1720,12 @@
   <block id="f8149e5272474293b308b5387c6e0eab" category="list-text">Se richiesto, accedere all'account Microsoft. Se non viene richiesto, selezionare *Accedi ad Azure*.</block>
   <block id="62aca030fc0ae0886728293f4df155b2" category="list-text">Selezionare *continua* e mantenere aperta la pagina fino al completamento dell'implementazione.</block>
   <block id="ad16396812bea804a1980d079b968f53" category="list-text">In BlueXP copy and Sync (Copia e sincronizzazione BlueXP), selezionare *Continue* (continua) una volta che il data broker è disponibile.</block>
-  <block id="b9c67bb0bae9993217d3413e493a9d52" category="list-text">Selezionare *Sync &gt; Licensing*.</block>
   <block id="a5fb6f9fbd972c02e5329e1ff986d9d5" category="list-text">Selezionare *Subscribe*, quindi selezionare *Continue* (continua).</block>
   <block id="9afef6b2e6bfae3c1516f6a5615e147a" category="list-text">Selezionare *continua per iscriversi*.</block>
   <block id="7d5dc2ab8bafad8f8a587f44b30dc6f0" category="list-text">Selezionare le opzioni del contratto, quindi selezionare *Crea contratto*.</block>
   <block id="8bf624ad0ff2e9fd580f8cf2ccbfb01b" category="list-text">Nel portale Azure, selezionare *Crea*, selezionare le opzioni desiderate, quindi selezionare *Iscriviti*.</block>
   <block id="50663aa7afb45a9a800941c0bc89dcf1" category="list-text">Una volta completata l'implementazione, selezionare il nome della risorsa SaaS nella finestra a comparsa di notifica.</block>
   <block id="610e8ce14d61f13ee15be5f296487890" category="list-text">Selezionare *Configure account* (Configura account) per tornare alla copia e alla sincronizzazione di BlueXP.</block>
-  <block id="8a16f41efcb781e6645783df6cb0e97b" category="list-text">In BlueXP, selezionare *Sync &gt; Licensing*.</block>
   <block id="0be0367eff89e989e3751d45bd6caf93" category="list-text">Selezionare *Add License* (Aggiungi licenza) e aggiungere le informazioni richieste:</block>
   <block id="46d344ee2c7e916b914b2b031a79a880" category="list-text">Se l'account non è stato ancora aggiunto, selezionare *Aggiungi credenziali NSS*, immettere il nome utente e la password, selezionare *Registra*, quindi selezionarlo dall'elenco a discesa.</block>
   <block id="6a44822bf57bcae55604cb610b227f67" category="paragraph">Selezionare *Filter Source Objects* (Filtra oggetti origine) per modificare le impostazioni che definiscono la modalità di sincronizzazione e gestione dei file e delle cartelle di origine nella posizione di destinazione.</block>
@@ -1944,4 +1941,11 @@
   <block id="6a16108e082698a01703a8570c1c83ab" category="list-text">*SELinux*: Si consiglia di disabilitare SELinux sull'host.</block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.56.</block>
   <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">27 ottobre 2024</block>
+  <block id="4fa4cb31b90bbe492aedd2e14cab7850" category="video-title">Escludi estensioni file per una relazione di sincronizzazione</block>
+  <block id="befcd22ee9f31ea0976355003e77715b" category="list-text">Dal menu di navigazione di BlueXP , selezionare *mobilità &gt; Copia e sincronizza*.</block>
+  <block id="f8b6a77f9bfe4363519793574823fcdf" category="video-title">Lancio di un data broker da un modello AWS CloudFormation</block>
+  <block id="fdd0629e14af63efd824f165e5349337" category="list-text">Selezionare *licenze*.</block>
+  <block id="734a65eeb41483b7a636c9cf13e4aad7" category="list-text">Selezionare *AWS*.</block>
+  <block id="045842584f2fd61a80d6c55f49bd1f4f" category="video-title">Iscriviti alla copia BlueXP  e sincronizzarla da AWS Marketplace</block>
+  <block id="09cf0bd8febab038e59733b8d4ac6505" category="video-title">Iscriviti alla copia BlueXP  e sincronizzala da Azure Marketplace</block>
 </blocks>

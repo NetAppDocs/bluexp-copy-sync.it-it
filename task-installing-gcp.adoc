@@ -106,6 +106,7 @@ Note:
 Esistono diversi modi per creare un nuovo data broker. Questi passaggi descrivono come installare un data broker in Google Cloud quando si crea una relazione di sincronizzazione.
 
 .Fasi
+. Dal menu di navigazione di BlueXP , selezionare *mobilità > Copia e sincronizza*.
 . Selezionare *Crea nuova sincronizzazione*.
 . Nella pagina *Definisci relazione di sincronizzazione*, scegliere un'origine e una destinazione e selezionare *continua*.
 +
