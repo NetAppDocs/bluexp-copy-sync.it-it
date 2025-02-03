@@ -1,0 +1,11 @@
+= Supporto di nuovi sistemi operativi per il broker di dati
+:allow-uri-read: 
+
+
+
+
+=== Supporto di nuovi sistemi operativi per il broker di dati
+
+Il broker di dati è ora supportato sugli host che eseguono Red Hat Enterprise 9,4, Ubuntu 23,04 e Ubuntu 24,04.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Visualizza i requisiti dell'host Linux"].
