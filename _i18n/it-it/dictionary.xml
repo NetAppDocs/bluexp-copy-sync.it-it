@@ -252,7 +252,6 @@
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="list-text">Azure Blob</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
-  <block id="200b74de2e12f861dad63aa0de84ec6c" category="list-text">Cloud Volumes Service</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Storage Google Cloud</block>
   <block id="5446a6bee3301e1f52824fc0affa6299" category="list-text">Storage a oggetti IBM Cloud</block>
   <block id="e83e5674ab295a6613b60f5e12d1bfe3" category="list-text">Server NFS</block>
@@ -309,7 +308,6 @@
   <block id="6de51c73db055b72838083b7da60e27e" category="paragraph">Le licenze di copia e sincronizzazione BlueXP sono disponibili anche presso il rappresentante NetApp. Ogni licenza consente 20 relazioni di sincronizzazione per 12 mesi.</block>
   <block id="9cc30b3e9afbdb901b838020c4f35584" category="inline-link-macro">Scopri di più sulle licenze</block>
   <block id="326db01706ec74f8dfe188207959e516" category="paragraph"><block ref="c8493ffe20fa12122d5f8e9b98cc5b4b" category="inline-link-macro-rx"></block>.</block>
-  <block id="49f3a6d816929e060637c72d117a2ab1" category="admonition">Le relazioni di copia e sincronizzazione BlueXP sono gratuite per Cloud Volumes Service e Azure NetApp Files.</block>
   <block id="d14d70754e8322b819c6bc86af6beefd" category="paragraph">*Costi delle risorse*</block>
   <block id="bdf9c0b5a2bb19426e68000000a0fa8e" category="paragraph">I costi delle risorse sono correlati ai costi di calcolo e storage per l'esecuzione del data broker nel cloud.</block>
   <block id="01396bcd8023631c1f74003124e865f5" category="section-title">Come vengono fatturate le copie e le sincronizzazioni BlueXP e come si gestisce l'abbonamento?</block>
@@ -419,9 +417,6 @@
   <block id="9812e4bcf0263cfa80fdd8c8a789a255" category="paragraph">Impostare il livello di servizio su Premium o Ultra per migliorare le prestazioni di sincronizzazione.</block>
   <block id="94e12c4a58e36c62d41d5c7ea1f166f7" category="inline-link">Scopri di più sui livelli di servizio e sul throughput di Azure NetApp Files</block>
   <block id="8c7b3ed9d7207fdbe57540ab6cd5e1e7" category="paragraph"><block ref="bc692a932f7211cd1ab661879beac160" category="inline-link-rx"></block>.</block>
-  <block id="06dd90f0736ba00a0e3050c043c11683" category="section-title">Perché si riscontrano prestazioni ridotte con Cloud Volumes Service per AWS?</block>
-  <block id="37bbffa966391c253fd64fcdf3509afa" category="paragraph">Quando sincronizzi i dati da o verso un volume cloud, potresti riscontrare guasti e problemi di performance se il livello di performance per il volume cloud è Standard.</block>
-  <block id="305fa2f993292af4e7b31404440f0f2e" category="paragraph">Impostare il livello di servizio su Premium o Extreme per migliorare le prestazioni di sincronizzazione.</block>
   <block id="a74feaca0228e843c01e1cc6a5a7a4da" category="section-title">Quanti broker di dati sono richiesti in un gruppo?</block>
   <block id="6d0c6fb653b3e1d2a836e0b86dabea25" category="paragraph">Quando si crea una nuova relazione, si inizia con un singolo data broker in un gruppo (a meno che non sia stato selezionato un data broker esistente che appartiene a una relazione di sincronizzazione accelerata). In molti casi, un singolo data broker può soddisfare i requisiti di performance per una relazione di sincronizzazione. In caso contrario, puoi accelerare le performance di sincronizzazione aggiungendo ulteriori broker di dati al gruppo. Tuttavia, è necessario prima controllare altri fattori che possono influire sulle prestazioni di sincronizzazione.</block>
   <block id="c6bdda7b88c4f51edb4d0ca671f8c528" category="paragraph">Diversi fattori possono influire sulle performance di trasferimento dei dati. Le performance di sincronizzazione complessive potrebbero risentire della larghezza di banda, della latenza e della topologia di rete, delle specifiche delle macchine virtuali del data broker e delle performance del sistema storage. Ad esempio, un singolo broker di dati in un gruppo può raggiungere i 100 MB/s, mentre il throughput del disco sulla destinazione potrebbe consentire solo i 64 MB/s. Di conseguenza, il gruppo di broker di dati continua a cercare di copiare i dati, ma la destinazione non può soddisfare le performance del gruppo di broker di dati.</block>
@@ -1951,4 +1946,5 @@
   <block id="87a7ac9f5b2ba3fbc595d73b0c0dc71c" category="list-text">Red Hat Enterprise Linux 8.5, 8.8, 8.9 e 9.4</block>
   <block id="62c1014736e4269f295e55cd59d3a0ec" category="list-text">Ubuntu Server 20,04 LTS, 23,04 LTS e 24,04 LTS</block>
   <block id="723559e2f2e86e612c412da00a435eea" category="section-title">2 febbraio 2025</block>
+  <block id="3de4ee14f1b1d0abe0ecac5872f26c6c" category="admonition">Le relazioni di copia e sincronizzazione di BlueXP  sono gratuite per Azure NetApp Files.</block>
 </blocks>

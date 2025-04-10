@@ -28,7 +28,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -47,7 +46,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -67,7 +65,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure NetApp Files
 * Casella ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -86,7 +83,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -119,7 +115,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -151,25 +146,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
-* Storage Google Cloud
-* Storage a oggetti IBM Cloud
-* Server NFS
-* Cluster ONTAP on-premise (NFS o SMB)
-* Server SMB
-* StorageGRID
-
-
-
-
-| Cloud Volumes Service  a| 
-* Amazon EFS
-* Amazon FSX per ONTAP
-* Amazon S3
-* Azure Blob
-* Azure NetApp Files
-* Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -187,7 +163,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -215,7 +190,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure NetApp Files
 * Casella ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -234,7 +208,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Google Drive
 * Storage a oggetti IBM Cloud
@@ -255,7 +228,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
@@ -289,7 +261,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Google Drive
 * Storage a oggetti IBM Cloud
@@ -311,7 +282,6 @@ BlueXP copy and Sync consente di sincronizzare i dati da un'origine a una destin
 * Azure NetApp Files
 * Casella ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Storage Google Cloud
 * Storage a oggetti IBM Cloud
 * Server NFS
